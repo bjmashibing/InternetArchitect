@@ -1,0 +1,437 @@
+/*生产经营总体情况*/
+.xssrwcqkBox,.lrjsjwcqkBox,.lhytqyxypmBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+}
+.xssrwcqkBoxL,.lrjsjwcqkBoxL{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.xssrwcqkBoxR,.lrjsjwcqkBoxR{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+.lhytqyxypmBox{
+	position: relative;
+}
+.xydbBtnBox{
+	position: absolute;
+	height: 282px;
+	width: 120px;
+	top: 0;
+	left: 20px;
+	border-top: 1px solid #E7EAEC;
+	border-left: 1px solid #E7EAEC;
+	border-bottom: 1px solid #E7EAEC;
+}
+.xydb{
+	height: 282px;
+	width: calc(100% - 120px);
+	float: right;
+}
+.lhytqyxypmBox1,.lhytqyxypmBox2{
+	height: 282px;
+	width: 100%;
+}
+.lhytqyxypmBoxL1,.lhytqyxypmBoxL2{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.lhytqyxypmBoxR1,.lhytqyxypmBoxR2{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+.xydbBtn li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #00b294;
+    position: relative;
+}
+.xydbBtn li:nth-child(1) {
+    background: #00B294;
+    color: #fff;
+}
+/*中石化大型炼油企业对比指标报表页面*/
+.ylyjglBox,.lrzeBox,.dylylrBox,.dwwqfyBox,.hzyrldwfyBox,.ylyjgcbBox,.cpxsjjBox,.zxcpjjBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+} 
+.ylyjglBoxL,.lrzeBoxL,.dylylrBoxL,.dwwqfyBoxL,.hzyrldwfyBoxL,.ylyjgcbBoxL,.cpxsjjBoxL,.zxcpjjBoxL{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.ylyjglBoxR,.lrzeBoxR,.dylylrBoxR,.dwwqfyBoxR,.hzyrldwfyBoxR,.ylyjgcbBoxR,.cpxsjjBoxR,.zxcpjjBoxR{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+/*化工主要指标*/
+.hgzblrzeBox,.dcpwqfyBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+} 
+.hgzblrzeBoxL,.dcpwqfyBoxL{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.hgzblrzeBoxR,.dcpwqfyBoxR{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+/*主要财务指标一*/
+.zycwzb1Box{
+	height: 100%;
+	width: 100%;
+	padding: 0 20px;
+}
+.zycwzb1Main{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}
+.jqTitle{
+	height:30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+/*主要财务指标二*/
+.zycwzb2Box{
+	height: 100%;
+	width: 100%;
+	padding: 0 20px;
+}
+.zycwzb2Main{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}
+
+/*资产公司利润总额排名*/
+.gqylrqkpmBox{
+	height: 100%;
+	width: 100%;
+	padding: 0 20px;
+}
+.gqylrqkpmBoxL{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}   
+.ydjndBox{
+	height: 400px;
+	width: 100%;
+	padding: 0 20px;
+	position: relative;
+}
+.ydjndBtnBox{
+	position: absolute;
+	height: 400px;
+	width: 120px;
+	top: 0;
+	left: 20px;
+	border-top: 1px solid #E7EAEC;
+	border-left: 1px solid #E7EAEC;
+	border-bottom: 1px solid #E7EAEC;
+}
+.ydjnd{
+	height: 400px;
+	width: calc(100% - 120px);
+	float: right;
+}
+.ydjndBox1,.ydjndBox2{
+	height: 400px;
+	width: 100%;
+}
+  
+.ydjndBoxR1,.ydjndBoxR2{
+	height: 400px;
+	width: 100%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+.ydjndBtn li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #00b294;
+    position: relative;
+}
+.ydjndBtn li:nth-child(1) {
+    background: #00B294;
+    color: #fff;
+}
+/*中石化乙烯企业对比*/
+.zshyxBox,.zshlrBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+} 
+.zshyxBoxL,.zshlrBoxL{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.zshyxBoxR,.zshlrBoxR{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+/*资金指标完成情况表*/
+.sszjzbBox,.fsszjzbBox{
+	height: 100%;
+/*	height: 282px;*/
+	width: 100%;
+	padding: 0 20px;
+} 
+.sszjzbBoxL,.fsszjzbBoxL{
+	height: 100%;
+/*	height: 282px;*/
+	width: 100%;
+/*	width: 49%;*/
+/*	float: left;*/
+	border: 1px solid #E7EAEC;
+}   
+/*.sszjzbBoxR,.fsszjzbBoxR{//待确认添加，目前只做表格
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}*/
+/*票据背书*/
+.yqndbBox,.yqydbBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+} 
+.yqndbBoxL,.yqydbBoxL{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.yqndbBoxR,.yqydbBoxR{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+/*资产状况*/
+.zczkgdzcBox,.zczkwxzcBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+} 
+.zczkgdzcBoxL,.zczkwxzcBoxL{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.zczkgdzcBoxR,.zczkwxzcBoxR{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+/*投资计划完成情况*/
+.tzjhwcqkBox{
+	height: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+.tzjhwcqkBoxT{
+	width: 100%;
+    height: 382px;
+    border: 1px solid #ccc;
+}
+.tzjhwcqkBoxM{
+	margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+.tzjhwcqkBoxB{
+	margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CCCCCC;
+}
+/*效益测算情况表*/
+.ydxycsBox,.ljxycsBox{
+	height: 100%;
+	width: 100%;
+	padding: 0 20px;
+} 
+.ydxycsBoxL,.ljxycsBoxL{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}  
+/*滚动预算*/
+.lygdysBox,.hggdysBox,.cxgdysBox{
+	height: 100%;
+	width: 100%;
+	padding: 0 20px;
+} 
+.lygdysBoxL,.hggdysBoxL,.cxgdysBoxL{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}   
+/*费用预算执行情况*/
+.lybkfyysBox,.hgbkfyysBox{
+	height: 100%;
+	width: 100%;
+	padding: 0 20px;
+}
+.lybkfyysBoxL,.hgbkfyysBoxL{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}   
+.fssbfzbkhBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+	position: relative;
+}
+.fssbfzbkhBtnBox{
+	position: absolute;
+	height: 282px;
+	width: 120px;
+	top: 0;
+	left: 20px;
+	border-top: 1px solid #E7EAEC;
+	border-left: 1px solid #E7EAEC;
+	border-bottom: 1px solid #E7EAEC;
+}
+.fssbfzbkh{
+	height: 282px;
+	width: calc(100% - 120px);
+	float: right;
+}
+.fssbfzbkhBox1,.fssbfzbkhBox2{
+	height: 282px;
+	width: 100%;
+}
+.fssbfzbkhBoxL1{
+	height: 282px;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}  
+.fssbfzbkhBoxL2{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.fssbfzbkhBoxR2{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+.fssbfzbkhBtn li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #00b294;
+    position: relative;
+}
+.fssbfzbkhBtn li:nth-child(1) {
+    background: #00B294;
+    color: #fff;
+}
+/*炼油主要指标*/
+.lyzyzbbBox{
+	height: 100%;
+	width: 100%;
+	padding: 0 20px;
+}
+.lyzyzbbBoxL{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}   
+.lyzyzbtBox{
+	height: 382px;
+	width: 100%;
+	padding: 0 20px;
+	position: relative;
+}
+.lyzyzbtBtnBox{
+	position: absolute;
+	height: 382px;
+	width: 120px;
+	top: 0;
+	left: 20px;
+	border-top: 1px solid #E7EAEC;
+	border-left: 1px solid #E7EAEC;
+	border-bottom: 1px solid #E7EAEC;
+}
+.lyzyzbt{
+	height: 382px;
+	width: calc(100% - 120px);
+	float: right;
+}
+.lyzyzbtBox1,.lyzyzbtBox2{
+	height: 382px;
+	width: 100%;
+}
+.lyzyzbtBoxL1,.lyzyzbtBoxL2{
+	height: 382px;
+	width: 100%;
+	border: 1px solid #E7EAEC;
+}    
+.lyzyzbtBtn li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #00b294;
+    position: relative;
+}
+.lyzyzbtBtn li:nth-child(1) {
+    background: #00B294;
+    color: #fff;
+}
+.lyTitle{
+	height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    padding: 0 20px 0 0;
+    border-bottom: 1px solid #e7eaec;
+}

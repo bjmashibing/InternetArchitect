@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>办公无纸化系统</title>
+
+<!-- 最新的 Bootstrap 核心 css 文件 -->
+<!-- 在url上 使用 @标签 可以帮我们 自动加上 contextpath -->
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script th:src="@{/js/common/jquery-3.4.1.min.js}" ></script>
+<script th:src="@{/js/bootstrap.min.js}" ></script>
+</head>
+<body>
+
+<!--  导航栏                      开始  			 ↓ -->
+
+<nav class="navbar navbar-default">
+
+
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">首页</a>
+    </div>
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    
+    
+      <ul class="nav navbar-nav">
+        <li class=""><a href="#">公文流转</a></li>
+        
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          人员管理 <span class="caret"></span>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li class="active"><a href="/account/list">用户列表</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+          
+          
+        </li>
+      </ul>
+      
+      
+      
+      
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请输入员工姓名或工号">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+      
+      
+      
+     
+     <!--  未登录用户 -->
+      <ul th:if="${session.account} ==null" class="nav navbar-nav navbar-right">
+        <li><a href="/account/register">注册</a></li>
+        <li><a href="/account/login">登录</a></li>
+      </ul>
+      
+     
+       <!-- 已登录用户    ↓ --> 
+      <ul th:if="${session.account} !=null" class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          
+          欢迎你 : [[${session.account.loginName}]] <span class="caret"></span> </a>
+          <ul class="dropdown-menu">
+            <li><a href="/account/profile">个人信息</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/account/logOut">退出登录</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+       <!-- 已登录用户   ↑ --> 
+    </div><!-- /.navbar-collapse -->
+    
+    
+    
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--  导航栏                      结束  			↑       -->
+
+<!--  列表       开始   ↓ -->
+<table class="table table-hover">
+ <tr>  
+ 	<th>序号</th>
+ 	<th>工号</th>
+ 	<th>loginName</th>
+ 	<th>nickName</th>
+ 	<th>age</th>
+ 	<th>location</th>
+ 	<th>role</th>
+ 	<th>操作</th>
+ </tr>
+ 
+ <tr th:each="account : ${accountList}">
+ 	<td th:text="${accountStat.count}"></td>
+ 	<td th:text="${account.id}">工号</td>
+ 	<td th:text="${account.loginName}">loginName</td>
+ 	<td th:text="${account.nickName}">nickName</td>
+ 	<td th:text="${account.age}">age</td>
+ 	<td th:text="${account.location}">location</td>
+ 	<td th:text="${account.role}">role</td>
+ 	<td>操作</td>
+ 	
+ 
+ </tr>
+</table>
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a th:href="@{/account/list?pageNum=1}">1</a></li>
+    <li><a th:href="@{/account/list?pageNum=2}">2</a></li>
+    <li><a th:href="@{/account/list?pageNum=3}">3</a></li>
+    <li><a th:href="@{/account/list?pageNum=4}">4</a></li>
+    <li><a th:href="@{/account/list?pageNum=5}">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!--  列表       结束   ↑ -->
+
+
+
+</body>
+</html>

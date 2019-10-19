@@ -1,0 +1,230 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/common/common.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/common/login.css}">
+
+</head>
+<body>
+
+	<div class="box">
+		<div class="header">
+			<div style="width:1000px;margin:0 auto;">
+ 				<div style="width: 100%;height: 87px;">
+ 					<div style="width: 87px;height: 87px;float: left;"><img th:src="@{/images/zshLogo.png}"/></div>
+ 					<span style="display: block;float: left;height: 87px;line-height: 87px;font-size: 26px;margin-left: 10px;">中国石化数据应用分析平台</span>
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="main">
+				<div id="div1">
+					<ul class="warp" id="warp">	
+						<li style='opacity:1;'><img th:src="@{/images/01.jpg}" alt=""></li>
+						<li><img th:src="@{/images/02.jpg}" alt=""></li>
+						<li><img th:src="@{/images/03.jpg}" alt=""></li>	
+					</ul>
+				</div>
+ 			 	<div styl="float:right;">
+		 			<div class="login_form">
+		 				<span class="tab_1"></span>
+		 				<h3>用户登录</h3>
+		 				<p class="tip">用户名不能为空</p>
+
+		 				<form class="form_input">
+		 					<div>
+		 						<span class="user_input"></span>
+		  						<input type="text" placeholder="请输入用户名" class="input01" id="loginName">
+		  						<img th:src="@{/images/x_icon.png}" class="clear_icon">
+		 					</div>
+
+		 					<div>
+		 						<span class="pass_input"></span>
+		  						<input type="password" placeholder="请输入密码" class="input02" id="password">
+		 					</div>
+							
+							<p style="height: 30px;width: 100%;"><span class="tishi" style="display: none;font-size: 14px;color: red;">输入的用户名错误！</span></p>
+		 					<p class="qxsq">
+		 						<span style="float:right; color:#333;">忘记密码？</span>	<span id="sprycheckbox1">
+		 						<input type="checkbox" name="checkbox1" id="checkbox1">
+	 						<span class="checkboxRequiredMsg">Please make a selection.</span></span>记住用户名 </p>
+
+
+		 					<div class="login_btn">
+		 						登录
+		 					</div>
+		 				</form>
+		 			</div>
+
+
+		 			<div class="login_form1">
+		 				<span class="tab_2"></span>
+						<h3>
+	                           用户登录 
+	                    </h3>
+
+	                    <p>使用二维码扫描</p>
+	                    <div style="text-align:center;">
+	                    	<img th:src="@{/images/Code.png}">
+	                    </div>
+		 			</div>
+	 			</div>
+  		</div>
+
+
+
+ 	
+	</div>
+    	<div class="footer" style="position:absolute; bottom:0px">
+ 			<p>Copyright© 2016 中国石油化工集团公司版权所有2002-2014 京ICP备05037230号 京公网安备：110401400107号 </p>
+ 			<p>地址：中国北京市朝阳区朝阳门北大街22号    邮政编码：100728    电话：123</p>
+ 			<p>技术支持：xx技术有限责任公司    电话：010</p>
+ 			<p>&nbsp;</p>
+ 		</div>
+	
+	<script type="text/javascript" th:src="@{/js/common/jquery-1.9.0.js}"></script>
+	<script type="text/javascript">
+		$(".tab_1").click(function(){
+			$(".login_form1").show();
+			$(".login_form").hide();
+		});
+
+
+		$(".tab_2").click(function(){
+			$(".login_form").show();
+			$(".login_form1").hide();
+		})
+
+//-----------------轮播
+
+
+        
+        
+        //---------------验证
+        
+		$(function(){	
+			$(".login_btn").click(function(){
+				
+				var loginName = $("#loginName").val();
+				var password = $("#password").val();
+				
+				if(loginName=="" || password ==""){
+					$(".tip").html("用户名和密码不能为空");
+					$(".tip").css("display","block");
+					return;
+				}else{
+					// 异步校验账号密码
+					
+					var url = "/account/validataAccount";
+					var args = {loginName:loginName,password:password};
+					$.post(url,args,function(data){
+						
+						if(data == "success"){
+							// 登录成功 跳转页面
+							window.location.href="/index";
+							
+						}else {
+							
+							$(".tip").html("用户名或密码错误");
+							$(".tip").css("display","block");
+						}
+						
+						console.log(data)
+					});
+					
+				}
+			
+				
+			})
+						
+		})
+		
+		
+		
+	//------------验证	
+		
+						
+			$(document).ready(function(){//获取焦点事件
+				$(".input01").focus(function(){
+			    	$(".tishi").css("display","none");
+			    	$(".tip").css("display","none")
+			    });
+//			    $(".input01").blur(function(){//失去焦点事件
+
+//			    });
+			});	
+			//===========轮播图===========
+			function getStyle(DOM,name){
+					if(DOM.currentStyle){
+						return DOM.currentStyle[name];
+					}else{
+						return getComputedStyle(DOM,false)[name];
+					}
+				}
+			function move(DOM,attr,target){
+				clearInterval(DOM.timer)
+				DOM.timer=setInterval(function(){
+					if(attr=='opacity'){
+			
+						var cur=Math.round(parseFloat(getStyle(DOM,attr))*100)
+			
+					}else{
+			
+						var cur=parseInt(getStyle(DOM,attr));
+			
+					}
+					//alert(cur)
+					//console.log(cur)
+					var speed=(target-cur)/6;
+					speed=speed>0?Math.ceil(speed):Math.floor(speed);
+			
+					if(cur==target){
+						clearInterval(DOM.timer)
+					}else{
+						if(attr=='opacity'){
+			
+							DOM.style.filter='alpha(opacity:'+(cur+speed)+')'
+							DOM.style.opacity=(cur+speed)/100
+						}else{
+			
+							DOM.style[attr]=cur+speed+'px';
+			
+						}
+					}
+			
+				},30)
+			}
+			window.onload = function(){
+				var Owarp = document.getElementById("warp");
+				var Oli = Owarp.children;
+				var timer = null;
+				var nowIndext = 0;
+				function imgLocation(){
+					for(var i= 0; i<Oli.length; i++){
+						Oli[i].style.opacity = 0;
+					}
+					if(nowIndext == Oli.length-1){
+						nowIndext = 0;
+						Oli[Oli.length-1].style.opacity = 0;
+						move(Oli[Oli.length-1], "opacity", 0)
+						move(Oli[nowIndext], "opacity", 100)
+						
+					}else{
+						nowIndext++;
+						Oli[nowIndext-1].style.opacity = 1;
+						move(Oli[nowIndext-1], "opacity", 0)
+						move(Oli[nowIndext], "opacity", 100)
+					}
+					
+				}
+				setInterval(imgLocation,2000)
+			}
+				
+			
+			
+			
+    </script>
+</body>
+</html>
