@@ -18,21 +18,20 @@ Spring 是一个于 2003 年兴起的一个轻量级的 Java 开源开发框架
 
 如今Spring已是Java项目的标配，它极大的简化了开发过程，降低了开发难度。
 
-l   方便解耦，简化开发；
+- 方便解耦，简化开发；
 
-l   AOP 编程的支持；
+- AOP 编程的支持；
 
-l   声明式事务的支持；
+- 声明式事务的支持；
 
-l   方便程序的测试；
+- 方便程序的测试；
+-  方便集成各种优秀框架。
 
-l   方便集成各种优秀框架。
-
-IoC 
+**IoC**
 
 Inversion of Control
 
-AOP 
+**AOP** 
 
 Aspect Oriented Programming 
 
@@ -40,41 +39,33 @@ Aspect Oriented Programming
 
 Spring5 是一个重要的版本，距离SpringFramework4差不多四年
 
-​            ![1571502929658](C:\Users\一明哥\AppData\Roaming\Typora\typora-user-images\1571502929658.png)                                      
+![1571502929658](images\1571502929658.png)                     
 
-l   支持JDK8
+- 支持JDK8
+  - Spring 接口中的默认方法
+  - 基于 Java8 反射增强的内部代码改进
+  - 在框架代码中使用函数式编程 - lambda表达式 和 stream流
 
-n   Spring 接口中的默认方法
+- 响应式编程支持Spring Web Reactive异步的、非阻塞的、事件驱动的服务
 
-n   基于 Java8 反射增强的内部代码改进
+- 支持J2EE7
+  - Servlet 3.1
+  - JMS 2.0
+  - JPA 2.1
+  - JAX-RS 2.0
 
-n   在框架代码中使用函数式编程 - lambda表达式 和 stream流
+- Bean Validation 1.1
+- Hibernate 5
 
-l   响应式编程支持Spring Web Reactive异步的、非阻塞的、事件驱动的服务
+- Jackson 2.6
 
-l   支持J2EE7
+-  EhCache 2.10
 
-n   Servlet 3.1
+- JUnit 5
 
-n   JMS 2.0
+- Tiles 3
 
-n   JPA 2.1
-
-n   JAX-RS 2.0
-
-n   Bean Validation 1.1
-
-l   Hibernate 5
-
-l   Jackson 2.6
-
-l   EhCache 2.10
-
-l   JUnit 5
-
-l   Tiles 3
-
-l   Kotlin
+- Kotlin
 
 ## 开发环境
 
@@ -86,19 +77,19 @@ https://repo.spring.io/libs-release-local/org/springframework/spring/
 
 解压缩Jar包可以看见如下结构
 
-   
+![1571503965778](1571503965778.png)
 
-l   Doc  文档 
+-  Doc  文档 
 
-l   Libs Jar包
+- Libs Jar包
 
-l   Schema XML约束
+- Schema XML约束
 
-l   license.txt 许可协议
+- license.txt 许可协议
 
-l   notice.txt 注意事项
+- notice.txt 注意事项
 
-l   readme.txt 读我
+- readme.txt 读我
 
 #### 常用Jar包
 
@@ -133,17 +124,17 @@ http://commons.apache.org/proper/commons-logging/download_logging.cgi
 
 https://spring.io/tools
 
-   
+   ![1571504062996](images/1571504062996.png)
 
 ### 环境变量
 
 #### window下配置
 
-l   新建->变量名"JAVA_HOME"，变量值"C:\Java\jdk1.8.0_05"（即JDK的安装路径） 
+- 新建->变量名"JAVA_HOME"，变量值"C:\Java\jdk1.8.0_05"（即JDK的安装路径） 
 
-l   编辑->变量名"Path"，在原变量值的最后面加上“;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin” 
+- 编辑->变量名"Path"，在原变量值的最后面加上“;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin” 
 
-l   新建->变量名“CLASSPATH”,变量值“.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”
+- 新建->变量名“CLASSPATH”,变量值“.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”
 
 在控制台分别输入java，javac，java -version 命令，测试环境是否设置成功
 
@@ -153,55 +144,42 @@ l   新建->变量名“CLASSPATH”,变量值“.;%JAVA_HOME%\lib;%JAVA_HOME%\l
 
 #### 包引入
 
-   
+   ![1571504086302](images/1571504086302.png)
 
 #### 配置文件
 
 在src下新建
 
-applicationContext.xml
+**applicationContext.xml**
 
-<?xml version=*"1.0"* encoding=*"UTF-8"*?>
-
-<beans xmlns=*"http://www.springframework.org/schema/beans"*
-
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
  
-
-xmlns:xsi=*"http://www.w3.org/2001/XMLSchema-instance"*
-
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  
-
-xmlns:p=*"http://www.springframework.org/schema/p"*
-
+xmlns:p="http://www.springframework.org/schema/p"
  
-
-xmlns:mvc=*"http://www.springframework.org/schema/mvc"*
-
+xmlns:mvc="http://www.springframework.org/schema/mvc"
  
-
-xmlns:context=*"http://www.springframework.org/schema/context"*
-
+xmlns:context="http://www.springframework.org/schema/context"
  
-
-xsi:schemaLocation=*"http://www.springframework.org/schema/beans*
-
-*http://www.springframework.org/schema/beans/spring-beans.xsd*
-
-*http://www.springframework.org/schema/mvc*
-
-*http://www.springframework.org/schema/mvc/spring-mvc.xsd*
-
-*http://www.springframework.org/schema/context*
-
-*http://www.springframework.org/schema/context/spring-context.xsd"*>
-
-​        
-
-​        "src/applicationContext.xml"
-
-​        <bean id=*"user"* class=*"com.msb.User"*></bean>
-
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+        
+        "src/applicationContext.xml"
+        <bean id="user" class="com.msb.User"></bean>
 </beans>
+
+```
+
+
+
+
 
 #### Bean
 
@@ -209,29 +187,37 @@ xsi:schemaLocation=*"http://www.springframework.org/schema/beans*
 
 包含两个属性，生成get/set方法
 
-​     **private** String name;
+```
+	private String name;
+	private Integer age;
+```
 
-​     **private** Integer age;
+
+
+
 
 #### 测试类
 
-​            ApplicationContext ctx = **new** ClassPathXmlApplicationContext("applicationContext.xml");
+```
+ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		User user = (User)ctx.getBean("user");
+		user.setName("uu");
+		user.setAge(18);
+		System.out.println(ToStringBuilder.reflectionToString(user));;
 
-​            User user = (User)ctx.getBean("user");
+```
 
-​            user.setName("uu");
 
-​            user.setAge(18);
 
-​            System.**out**.println(ToStringBuilder.*reflectionToString*(user));;
+​           
 
 ### ToStringBuilder 工具类
 
-l   Commons项目中用来处理Java基本对象方法的工具类包，可以简化很多平时经常要用到的写法，例如判断字符串是否为空等等。
+- Commons项目中用来处理Java基本对象方法的工具类包，可以简化很多平时经常要用到的写法，例如判断字符串是否为空等等。
 
-l   是一个最常用的工具，作为jdk的补充。
+-  是一个最常用的工具，作为jdk的补充。
 
-l   Lang下有很多Utils类，提供了若干static方法供调用，涵盖了字符串操作、字符操作、JVM交互操作、归类、异常和位域校验等等。
+- Lang下有很多Utils类，提供了若干static方法供调用，涵盖了字符串操作、字符操作、JVM交互操作、归类、异常和位域校验等等。
 
 项目地址
 
