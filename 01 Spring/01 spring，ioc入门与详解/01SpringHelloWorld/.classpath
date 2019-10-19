@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="libs/spring-beans-5.1.7.RELEASE.jar" sourcepath="C:/Users/Administrator/Desktop/课件/Spring/spring-framework-5.1.7.RELEASE-dist/spring-framework-5.1.7.RELEASE/libs/spring-beans-5.1.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="source_encoding" value="UTF-8"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/spring-context-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-core-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-expression-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang3-3.9.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
