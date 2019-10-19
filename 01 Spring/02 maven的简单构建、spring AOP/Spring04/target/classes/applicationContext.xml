@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <!--
+ 动态工厂 每次都是new出来的
+        <bean id="carFactory" class="com.mashibing.spring.CarFactory">
+        
+      	  <property name="name"  value="audi"></property> 
+        </bean>
+        
+        <bean id="car" factory-bean="carFactory" factory-method="getCar">
+        需要set方法
+        	
+        </bean> -->
+        
+        <bean id="car" class="com.mashibing.spring.CarFactory" factory-method="getCar" >
+        	<constructor-arg value="audi"></constructor-arg>
+        </bean>
+        
+</beans>
+

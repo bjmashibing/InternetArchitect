@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+		<import resource="applicationContext-*.xml"/>
+        <!-- 对象属性 Spring 会调起 对象的 set方法  来 DI -->
+        <bean id="person" name="human,star" class="com.mashibing.spring.Person">
+        	<property name="name"><value>马小六</value></property>
+        	<property name="age" value="18" />
+        	<property name="food" ref="food" />
+        	<property name="list">
+        		<array>
+        			<value>a</value>
+        			<value>b</value>
+        			<value>c</value>
+        		</array>
+        	</property>
+        	        	
+	
+        	<property name="set">
+        	
+        		<array>
+        			<value>a</value>
+        			<value>b</value>
+        			<value>c</value>
+        			<value>c</value>
+        		</array>
+        	</property>
+        	
+    		<property name="map">
+    			<props>
+    				<prop key="a">1</prop>
+    				<prop key="b">2</prop>
+    			</props>
+    			<!-- 
+    			<map>
+    				<entry key="a" value="1"></entry>
+    				<entry key="b" value="2"></entry>
+    				<entry key="b" value="2"></entry>
+    			</map>
+    			 -->
+    		</property>
+        	
+        	
+        	<property name="gift">
+	        	<value>
+	        	douban=http://douban.com/movie/xx.html
+	        	paoniu=100,
+	        	dushu=200
+	        	</value>
+        	</property>
+        </bean>
+        
+        <bean id="food" class="com.mashibing.spring.Food"></bean>
+        
+        <alias name="person" alias="person2"/>
+        
+</beans>
+
