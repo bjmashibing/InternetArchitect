@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one or more
+  ~ contributor license agreements.  See the NOTICE file distributed with
+  ~ this work for additional information regarding copyright ownership.
+  ~ The ASF licenses this file to You under the Apache License, Version 2.0
+  ~ (the "License"); you may not use this file except in compliance with
+  ~  he License.  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.apache</groupId>
+	<artifactId>dubbo-admin</artifactId>
+	<version>0.1</version>
+	<modules>
+		<module>dubbo-admin-ui</module>
+		<module>dubbo-admin-server</module>
+		<module>dubbo-admin-distribution</module>
+	</modules>
+	<packaging>pom</packaging>
+
+	<name>dubbo-admin</name>
+	<description>Dubbo admin front and back end</description>
+
+	<parent>
+		<groupId>org.apache</groupId>
+		<artifactId>apache</artifactId>
+		<version>19</version>
+	</parent>
+
+	<repositories>
+		<repository>
+			<id>apache.snapshots.https</id>
+			<name>Apache Development Snapshot Repository</name>
+			<url>https://repository.apache.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<properties>
+		<main.basedir>${project.basedir}</main.basedir>
+                <commons-lang3-version>3.7</commons-lang3-version>
+		<dubbo-version>2.7.2</dubbo-version>
+		<curator-version>2.12.0</curator-version>
+		<curator-test-version>4.1.0</curator-test-version>
+		<fastjson-version>1.2.46</fastjson-version>
+		<springfox-swagger-version>2.9.2</springfox-swagger-version>
+		<netty-version>4.1.30.Final</netty-version>
+		<jacoco-version>0.8.2</jacoco-version>
+		<jedis-version>2.9.0</jedis-version>
+                <apollo-version>1.2.0</apollo-version>
+		<snakeyaml-version>1.24</snakeyaml-version>
+		<maven-checkstyle-plugin-version>3.0.0</maven-checkstyle-plugin-version>
+		<spring-boot-version>2.1.4.RELEASE</spring-boot-version>
+		<maven_compiler_version>3.6.0</maven_compiler_version>
+		<java_source_version>1.8</java_source_version>
+		<java_target_version>1.8</java_target_version>
+		<file_encoding>UTF-8</file_encoding>
+		<checkstyle.skip>true</checkstyle.skip>
+		<rat.skip>true</rat.skip>
+	</properties>
+
+	<dependencyManagement>
+        <dependencies>
+			<dependency>
+				<groupId>org.yaml</groupId>
+				<artifactId>snakeyaml</artifactId>
+				<version>${snakeyaml-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-parent</artifactId>
+				<version>${spring-boot-version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${jedis-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.ctrip.framework.apollo</groupId>
+				<artifactId>apollo-openapi</artifactId>
+				<version>${apollo-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.dubbo</groupId>
+				<artifactId>dubbo</artifactId>
+				<version>${dubbo-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.dubbo</groupId>
+				<artifactId>dubbo-serialization-kryo</artifactId>
+				<version>${dubbo-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.curator</groupId>
+				<artifactId>curator-framework</artifactId>
+				<version>${curator-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.curator</groupId>
+				<artifactId>curator-test</artifactId>
+				<version>${curator-test-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.curator</groupId>
+				<artifactId>curator-recipes</artifactId>
+				<version>${curator-version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.zookeeper</groupId>
+						<artifactId>zookeeper</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${springfox-swagger-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${springfox-swagger-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-all</artifactId>
+				<version>${netty-version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<profiles>
+		<profile>
+			<id>checkstyle</id>
+			<activation>
+				<jdk>[1.8,)</jdk>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-checkstyle-plugin</artifactId>
+						<version>${maven-checkstyle-plugin-version}</version>
+						<dependencies>
+							<dependency>
+								<groupId>com.puppycrawl.tools</groupId>
+								<artifactId>checkstyle</artifactId>
+								<version>8.9</version>
+							</dependency>
+						</dependencies>
+						<executions>
+							<execution>
+								<id>checkstyle-validation</id>
+								<phase>validate</phase>
+								<configuration>
+									<configLocation>codestyle/checkstyle.xml</configLocation>
+									<encoding>UTF-8</encoding>
+									<consoleOutput>true</consoleOutput>
+									<failOnViolation>true</failOnViolation>
+								</configuration>
+								<goals>
+									<goal>check</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.rat</groupId>
+						<artifactId>apache-rat-plugin</artifactId>
+						<version>0.12</version>
+						<executions>
+							<execution>
+								<id>verify.rat</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>check</goal>
+								</goals>
+								<configuration>
+									<excludes>
+										<exclude>**/*.versionsBackup</exclude>
+										<exclude>**/.idea/</exclude>
+										<exclude>**/*.iml</exclude>
+										<exclude>**/*.txt</exclude>
+										<exclude>**/*.sh</exclude>
+										<exclude>**/*.bat</exclude>
+										<exclude>**/*.md</exclude>
+										<exclude>.git/</exclude>
+										<exclude>**/*.git*</exclude>
+										<exclude>.gitignore</exclude>
+										<exclude>**/.settings/*</exclude>
+										<exclude>**/.classpath</exclude>
+										<exclude>**/*.properties</exclude>
+										<exclude>**/.project</exclude>
+										<exclude>**/target/**</exclude>
+										<exclude>**/*.log</exclude>
+										<exclude>CODE_OF_CONDUCT.md</exclude>
+										<exclude>.codecov.yml</exclude>
+										<exclude>.travis.yml</exclude>
+										<exclude>PULL_REQUEST_TEMPLATE.md</exclude>
+										<exclude>CONTRIBUTING.md</exclude>
+										<exclude>**/codestyle/*</exclude>
+										<exclude>**/node_modules/**</exclude>
+										<exclude>**/.babelrc</exclude>
+										<exclude>**/.editorconfig</exclude>
+										<exclude>**/package-lock.json</exclude>
+										<exclude>**/package.json</exclude>
+										<exclude>**/OpenSans.css</exclude>
+										<exclude>**/.eslintignore</exclude>
+										<exclude>**/resources/META-INF/**</exclude>
+										<exclude>**/src/main/resources/public/**</exclude>
+										<exclude>**/src/licenses/**</exclude>
+									</excludes>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco-version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven_compiler_version}</version>
+				<configuration>
+					<source>${java_source_version}</source>
+					<target>${java_target_version}</target>
+					<encoding>${file_encoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.21.0</version>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>

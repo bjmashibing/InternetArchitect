@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>办公无纸化系统</title>
+
+<!-- 最新的 Bootstrap 核心 css 文件 -->
+<!-- 在url上 使用 @标签 可以帮我们 自动加上 contextpath -->
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script th:src="@{/js/common/jquery-3.4.1.min.js}" ></script>
+<script th:src="@{/js/bootstrap.min.js}" ></script>
+</head>
+<body>
+
+<!--  导航栏                      开始  			 ↓ -->
+
+<nav class="navbar navbar-default">
+
+
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">首页</a>
+    </div>
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    
+    
+      <ul class="nav navbar-nav">
+        <li class=""><a href="#">公文流转</a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          人力资源 <span class="caret"></span>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a href="/account/list">员工列表</a></li>
+          </ul>
+          
+        </li>
+      </ul>
+      
+      
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          系统设置 <span class="caret"></span>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a href="/manager/accountList">账号列表</a></li>
+            <li><a href="/manager/roleList"> 角色管理</a></li>
+            <li><a href="/manager/permissionList">权限管理</a></li>
+          </ul>
+          
+        </li>
+      </ul>
+      
+      
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请输入员工姓名或工号">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+      
+      
+      
+     
+     <!--  未登录用户 -->
+      <ul th:if="${session.account} ==null" class="nav navbar-nav navbar-right">
+        <li><a href="/account/register">注册</a></li>
+        <li><a href="/account/login">登录</a></li>
+      </ul>
+      
+     
+       <!-- 已登录用户    ↓ --> 
+      <ul th:if="${session.account} !=null" class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          
+          欢迎你 : [[${session.account.loginName}]] <span class="caret"></span> </a>
+          <ul class="dropdown-menu">
+            <li><a href="/account/profile">个人信息</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/account/logOut">退出登录</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+       <!-- 已登录用户   ↑ --> 
+    </div><!-- /.navbar-collapse -->
+    
+    
+    
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--  导航栏                      结束  			↑       -->
+<h1>账号管理</h1>
+
+<!--  列表       开始   ↓ -->
+<table class="table table-hover">
+ <tr>  
+ 	<th>序号</th>
+ 	<th>工号</th>
+ 	<th>loginName</th>
+ 	<th>nickName</th>
+ 	<th>age</th>
+ 	<th>location</th>
+ 	<th>role</th>
+ 	<th>操作</th>
+ </tr>
+ 
+ <tr th:each="account : ${page.list}">
+ 	<td th:text="${accountStat.count}"></td>
+ 	<td th:text="${account.id}">工号</td>
+ 	<td th:text="${account.loginName}">loginName</td>
+ 	<td th:text="${account.nickName}">nickName</td>
+ 	<td th:text="${account.age}">age</td>
+ 	<td th:text="${account.location}">location</td>
+ 	<td th:text="${account.role}">role</td>
+ 	<td>
+
+
+		<a class="btn btn-danger" th:href = "@{'javascript:deleteById('+${account.id}+');'}">
+		删除
+		</a>
+		
+		修改密码
+
+
+
+</td>
+ 	
+ 
+ </tr>
+</table>
+
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    
+    <li th:class="${page.prePage} == 0?'disabled' :'' ">
+      <a th:href="@{${page.prePage} == 0?'javascript:void(0);' :'/account/list?pageNum='+${page.prePage}}" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    
+    
+    <li th:each="pageNum : ${page.navigatepageNums}"><a th:href="@{'/account/list?pageNum='+${pageNum}}">[[${pageNum}]]</a></li>
+    
+    <li>
+      <a th:href="@{'/account/list?pageNum='+${page.nextPage}}" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="com-alert" class="modal" style="z-index:9999;display: none;" >  
+      <div class="modal-dialog modal-sm">  
+        <div class="modal-content">  
+          <div class="modal-header">  
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>  
+            <h5 class="modal-title"><i class="fa fa-exclamation-circle"></i> [Title]</h5>  
+          </div>  
+          <div class="modal-body small">  
+            <p>[Message]</p>  
+          </div>  
+          <div class="modal-footer" >  
+            <button type="button" class="btn btn-primary ok" data-dismiss="modal">[BtnOk]</button>  
+            <button type="button" class="btn btn-default cancel" data-dismiss="modal">[BtnCancel]</button>  
+          </div>  
+        </div>  
+      </div>  
+    </div> 
+
+
+
+
+
+<!--  列表       结束   ↑ -->
+<script type="text/javascript">
+
+$(function () {  
+	  window.Modal = function () {  
+	    var reg = new RegExp("\\[([^\\[\\]]*?)\\]", 'igm');  
+	    var alr = $("#com-alert");  
+	    var ahtml = alr.html();  
+	  
+	    var _tip = function (options, sec) {  
+	        alr.html(ahtml);    // 复原  
+	        alr.find('.ok').hide();  
+	        alr.find('.cancel').hide();  
+	        alr.find('.modal-content').width(500);  
+	        _dialog(options, sec);  
+	          
+	        return {  
+	            on: function (callback) {  
+	            }  
+	        };  
+	    };  
+	  
+	    var _alert = function (options) {  
+	      alr.html(ahtml);  // 复原  
+	      alr.find('.ok').removeClass('btn-success').addClass('btn-primary');  
+	      alr.find('.cancel').hide();  
+	      _dialog(options);  
+	  
+	      return {  
+	        on: function (callback) {  
+	          if (callback && callback instanceof Function) {  
+	            alr.find('.ok').click(function () { callback(true) });  
+	          }  
+	        }  
+	      };  
+	    };  
+	  
+	    var _confirm = function (options) {  
+	      alr.html(ahtml); // 复原  
+	      alr.find('.ok').removeClass('btn-primary').addClass('btn-success');  
+	      alr.find('.cancel').show();  
+	      _dialog(options);  
+	  
+	      return {  
+	        on: function (callback) {  
+	          if (callback && callback instanceof Function) {  
+	            alr.find('.ok').click(function () { callback(true) });  
+	            alr.find('.cancel').click(function () { return; });  
+	          }  
+	        }  
+	      };  
+	    };  
+	  
+	    var _dialog = function (options) {  
+	      var ops = {  
+	        msg: "提示内容",  
+	        title: "操作提示",  
+	        btnok: "确定",  
+	        btncl: "取消"  
+	      };  
+	  
+	      $.extend(ops, options);  
+	  
+	      var html = alr.html().replace(reg, function (node, key) {  
+	        return {  
+	          Title: ops.title,  
+	          Message: ops.msg,  
+	          BtnOk: ops.btnok,  
+	          BtnCancel: ops.btncl  
+	        }[key];  
+	      });  
+	        
+	      alr.html(html);  
+	      alr.modal({  
+	        width: 250,  
+	        backdrop: 'static'  
+	      });  
+	    }  
+	  
+	    return {  
+	      tip: _tip,  
+	      alert: _alert,  
+	      confirm: _confirm  
+	    }  
+	  
+	  }();  
+	});
+function showTip(msg, sec, callback){  
+  if(!sec) {  
+      sec = 1000;  
+  }  
+  Modal.tip({  
+      title:'提示',  
+      msg: msg  
+  }, sec);  
+  setTimeout(callback, sec);  
+}  
+
+/** 
+* 显示消息 
+* @param msg 
+*/  
+function showMsg(msg, callback){  
+  Modal.alert({  
+      title:'提示',  
+      msg: msg,  
+      btnok: '确定'  
+  }).on(function (e) {  
+      if(callback){  
+          callback();  
+      }  
+   });  
+}  
+
+/** 
+* 模态对话框 
+* @param msg 
+* @returns 
+*/  
+function showConfirm(msg,callback){  
+  //var res = false;  
+  Modal.confirm(  
+    {  
+        title:'提示',  
+        msg: msg,  
+    }).on( function (e) {  
+        callback();  
+        //res=true;  
+    });  
+  //return res;  
+}
+
+
+
+
+	function deleteById(id){
+		
+		console.log("id:" + id)
+		// 直接连接的方式 访问 controller里的删除方法
+		// 异步通过ajax 去访问 带有json访问结果的controller
+		
+		
+	//	showTip("haha", 5000, function() {});
+		
+	//	showMsg("haha", function() {});
+		showConfirm("haha", function() {
+			// 确认删除
+			var url = "/account/deleteById";
+			var args = {id:id};
+			// RESPStat 类型的结果
+			$.post(url,args,function(data){
+				console.log(data)
+				if (data.code == 200){
+					//删除成功，刷新页面
+					window.location.reload();
+				}else {
+					alert(data.msg)
+				}
+			});
+		});
+		
+		
+	//	var isDel = confirm("真的确定要删除吗？");
+		
+//		if(isDel == false){
+	//		return;
+	//	}
+		
+	
+	}
+// 锋利的jQuery
+</script>
+
+
+</body>
+</html>

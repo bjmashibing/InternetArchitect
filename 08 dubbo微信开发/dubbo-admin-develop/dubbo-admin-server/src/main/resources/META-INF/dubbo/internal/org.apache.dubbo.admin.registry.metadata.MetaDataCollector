@@ -1,0 +1,2 @@
+zookeeper=org.apache.dubbo.admin.registry.metadata.impl.ZookeeperMetaDataCollector
+redis=org.apache.dubbo.admin.registry.metadata.impl.RedisMetaDataCollector

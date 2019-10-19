@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1>个人信息</h1>
+昵称： [[${session.user}]]
+<br>
+<p>
+头像：<img th:src = "${session.user.headimgurl}">
+</body>
+</html>

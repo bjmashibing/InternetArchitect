@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.mashibing.springboot</groupId>
+		<artifactId>dubbo01</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>oa-consumer</artifactId>
+
+	<dependencies>
+		<!-- API -->
+		<dependency>
+			<groupId>com.mashibing.springboot</groupId>
+			<artifactId>api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			</dependency>
+			
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.spring4all</groupId>
+			<artifactId>swagger-spring-boot-starter</artifactId>
+		</dependency>
+
+		<!-- 父子项目 继承的时候 如果在 父项目 还有爷爷项目 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.liyiorg</groupId>
+			<artifactId>weixin-popular</artifactId>
+		</dependency>
+	</dependencies>
+</project>

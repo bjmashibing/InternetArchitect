@@ -1,0 +1,133 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.mashibing.springboot</groupId>
+	<artifactId>dubbo01</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>dubbo01</name>
+	<url>http://maven.apache.org</url>
+
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.7.RELEASE</version>
+	</parent>
+
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<dubbo.version>2.7.1</dubbo.version>
+	</properties>
+
+	<modules>
+		<module>oa-provider</module>
+		<module>oa-consumer</module>
+		<module>api</module>
+		<module>wx-provider</module>
+		<module>wx-consumer</module>
+	</modules>
+
+	<!-- 对依赖版本的管理 只定义版本 不是所有的子项目都需要的依赖 -->
+	<dependencyManagement>
+
+		<dependencies>
+
+
+<!-- 微信API -->
+			<dependency>
+				<groupId>com.github.liyiorg</groupId>
+				<artifactId>weixin-popular</artifactId>
+				<version>2.8.28</version>
+			</dependency>
+
+			<!-- 分页插件 https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter -->
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper-spring-boot-starter</artifactId>
+				<version>1.2.12</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.github.tobato</groupId>
+				<artifactId>fastdfs-client</artifactId>
+				<version>1.26.6</version>
+			</dependency>
+
+			<!--  swagger API -->
+
+			<dependency>
+				<groupId>com.spring4all</groupId>
+				<artifactId>swagger-spring-boot-starter</artifactId>
+				<version>1.9.0.RELEASE</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- 公用的依赖 -->
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+
+		<!-- dubbo -->
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo-spring-boot-starter</artifactId>
+			<version>${dubbo.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbo.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-framework</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-recipes</artifactId>
+			<version>4.2.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.zookeeper</groupId>
+					<artifactId>zookeeper</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

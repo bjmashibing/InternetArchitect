@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>办公无纸化系统</title>
+
+<!-- 最新的 Bootstrap 核心 css 文件 -->
+<!-- 在url上 使用 @标签 可以帮我们 自动加上 contextpath -->
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script th:src="@{/js/common/jquery-3.4.1.min.js}" ></script>
+<script th:src="@{/js/bootstrap.min.js}" ></script>
+</head>
+<body>
+
+<!--  导航栏                      开始  			 ↓ -->
+
+<nav class="navbar navbar-default">
+
+
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">首页</a>
+    </div>
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    
+    
+      <ul class="nav navbar-nav">
+        <li class=""><a href="#">公文流转</a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          人力资源 <span class="caret"></span>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a href="/account/list">员工列表</a></li>
+          </ul>
+          
+        </li>
+      </ul>
+      
+      
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          系统设置 <span class="caret"></span>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a href="/manager/accountList">账号列表</a></li>
+            <li><a href="/manager/roleList"> 角色管理</a></li>
+            <li><a href="/manager/permissionList">权限管理</a></li>
+          </ul>
+          
+        </li>
+      </ul>
+      
+      
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请输入员工姓名或工号">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+      
+      
+      
+     
+     <!--  未登录用户 -->
+      <ul th:if="${session.account} ==null" class="nav navbar-nav navbar-right">
+        <li><a href="/account/register">注册</a></li>
+        <li><a href="/account/login">登录</a></li>
+      </ul>
+      
+     
+       <!-- 已登录用户    ↓ --> 
+      <ul th:if="${session.account} !=null" class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          
+          欢迎你 : [[${session.account.loginName}]] <span class="caret"></span> </a>
+          <ul class="dropdown-menu">
+            <li><a href="/account/profile">个人信息</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/account/logOut">退出登录</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+       <!-- 已登录用户   ↑ --> 
+    </div><!-- /.navbar-collapse -->
+    
+    
+    
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--  导航栏                      结束  			↑       -->
+<h1>修改/添加 权限</h1>
+
+<form id="p">
+权限名称： <input name="name" type="text" th:value="${p}==null?'':${p.name}">  <br>
+URI： <input name="uri" type="text" th:value="${p}==null?'':${p.uri}"><br>
+
+权限：  
+<input type="checkbox" id="c" th:checked="${p}==null?'false':${p.c}"> c
+<input type="checkbox" id="r" th:checked="${p}==null?'false':${p.r}"> r
+<input type="checkbox" id="u" th:checked="${p}==null?'false':${p.u}"> u
+<input type="checkbox" id="d" th:checked="${p}==null?'false':${p.d}"/> d
+
+<input type="text" name="id" th:value="${p}==null?'':${p.id}">
+<br>
+<a class="btn btn-danger" href="javascript:smt();">提交</a>
+</form>
+
+
+<br>
+
+
+<script type="text/javascript">
+function smt(){
+	var formObject = {};
+	
+	var data = $("#p").serializeArray();
+	$.each(data,function(i,item){
+		
+		formObject[item.name] = item.value
+	});
+	
+	
+	formObject["c"] = $("#c").is(':checked');
+	formObject["r"] = $("#r").is(':checked');
+	formObject["u"] = $("#u").is(':checked');
+	formObject["d"] = $("#d").is(':checked');
+	
+	
+	// 提交json对象 到controller
+	console.log("data" + data);
+	console.log("formObject" + formObject);
+	console.log("formObject" + JSON.stringify(formObject));
+	
+	// 有没有 id 传过来
+	var url = "/api/v1/manager/permission/add";
+	
+//	$.post(url,formObject,function(data){
+//		console.log(data)
+		
+//	})
+
+
+	$.ajax({
+		
+		type : "post",
+		url : url,
+		contentType : "application/json" ,
+		data : JSON.stringify(formObject),
+		dataType : "json",
+		
+		success : function (msg){
+			console.log("sucess:" +JSON.stringify(msg) )
+		},
+		error : function (msg){
+			console.log("error:" + msg)
+		}
+	})
+	
+}
+
+
+</script>
+
+
+</body>
+</html>

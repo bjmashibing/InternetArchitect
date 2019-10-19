@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mashibing.springboot.mapper.PermissionMapper">
+  <resultMap id="BaseResultMap" type="com.mashibing.springboot.entity.Permission">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uri" jdbcType="VARCHAR" property="uri" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="c" jdbcType="BIT" property="c" />
+    <result column="r" jdbcType="BIT" property="r" />
+    <result column="u" jdbcType="BIT" property="u" />
+    <result column="d" jdbcType="BIT" property="d" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, uri, `name`, `c`, r, u, d
+  </sql>
+  <select id="selectByExample" parameterType="com.mashibing.springboot.mapper.PermissionExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from permission
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from permission
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from permission
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.mashibing.springboot.mapper.PermissionExample">
+    delete from permission
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.mashibing.springboot.entity.Permission" useGeneratedKeys="true">
+    insert into permission (uri, `name`, `c`, r, 
+      u, d)
+    values (#{uri,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{c,jdbcType=BIT}, #{r,jdbcType=BIT}, 
+      #{u,jdbcType=BIT}, #{d,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.mashibing.springboot.entity.Permission" useGeneratedKeys="true">
+    insert into permission
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uri != null">
+        uri,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="c != null">
+        `c`,
+      </if>
+      <if test="r != null">
+        r,
+      </if>
+      <if test="u != null">
+        u,
+      </if>
+      <if test="d != null">
+        d,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uri != null">
+        #{uri,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="c != null">
+        #{c,jdbcType=BIT},
+      </if>
+      <if test="r != null">
+        #{r,jdbcType=BIT},
+      </if>
+      <if test="u != null">
+        #{u,jdbcType=BIT},
+      </if>
+      <if test="d != null">
+        #{d,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.mashibing.springboot.mapper.PermissionExample" resultType="java.lang.Long">
+    select count(*) from permission
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update permission
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.uri != null">
+        uri = #{record.uri,jdbcType=VARCHAR},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.c != null">
+        `c` = #{record.c,jdbcType=BIT},
+      </if>
+      <if test="record.r != null">
+        r = #{record.r,jdbcType=BIT},
+      </if>
+      <if test="record.u != null">
+        u = #{record.u,jdbcType=BIT},
+      </if>
+      <if test="record.d != null">
+        d = #{record.d,jdbcType=BIT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update permission
+    set id = #{record.id,jdbcType=INTEGER},
+      uri = #{record.uri,jdbcType=VARCHAR},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      `c` = #{record.c,jdbcType=BIT},
+      r = #{record.r,jdbcType=BIT},
+      u = #{record.u,jdbcType=BIT},
+      d = #{record.d,jdbcType=BIT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mashibing.springboot.entity.Permission">
+    update permission
+    <set>
+      <if test="uri != null">
+        uri = #{uri,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="c != null">
+        `c` = #{c,jdbcType=BIT},
+      </if>
+      <if test="r != null">
+        r = #{r,jdbcType=BIT},
+      </if>
+      <if test="u != null">
+        u = #{u,jdbcType=BIT},
+      </if>
+      <if test="d != null">
+        d = #{d,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mashibing.springboot.entity.Permission">
+    update permission
+    set uri = #{uri,jdbcType=VARCHAR},
+      `name` = #{name,jdbcType=VARCHAR},
+      `c` = #{c,jdbcType=BIT},
+      r = #{r,jdbcType=BIT},
+      u = #{u,jdbcType=BIT},
+      d = #{d,jdbcType=BIT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

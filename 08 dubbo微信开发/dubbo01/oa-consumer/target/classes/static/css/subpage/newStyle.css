@@ -1,0 +1,2993 @@
+.PBL-table {
+    width: 100%;
+    overflow: hidden;
+    color: #000;
+}
+.seacher{
+    height: 50px;
+    line-height: 46px;
+    font-size: 16px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e7eaec;
+    border-top:2px solid #e7eaec;
+}
+.seacher1{
+    height: 44px;
+    line-height: 40px;
+    font-size: 16px;
+    padding:0 20px 0 0;
+    border-bottom: 1px solid #e7eaec;
+    border-top:2px solid #e7eaec;
+}
+.seacher2{
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    padding:0 20px;
+    border-bottom: 1px solid #e7eaec;
+    border-top:2px solid #e7eaec;
+}
+.labels{
+    overflow: hidden;
+}
+.labels label{
+    margin-right: 10px;
+    color: #000;
+}
+.seacher .tb{
+    padding-right: 20px;
+}
+/*日历背景图*/
+.rili {
+    background: url(../../images/dnldata.png) no-repeat 96% center;
+    background-size: 15px 15px;
+    border: 1px solid #AAAAAA;
+}
+.form-control{
+	display: inline-block;
+	padding: 0;
+}
+.datetimepicker table tr td span {
+    display: inline-block;
+}
+/*index.html搜索框设置样式*/
+.home_head input{
+	margin-top: 15px;
+	padding-left: 10px;
+	height: 30px;
+	line-height: 30px;
+	/*width: 230px;*/
+	border: none;
+	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+	background: #F0F0F0;
+}
+.home_head .searchBTn{
+	margin-top: 15px;
+	height: 30px;
+    width: 40px;
+    background: #F0F0F0;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 14px;
+    background-image: url(../../images/fdgtb.png);
+    background-repeat: no-repeat;
+	background-position:12px 7px;
+}
+.fhHome:hover{
+	color: #000;
+}
+/*firstPage.html*/
+.homeBack{
+	height: 60px;
+	width: 100px;
+	float: right;
+	line-height: 60px;
+	font-size: 14px;
+	color: #7f7f7f;
+}
+.homeBack i{
+	font-size: 20px;
+	color: #1fb495;
+	margin-right: 5px;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	padding: 15px 15px 0;
+}
+.homeBox{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.firstClassify{
+	width: auto;
+    height: 54px;
+    line-height: 54px;
+    padding-top:3px;
+    margin-left: 10px;
+    position: relative;
+}
+.firstClassify li{
+	float: left;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #595959;
+}
+.LiYs{
+	color: #1ab394;
+	border-bottom: 3px solid #1ab394;
+}
+.qyTk{
+	width: 400px;
+	height: 150px;
+	background: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	bottom: -156px;
+	right: -332px;
+	border-radius: 3px;	
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.firstClassify .qyTkBox li{
+	font-size: 13px;
+	height: 36px;
+	line-height: 36px;
+}
+.firstClassify .qyTkBox li span:nth-child(2){
+	margin-left: 10px;
+}
+.qyTkBox{/*企业弹框内容超出显示滚轮*/
+	overflow-y: auto;
+	width: 100%;
+	height: 100%;
+}
+/*electricalUnit.html*/
+/*查询条件复选框和单选框样式*/
+.PBL .searchItem .eleUnitcheckbox,.PBL .searchItem .eleUnitradio{
+	width:18px;
+	height: 18px;
+	float: left;
+	margin-left: 10px;
+}
+.eleUnitlabel{
+    width: auto;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 5px;
+    float: left;
+} 
+.jqgrid-xy .title{
+	height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 16px;
+    border-bottom: 1px solid #e7eaec;
+    position: relative;
+}
+.jqgrid-xy .title span:before{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 20px;
+	top:10px;
+	left: 15px;
+	font-size: 12px;
+	background-color: #1ab394;
+}
+.titleBtn{
+	height: 40px;
+    line-height: 40px;    
+    float: right;
+    text-align: right;
+}
+.zfdfxBtn{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.sjx-xy{
+	height:100%;
+	width: 100%;
+	padding: 10px;
+}
+.sjxBox{
+	width: 100%;
+	height: 360px;
+	border: 1px solid #dcdcdc;
+}
+.sjxL{
+	width: 39%;
+	height: 358px;
+	border-right: 1px solid #ccc;
+}
+.sjxR{
+	width: 60%;
+	height: 358px;
+	overflow-y: auto;/*邮箱内容过多增加滚轮*/
+}
+.email .table>tbody>tr>td{
+	padding: 0;
+	height:40px;
+}
+.email .table>tbody>tr>td:nth-child(1){
+	text-indent: 20px;
+}
+/*自发电单位jqgrid标题样式*/
+.Eletitle{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding-left: 16px;
+	border-bottom: 1px solid #e7eaec;
+	position: relative;
+}
+.Eletitle span{
+	margin-left: 15px;
+}
+.Eletitle span:before{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 20px;
+	top:10px;
+	left: 15px;
+	font-size: 12px;
+	background-color: #1ab394;
+}
+/*propertyLiability.html*/
+/*查询条件复选框和单选框样式*/
+.PBL .searchItem .proliabcheckbox,.PBL .searchItem .proliabradio{
+	width:18px;
+	height: 18px;
+	float: left;
+	margin-left: 10px;
+}
+.proliablabel{
+    width: auto;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 5px;
+    float: left;
+}
+.threeTab{
+	height: 42px;
+	float: left;
+}
+.threeTab li{
+	height: 42px;
+	float: left;
+	padding: 0 10px;
+	font-size: 15px;
+	color: #323232;
+}
+.threeLiBor{
+	border-top: 2px #1ab394 solid;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+
+.gdzcBox,.fzjqyBox,.zcfzlBox{
+	height: 282px;
+	width: 100%;
+	padding: 0 20px;
+} 
+.fzjqyBoxL,.zcfzlBoxL,.gdzcBoxL{
+	height: 282px;
+	width: 49%;
+	float: left;
+	border: 1px solid #E7EAEC;
+}   
+.fzjqyBoxR,.zcfzlBoxR,.gdzcBoxR{
+	height: 282px;
+	width: 49%;
+	float: right;
+	border: 1px solid #E7EAEC;	
+}
+.gdzcBoxR1,.fzjqyBoxR1{
+	width:50%;
+	height: 282px;
+	float: left;
+}
+.gdzcBoxR2,.fzjqyBoxR2{
+	width:50%;
+	height: 282px;
+	float: right;
+}
+.previewTk{
+	width:600px;
+	height: 360px;
+	overflow-y: auto;
+	background:#fff;
+	padding: 20px;
+}
+.onlineEdt,.saveEdtTit,.comitEdtTit{
+	height: 40px;
+	line-height: 38px;
+	position: relative;
+	background: #eff6fd;
+	border: 1px solid #e7eaec;
+}
+.saveEdtTit i,.comitEdtTit i{
+	color: #646464;
+	font-size:16px;
+}
+.onlineEdt label,.saveEdtTit label,.comitEdtTit label{
+	margin-left: 30px;
+	font-size: 14px;
+	color: #323232;
+}
+.saveEdt label,.comitEdt label{
+	margin-left: 30px;
+	font-size: 12px;
+	color: #939393;
+}
+.saveEdtMain,.comitEdtMain{
+	border-left:1px solid #e7eaec;
+	border-right: 1px solid #e7eaec;
+	border-bottom: 1px solid #e7eaec;
+}
+.saveEdt,.comitEdt{
+	padding-left: 30px;
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+}
+.onlineEdt span,.saveEdt span,.comitEdt span{
+	float: right;
+	margin-right: 10px;
+	font-size: 12px;
+	color: #b9bbbc;
+}
+.saveEdt .iradio_square-green,.comitEdt .iradio_square-green{
+	position: absolute;
+	top: 8px;
+}
+.onlineEdt .iradio_square-green{
+	position: absolute;
+	top: 8px;
+}
+.saveEdtTit span,.comitEdtTit span{
+	display: inline-block;
+	height: 38px;
+	line-height: 36px;
+	float: right;
+	margin-right: 20px;
+}
+/*echarts图表数据更改*/
+#data_table_div{
+	width: 400px;
+	height: 300px;
+	overflow-y: auto;
+	padding: 10px;
+}
+#data_table_div table tr td{
+	height:40px;
+	line-height: 40px;
+/*	text-align: center;*/
+}
+#data_table_div table tr td:nth-child(1){
+	width:6%;
+	text-align: center;
+}
+#data_table_div table tr td:nth-child(2){
+	width: 47%;
+	text-indent: 10px;
+}
+#data_table_div table tr td:nth-child(3){
+	width: 47%;
+	text-align: center;
+}
+#data_table_div table tr td input{
+	height: 24px;
+	line-height: 24px;
+	padding: 0 5px;
+}
+/*查询弹框*/
+.inquireTk{
+	width:400px;
+	height: 180px;
+	padding:20px;
+}
+.firstInqur,.secondInqur{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+}
+.firstInqur label,.secondInqur label{
+	font-size: 14px;
+	color: #323232;
+	width: 60px;
+}
+.firstInqur input,.secondInqur input{
+	height: 26px;
+	line-height: 26px;
+	width: 100px;
+	border: 1px solid #ccc;
+	color: #ACACAC;
+    background-image: url(../../images/pptDate.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 90% center;
+}
+/*propertyzijinliuliang.html*/
+.ryzjjtcBox{
+	height: 480px;
+	width: 100%;
+	padding: 0 20px;
+}
+.xjlxBox{
+	height: 290px;
+	width: 100%;
+	padding: 0 20px;
+}
+.zjjzyqdBox{
+	height: 410px;
+	width: 100%;
+	padding: 0 20px;
+}
+.ryzjjtcBoxT{
+		margin-top: 20px;
+	width: 100%;
+	height: 170px;
+	border: 1px solid #ccc;
+}
+.ryzjjtcBoxB{
+	width: 100%;
+	height: 280px;
+	border:1px solid #CCCCCC
+}
+.ryzjjtcBoxBec{
+	width: 100%;
+	height: 280px;
+}
+
+.xjlxBoxL{
+	width: 49%;
+	height: 280px;
+	float: left;
+	border: 1px solid #ccc;
+}
+.xjlxBoxR{
+	width: 49%;
+	height: 280px;
+	float: right;
+	border: 1px solid #ccc;
+}
+.xjlxBoxR1{
+	width: 100%;
+	height: 280px;
+}
+
+.zjjzyqdBoxT{
+	margin-top: 30px;
+	width: 100%;
+	height: 100px;
+	border: 1px solid #ccc;
+}
+.zjjzyqdBoxB{
+	width: 100%;
+	height: 280px;
+	border: 1px solid #ccc;
+}
+.zjjzyqdBoxB1{
+	width: 100%;
+	height: 280px;
+}
+/*style.css第211定义，复制过来但多修改，防止其他页面被修改*/
+.PBL .searchItem input,.PBL .searchItem select{
+    width:100px;
+}
+
+/*zhuye.html*/
+/*待办模块文字样式*/
+.db-xy li p:nth-child(1){
+	font-size: 14px;
+	color: #323232;
+	padding: 0 10px;
+}
+.db-xy li p:nth-child(2){
+	font-size: 26px;
+	color: #323232;
+	font-weight: bold;
+	padding: 5px 0px;
+}
+.db-xy li span:nth-child(1){
+	font-size: 14px;
+	color: #323232;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 5px;
+}
+.db-xy li span:nth-child(1) i{
+	color: #1ab394;
+}
+/*主页每个模块标题样式设置*/
+.title span{
+	margin-left: 15px;
+	font-size: 16px;
+	color: #323232;
+}
+.title span:before{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 20px;
+	top:10px;
+	left: 10px;
+	font-size: 12px;
+	background-color: #2a84c4;
+}
+
+/*快捷通道模块样式*/
+/*轮播设置*/
+.banner-box{width:100%;height:130px;position:relative;overflow:hidden;}
+.banner-box .bd{ width:100% !important;height: 100px;overflow:hidden;}
+.banner-box .bd ul{width: 100% !important;height: 100px;overflow:hidden;}
+.banner-box .bd li{width:100% !important;height:100px;padding:10px}
+.banner-box .bd li a{display:block;background-size:auto;}
+.banner-box .hd {width: auto;height: 15px;position: absolute; left: 50%; bottom: 4px;transform: translate(-50%, 0)}
+.banner-box .hd ul{width: 100%;height: 15px;}
+.banner-box .hd ul li{width:10px;height:10px;border-radius :50%;text-indent:-9999px;margin-right:10px;background:#e1e1e1;float:left;cursor:pointer;}
+.banner-box .hd ul li.on{background:#acacac;}
+.carousel li div{
+	height: 100%;
+	width: 22%;
+	margin-left: 4%;
+	float: left;
+	padding: 10px 0;
+	border-radius: 4px;
+}
+.carousel li div:nth-child(1){
+	margin-left: 0;
+	color: #3e97ea;
+	background: #deedfb;
+}
+.carousel li div:nth-child(2){
+    color: #2db4e6;
+    background: #ddf3fb;
+}
+.carousel li div:nth-child(3){
+    color: #f6ab5e;
+    background: #fef1e5;
+}
+.carousel li div:nth-child(4){
+	color: #8982e4;
+    background: #ecebfb
+}
+.carousel li div p:nth-child(1){
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+}
+.carousel li div p:nth-child(2){
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+}
+.carousel li>div:nth-child(1)>p:nth-child(1)>i{
+	font-size: 30px;
+}
+.carousel li>div:nth-child(2)>p:nth-child(1)>i{
+	font-size: 24px;
+}
+.carousel li>div:nth-child(3)>p:nth-child(1)>i{
+	font-size: 28px;
+}
+.carousel li>div:nth-child(4)>p:nth-child(1)>i{
+	font-size: 27px;
+}
+/*.kjtdMk{
+	height: 80px;
+	padding: 3%;
+}
+.home-right .kjtdMk li{
+	border-radius: 5px;
+	height: 100%;
+	width: 22%;
+	float: left;
+	line-height: none;
+}
+.kjtdMk li:nth-child(1){
+	background:#deedfb;
+}
+.kjtdMk li:nth-child(1){
+	color: #3e97ea;
+}
+.kjtdMk li:nth-child(2){
+	color: #2db4e6;
+	background:#ddf3fb;
+	margin-left: 4%;
+}
+.kjtdMk li:nth-child(3){
+	color: #f6ab5e;
+	background:#fef1e5;
+	margin-left: 4%;
+}
+.kjtdMk li:nth-child(4){
+	color: #8982e4;
+	background:#ecebfb;
+	margin-left: 4%;
+}
+.kjtdMk p:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.kjtdMk li:nth-child(1) p:nth-child(1) i{
+	font-weight: bold;
+	color: #3e97ea;
+}
+.kjtdMk li:nth-child(2) p:nth-child(1) i{
+	color: #2db4e6;
+}
+.kjtdMk li:nth-child(3) p:nth-child(1) i{
+	color: #f6ab5e;
+	font-weight: bold;
+}
+.kjtdMk li:nth-child(4) p:nth-child(1) i{
+	color: #8982e4;
+}
+.kjtdMk p:nth-child(1) i{
+	font-size: 20px;
+	text-align: center;
+}
+.kjtdMk p:nth-child(2){
+	font-size: 12px;
+	text-align: center;
+}
+.home-right .target1#kjtdMk li{
+	line-height: none;
+}*/
+
+
+/*快捷通道纪要模块点击弹框样式*/
+.summaryTk{
+	width: 600px;
+	height: 300px;
+	padding: 10px;
+}
+.summaryTk1{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.summaryTk1 input,.summaryTk1 select{
+	display: inline-block;
+	height: 30px;
+	width: 140px;
+	line-height:30px;
+	margin-left: 10px;
+}
+.summaryTk p{
+	margin-top: 20px;
+	padding: 0 10px;
+}
+.summaryTk2{
+	width: 100%;
+	height: 190px;
+	padding: 10px;
+}
+.summaryTk2 textarea{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*数据分析指标波动情况*/
+.leadchartBox{
+	width: 100%;
+	height: 290px;
+}
+.lyEchartsBox,.hgEchartsBox,.cxEchartsBox,.ztEchartsBox{
+	height: 270px;
+	width: 100%;
+}
+.CorporateBtnBox1{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+}
+.CorporateBtnBox1 span{
+	font-size: 12px;
+	padding:2px 10px;
+	border: 1px solid #3391e8;
+	color: #3391e8;
+	margin: 0;
+}
+.CorporateBtnBox1 span:nth-child(1){
+	background: #3391e8;
+	color: #fff;
+}
+.threeEchart .col-sm-12{
+	width: 100%;
+	height: 270px;
+	padding: 10px 0;
+}
+.threeEchart .col-sm-12 .col-sm-4{
+	height: 270px;
+	padding:0;
+}
+.threeEchart .col-sm-12 .col-sm-4:nth-child(1),
+.threeEchart .col-sm-12 .col-sm-4:nth-child(2){
+	border-right: 1px solid #E7EAEC;
+}
+/*图形模块轮播切换*/
+/* banner-box */
+.banner-box1{width:100%;height:290px;position:relative;overflow:hidden;}
+.banner-box1 .bd1{ width:94% !important;height: 290px;float: left;}
+.banner-box1 .bd1 ul{width: 100% !important;height: 290px;}
+.banner-box1 .bd1 li{width:100% !important;height:290px;float: left;}
+.banner-box1 .bd1 li a{display:block;background-size:auto;}
+.banner-box1 a{float: left;display:block;width:3%;height:100%;filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity:0.6;opacity:0.6;}
+.banner-box1 a.prev{background:url(../../images/btn_l.png) no-repeat center center;} 
+.banner-box1 a.next{background:url(../../images/btn_r.png) no-repeat center center;}
+.banner-box1 a.prev{background-size: 65% 15%;} 
+.banner-box1 a.next{background-size: 65% 15%;}
+
+/*企业排名*/
+.title i.icon-gengduo{
+	font-size: 12px;
+}
+.CorporateBtnBox{
+	display: inline-block;
+	height: 100%;
+}
+.CorporateBtnBox span{
+	font-size: 12px;
+	padding:2px 10px;
+	border: 1px solid #3391e8;
+	color: #3391e8;
+	margin: 0;
+}
+.CorporateBtnBox span:nth-child(1){
+	background: #3391e8;
+	color: #fff;
+}
+.CorporateMain {
+	width: 100%;
+	height: 220px;
+	padding: 10px;
+}
+.CoprateMainL{
+	width: 36px;
+	height: 100%;
+	background: #3391e8;
+	float: left;	
+	position: relative;
+}
+.CoprateMainL span{
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	width: 100%;
+	text-align:center;
+	display: inline-block;
+	position: absolute; 
+	left: 50%; 
+	top: 50%;
+    transform: translate(-50%, -50%)
+}
+.CoprateMainR{
+	width: calc(100% - 36px);
+	height: 100%;
+	float: left;
+}
+.CoprateMainR ul{
+	width: 100%;
+	height: 100%;
+}
+.CoprateMainR ul li{
+	width: 100%;
+	height: 50px;
+	line-height: 48px;
+	padding-left: 15px;
+	border-top: 1px solid #e7eaec;
+	border-right: 1px solid #e7eaec;
+}
+.CoprateMainR ul li:first-child{
+	background: #eff6fd;
+}
+.CoprateMainR ul li:first-child label{
+	color: #323232;
+}
+.CoprateMainR ul li:last-child{
+	border-bottom: 1px solid #e7eaec;
+}
+.CoprateMainR ul li label{
+	font-size: 14px;
+	color: #bcbcbc;
+}
+.CoprateMainR ul li label:nth-child(1){
+	width: 15%;
+}
+.CoprateMainR ul li label:nth-child(2){
+	width: 44%;
+	text-align: center;
+}
+.CoprateMainR ul li label:nth-child(2) i{
+	margin-left: 5px;
+}
+.CoprateMainR ul li label:nth-child(3){
+	width: 36%;
+	text-align: center;
+}
+.CoprateMainR ul li label:nth-child(3) span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	margin-top: 13px;
+	text-align: center;
+	background: #3391e8;
+	border-radius: 2px;
+	color: #fff;
+}
+.CoprateMainR ul li label:nth-child(3) i{
+	margin-left: 5px;
+}
+.CoprateMainR ul li label i{
+	font-size: 18px;
+}
+.CoprateMainR ul li label i.iconfont.icon-xiajiang{
+	font-size: 19px;
+}
+.clr3492e9{
+	color: #3492e9;
+}
+.clre6370a{
+	color: #e6370a;
+}
+.clr1ab394{
+	color: #1ab394;
+}
+/*系统公告*/
+.systemNotice{
+	height: 130px;
+	width: 100%;
+}
+.systemNotBox{
+	width: 100%;
+	height: 100%;
+}
+.systemNotBox .table-bordered>tbody>tr:nth-child(1){
+	height: 0px !important;
+}
+.systemNotBox .table-bordered{
+	border: none;
+}
+.systemNotBox .table-bordered>tbody>tr{
+	height: 31.5px;
+	line-height: 31.5px;
+}
+.systemTK{
+	width: 600px;
+	height: 360px;
+	background: #fff;
+	padding: 20px;
+}
+.systemTKtop{
+	width: 100%;
+	height: 68px;
+	border: 1px solid #E7EAEC;
+}
+.systemTKtop p:nth-child(1){
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #323232;
+	padding-left: 15px;
+}
+.systemTKtop p:nth-child(2){
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #ACACAC;
+	padding-left: 15px;
+}
+.systemTKtop p:nth-child(2) span{
+	font-size: 12px;
+	color: #ACACAC;
+}
+.systemTKtop p:nth-child(2) span:nth-child(3){
+	margin-left: 20px;
+}
+.systemTKbot{
+	border: 1px solid #E7EAEC;
+	border-top: none;
+	width: 100%;
+	height: 248px;
+}
+.systemTKbot textarea{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	text-indent: 25px;
+	border: none;
+}
+/*去掉系统公告的border线*/
+.systemNotBox .table-bordered>tbody>tr>td{
+	padding: 0;
+	border: none;
+	height: 31.5px;
+	line-height: 31.5px;
+	cursor: pointer;
+}
+.systemNotBox .table-bordered>tbody>tr>td:nth-child(1){
+	padding-left: 15px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.systemNotBox .table-bordered>tbody>tr>td:nth-child(2),
+.systemNotBox .table-bordered>tbody>tr>td:nth-child(3){
+	color: #b6b7b8;
+}
+/*PPT材料收集*/
+.infocollectPPT{
+	width: 100%;
+	height: 360px;
+	padding: 15px;
+}
+.collectionPPT{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.collectionPPT li{
+	width: calc(100%/2 - 8px);
+    height:330px;
+    float: left;
+    cursor: pointer;
+}
+.collectionPPT li:nth-child(2){
+	margin-left: 16px;
+}
+.colPPTchild{
+	width:100%;
+	height: 206px;
+}
+.collectionPPT .colPPTchild li{
+	float: left;
+	margin-top: 0;
+	margin-left: 0;
+	width: 33.333333333%;
+    height:50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: #323232;
+}
+.collectionPPT .colPPTchild li.colorac{
+	color: #ACACAC;
+}
+.collectionPPT .colPPTchild li:nth-child(1),
+.collectionPPT .colPPTchild li:nth-child(2),
+.collectionPPT .colPPTchild li:nth-child(4),
+.collectionPPT .colPPTchild li:nth-child(5),
+.collectionPPT .colPPTchild li:nth-child(7),
+.collectionPPT .colPPTchild li:nth-child(8){
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.collectionPPT .colPPTchild li:nth-child(10),
+.collectionPPT .colPPTchild li:nth-child(11){
+	border-right: 1px solid #ccc;
+}
+.collectionPPT .colPPTchild li:nth-child(3),
+.collectionPPT .colPPTchild li:nth-child(6),
+.collectionPPT .colPPTchild li:nth-child(9){
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.collectionPPT .colPPTchild li:hover{
+	transform: scale(1.1); 
+	-moz-box-shadow: 0px 2px 7px #888888; 
+	box-shadow: 0px 2px 2px #888888;
+	border: none;
+} 
+.colPPTBox{
+	width: 100%;
+	height: 124px;
+	padding-top: 15px;
+}
+.adminOffice .ui-jqgrid{
+    border: 1px solid #ddd;
+}
+/*我的收藏*/
+.myFavoriteBox{
+	width: 100%;
+	height: 360px;
+	padding: 10px;
+}
+.myFavorite {
+	height: 100%;
+	width: 100%;
+}
+.myFavorite li{
+	float: left;
+    margin-top: 0;
+    margin-left: 0;
+    width: 33.333333333%;
+    height: 113.3333333px;
+    background: #fff;
+    text-align: center;
+    color: #323232;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+.myFavorite li:nth-child(1), 
+.myFavorite li:nth-child(2), 
+.myFavorite li:nth-child(4), 
+.myFavorite li:nth-child(5), 
+.myFavorite li:nth-child(7), 
+.myFavorite li:nth-child(8){
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+}
+.myFavorite li:nth-child(3),
+.myFavorite li:nth-child(6),
+.myFavorite li:nth-child(9){
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+.myFavorite li:nth-child(7),
+.myFavorite li:nth-child(8),
+.myFavorite li:nth-child(9){
+	border-bottom: 1px solid #CCCCCC;
+}
+.myFavorite li p{
+	padding-top: 10px;
+	width: 100%;
+	height: 76%;
+}
+.myFavorite li span{
+	display: inline-block;
+	width: 20px;
+	height: 4px;
+	background: #99c8f3;
+}
+.myFavorite li:hover{
+	transform: scale(1.1); 
+	-moz-box-shadow: 0px 2px 7px #888888; 
+	box-shadow: 0px 2px 2px #888888;
+	border: none;
+}
+/*近期会议*/
+.recentMeet{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.recentMeetBox{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #e7e7e7 ;
+}
+.recentMeetBox table tr td i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+/*zhuye-lead.html下tab切换按钮*/
+.otherBtn{
+	width:100%;
+	height:38px;
+	line-height: 38px;
+	padding-left: 10px;
+}
+.otherBtn li{
+	float: left;
+	padding: 0 20px;
+	color: #646464;
+	border-bottom: 2px solid #eaeaea;
+	cursor: pointer;
+}
+.otherBtn li:nth-child(2),.otherBtn li:nth-child(3),.otherBtn li:nth-child(4){
+	margin-left: 2px;
+}
+.otherBtn .on{
+	color: #2d7de5;
+	border-bottom: 2px solid #2d7de5;
+}
+
+/*zhuye-lead.html其他下我的收藏*/
+.footer2 .myFavoriteBoxA .title{
+	border: none;
+}
+.myFavoriteBoxA{
+	width: 100%;
+	height: 190px;
+	padding: 0 10px 10px 10px;
+}
+.myFavoriteA{
+	height: 100%;
+	width: 100%;
+}
+.myFavoriteA li{
+	float: left;
+    margin-top: 0;
+    margin-left: 0;
+    width: 11.1111111%;
+    height: 140px;
+    background: #fff;
+    text-align: center;
+    color: #323232;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+.myFavoriteA li:nth-child(1), 
+.myFavoriteA li:nth-child(2), 
+.myFavoriteA li:nth-child(3),
+.myFavoriteA li:nth-child(4), 
+.myFavoriteA li:nth-child(5), 
+.myFavoriteA li:nth-child(6),
+.myFavoriteA li:nth-child(7){
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+.myFavoriteA li:last-child{
+	border-right: 1px solid #CCCCCC;
+}
+.myFavoriteA li p{
+	padding-top: 10px;
+	width: 100%;
+	height: 76%;
+}
+.myFavoriteA li span{
+	display: inline-block;
+	width: 20px;
+	height: 4px;
+	background: #99c8f3;
+}
+.myFavoriteA li:hover{
+	transform: scale(1.1); 
+	-moz-box-shadow: 0px 2px 7px #888888; 
+	box-shadow: 0px 2px 2px #888888;
+	border: none;
+}
+/*zhuye-lead.html其他下ppt材料汇总*/
+.pptCollectLead{
+	width: 100%;
+	height: 100%;
+	padding: 0 10px 10px 10px;
+}
+.footer2 .pptCollectLead .title{
+	border: none;
+}
+.pptCollectN{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.pptCollectN li{
+	width: 32%;
+    height:376px;
+    float: left;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+.pptCollectN li:nth-child(1),.pptCollectN li:nth-child(2),.pptCollectN li:nth-child(3){
+	margin-top: 0; !important;
+}
+.pptCollectN li:nth-child(3n+1){
+	margin-left: 0; !important;
+}
+
+.CollectchildN{
+	width:100%;
+	height: 246px;
+}
+.pptCollectN .CollectchildN li{
+	float: left;
+	margin-top: 0;
+	margin-left: 0;
+	width: 33.333333333%;
+    height:60px;
+    background: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    color: #323232;
+}
+.pptCollectN .CollectchildN li.colorac{
+	color: #ACACAC;
+}
+.pptCollectN .CollectchildN li:nth-child(1),
+.pptCollectN .CollectchildN li:nth-child(2),
+.pptCollectN .CollectchildN li:nth-child(4),
+.pptCollectN .CollectchildN li:nth-child(5),
+.pptCollectN .CollectchildN li:nth-child(7),
+.pptCollectN .CollectchildN li:nth-child(8){
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.pptCollectN .CollectchildN li:nth-child(10),
+.pptCollectN .CollectchildN li:nth-child(11){
+	border-right: 1px solid #ccc;
+}
+.pptCollectN .CollectchildN li:nth-child(3),
+.pptCollectN .CollectchildN li:nth-child(6),
+.pptCollectN .CollectchildN li:nth-child(9){
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.pptCollectN .CollectchildN li:hover{
+	transform: scale(1.1); 
+	-moz-box-shadow: 0px 2px 7px #888888; 
+	box-shadow: 0px 2px 2px #888888;
+	border: none;
+}   
+/*按钮画过变色*/
+.collectBtnBoxN button.bgCollect1:hover{
+	background: #71b2ef;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+.collectBtnBoxN button.bgCollect2:hover{
+	background: #7cd1c0;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+.collectBtnBoxN button.bgCollect3:hover{
+	background: #f9cb9c;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+.collectBtnBoxN button.bgCollect4:hover{
+	background: #b0ace9;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+.collectBoxN{
+	width: 100%;
+	height: 130px;
+	padding-top: 15px;
+}
+.collectNameN{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.collectBtnBoxN{
+	margin-top: 10px;
+	text-align: center;
+}
+.collectBtnN{
+	height: 40px;
+	line-height: 38px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid #fff;
+	width: 90%;
+	border-radius: 5px;
+}
+/*autogenerationPPT.html*/
+.scPPT{
+    width: 100%;
+    height: calc(100% - 65px);
+}
+.pptTitle{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #fafbfc;
+}
+.pptTitle span{
+	color: #323232;
+	font-size: 18px;
+	font-weight: bold;
+}
+.pptTitle span:nth-child(3){
+	color: #3391e8;
+}
+.pptTitle span i{
+	font-size: 20px;
+}
+.pptTitleBtn{
+	height: 50px;
+    line-height: 50px;
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+}
+.pptTitleBtn i{
+	font-size:14px ;
+}
+.cutFormTit{
+	width: 100%;
+	height: 46px;
+	line-height: 44px;
+	padding: 0 15px;
+}
+.cutFormTit span{
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+}
+.cutFormMain{
+	height: 100%;
+	width: 100%;
+	padding: 0 15px;
+	text-align: center;
+}
+.cutFormBtn{
+	float: right;
+}
+.cutFormTit button{
+	height: 30px;
+	line-height: 28px;
+	background: #88abda;
+	border: 1px solid #fff;
+	padding: 0 10px;
+	border-radius: 3px;
+	color: #fff;
+}
+.cutFormTit button i.iconfont{
+	font-size: 14px;
+}
+.riqiPz{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.riqiPz input,.riqiPz select{
+	height: 26px;
+	line-height: 26px;
+	width: 100px;
+	padding-left: 5px;
+}
+.riqiPz .zb{
+	width: 150px;
+}
+.riqiPz .lab45{
+	text-align: center;
+	font-size: 14px;
+    color: #202020;
+    font-weight: bold;
+}
+.scPPT .col-sm-12{
+	padding: 0;
+}
+.scPPT .col-sm-4{
+	padding: 10px;
+}
+.threeBox{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	position: relative;
+}
+.threeBox input{
+	position: absolute;
+	top: -10px;
+	right: -11px;
+	width: 20px;
+	height: 20px;
+	z-index: 123;
+}
+.scPPT p{
+	text-indent: 24px;
+	color: #323232;
+}
+.topEJ{
+	width: 100%;
+	height: 410px;
+}
+.topEJ .ejBox1,.topEJ .ejBox2,.topEJ .ejBox3{
+	height: 410px;
+}
+.leftEJtop{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.leftEJmid{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.leftEJbot{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.midEJtop{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.midEJmid{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.midEJbot{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.rightEJtop{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.rightEJmid{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.rightEJbot{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+/*中间部分*/
+.midEJ{
+	width: 100%;
+	height: 410px;
+	margin-top: 20px;
+}
+.midEJ .ejBox7,.botEJ .ejBox8,.botEJ .ejBox9{
+	height: 410px;
+}
+.leftEJtopB{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.leftEJmidB{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.leftEJbotB{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.midEJtopB{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.midEJmidB{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.midEJbotB{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.rightEJtopB{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.rightEJmidB{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.rightEJbotB{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+
+/*下部分*/
+.botEJ{
+	width: 100%;
+	height: 410px;
+	margin-top: 20px;
+}
+.botEJ .ejBox4,.botEJ .ejBox5,.botEJ .ejBox6{
+	height: 410px;
+}
+.leftEJtopA{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.leftEJmidA{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.leftEJbotA{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.midEJtopA{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.midEJmidA{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.midEJbotA{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.rightEJtopA{
+	width: 100%;
+	height: 190px;
+	border: 1px solid #ccc;
+}
+.rightEJmidA{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.rightEJbotA{
+	width: 100%;
+	height: 60px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+/*生成ppt进度条*/
+.wrapperJdt {
+	width: 350px;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+.wrapperJdt p a {
+	color: #757575;
+	text-decoration: none;
+}
+
+.wrapperJdt .load-bar {
+	width: 100%;
+	height: 25px;
+	border-radius: 30px;
+	background: #dcdbd7;
+	position: relative;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.wrapperJdt .load-bar-inner {
+	height: 99%;
+	width: 0%;
+	border-radius: inherit;
+	position: relative;
+	background: #c2d7ac;
+	background: linear-gradient(#e0f6c8, #98ad84);
+	background: -moz-linear-gradient(#e0f6c8, #98ad84);
+	background: -webkit-linear-gradient(#e0f6c8, #98ad84);
+	background: -o-linear-gradient(#e0f6c8, #98ad84);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1), 0 1px 5px rgba(0, 0, 0, 0.3), 0 4px 5px rgba(0, 0, 0, 0.3);
+	animation: loader 10s linear infinite;
+	-moz-animation: loader 10s linear infinite;
+	-webkit-animation: loader 10s linear infinite;
+	-o-animation: loader 10s linear infinite;
+}
+
+.wrapperJdt #counterJdt {
+	position: absolute;
+	background: #eeeff3;
+	background: linear-gradient(#eeeff3, #cbcbd3);
+	background: -moz-linear-gradient(#eeeff3, #cbcbd3);
+	background: -webkit-linear-gradient(#eeeff3, #cbcbd3);
+	background: -o-linear-gradient(#eeeff3, #cbcbd3);
+	padding: 5px 10px;
+	border-radius: 0.4em;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1), 0 2px 4px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+	left: -25px;
+	top: -50px;
+	font-size: 12px;
+	font-weight: bold;
+	width: 44px;
+	animation: counterJdt 10s linear infinite;
+	-moz-animation: counterJdt 10s linear infinite;
+	-webkit-animation: counterJdt 10s linear infinite;
+	-o-animation: counterJdt 10s linear infinite;
+}
+
+.wrapperJdt #counterJdt:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #cbcbd3;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	left: 50%;
+	margin-left: -4px;
+	bottom: -4px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+	border-radius: 0 0 3px 0;
+}
+
+.wrapperJdt h1 {
+	font-size: 28px;
+	padding: 20px 0 8px 0;
+}
+
+.wrapperJdt p {
+	font-size: 13px;
+}
+
+@keyframes loader {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@-moz-keyframes loader {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes loader {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@-o-keyframes loader {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes counterJdt {
+	from {
+		left: -25px;
+	}
+	to {
+		left: 323px;
+	}
+}
+
+@-moz-keyframes counterJdt {
+	from {
+		left: -25px;
+	}
+	to {
+		left: 323px;
+	}
+}
+
+@-webkit-keyframes counterJdt {
+	from {
+		left: -25px;
+	}
+	to {
+		left: 323px;
+	}
+}
+
+@-o-keyframes counterJdt {
+	from {
+		left: -25px;
+	}
+	to {
+		left: 323px;
+	}
+}
+
+/*自发电装置成本表新*/
+.eleNewTitle{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.eleNewTitle span{
+	color: #676A6C;
+}
+/*变量设置模块*/
+.Variable input,.Variable select{
+	width: 140px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #C8C8C8;
+}
+.Variable input{
+	padding-left: 10px;
+}
+.Variable label{
+	margin-right: 10px;
+}
+.gsInput input{
+	width: calc(100% - 163px);
+	border: 1px solid #C8C8C8;
+}
+.sqlInput input{
+	width: calc(100% - 100px);
+	border: 1px solid #C8C8C8;
+}
+.bzInput textarea{
+	width: calc(100% - 100px);
+	height: 42px;
+	border: 1px solid #C8C8C8;
+}
+.configTk1{
+	width: 100%;
+}
+.configTK1Box{
+	width: 100%;
+	border-left: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+}
+.configTk{
+	width: 100%;
+	padding: 0 10px;
+}
+.configJqBox{
+	width: 100%;
+	border-left: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+}
+
+.calculator{
+	width: 100%;
+}
+.calBtn{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.claContentL{
+	width: calc(98% - 153px);
+	height: 100px;
+	float: left;
+}
+.claContentL textarea{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.claContentR{
+	width: 153px;
+	height: 100px;
+	float: right;
+	border: 1px solid #ccc;
+}
+.claContentR ul{
+	width: 100%;
+	height: 100px;
+}
+.claContentR ul li{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	float: left;
+}
+
+/*绘制三角形*/
+.triangle-left{
+	position: absolute;
+	top: 24px;
+	right: 0px;
+	display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 8px solid #fff;
+    border-bottom: 6px solid transparent;
+}
+/*各指标页面生成ppt按钮组*/
+.pptBtnTeam{
+	padding-right: 20px;
+}
+.pptBtnA{
+	height: 30px;
+    line-height: 28px;
+    padding: 0px 10px;
+    background: rgb(26, 179, 148);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 1px solid rgb(26, 179, 148);
+    border-radius: 2px; 
+}
+a.pptBtnA{
+	height: 30px;
+    line-height: 28px;
+    padding: 0px 10px;
+    background: rgb(26, 179, 148);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 1px solid rgb(26, 179, 148);
+    border-radius: 2px;
+    display: inline-block;   
+}
+.pptBtnA i.iconfont{
+	font-size: 14px;
+}
+/*会议材料收集箱*/
+.seacher1.pptMeet{
+	position: relative;
+	padding-left: 15px;
+}
+.seacher1.pptMeet span:before{
+	content: "";
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    top: 10px;
+    left: 15px;
+    font-size: 12px;
+    background-color: #2a84c4;
+}
+/*.fract{
+	margin-left: 2.5%;
+}*/
+.materialBox{
+	width: 100%;
+	height: 160px;
+	margin-bottom: 2.5%;
+}
+.materialBox li{
+	width: 18%;
+	height: 160px;
+	float: left;
+	cursor: pointer;
+	padding: 0 10px;
+	position: relative;
+}
+.materialBox li:nth-child(2),
+.materialBox li:nth-child(3),
+.materialBox li:nth-child(4),
+.materialBox li:nth-child(5){
+	margin-left: 2.5%;
+}
+
+.mouseAcross{
+	display:none;
+	border-radius: 5px;
+	background:rgba(1,25,47,0.8);
+	width: calc(100% + 24px); 
+	height: 60px;
+	position: absolute; 
+	left: 50%; 
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.mouseAcross .col-sm-4:hover{
+	background:rgba(1,25,47,0.95);
+}
+.mouseAcross .col-sm-12,
+.mouseAcross .col-sm-4{
+	height: 60px;
+	padding: 0;
+}
+.mouseAcross .col-sm-12 .col-sm-4:nth-child(1){
+	border-top-left-radius:5px ;
+	border-bottom-left-radius:5px ;
+}
+.mouseAcross .col-sm-12 .col-sm-4:nth-child(3){
+	border-top-right-radius:5px ;
+	border-bottom-right-radius:5px ;
+}
+.mouseAcross .col-sm-4 span{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color:#fff
+}
+.mouseAcross .col-sm-4 span i{
+	display: inline-block;
+	font-size: 18px;
+}
+.mouseAcross .col-sm-4 span i.icon-tixing{
+	font-size: 16px;
+	margin-top: 4px;
+}
+.createMater{
+	border: 2px dashed #DCDCDC;
+}
+.borderJxz{
+	border-top: 3px solid #f6ab5e;
+	border-bottom: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	border-left: 1px solid #dcdcdc;
+}
+.borderYgq{
+	border-top: 3px solid #ec5064;
+	border-bottom: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	border-left: 1px solid #dcdcdc;
+}
+.borderYwc{
+	border-top: 3px solid #3492e9;
+	border-bottom: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	border-left: 1px solid #dcdcdc;
+}
+.createMater span{
+	color: #3492e9;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+}
+.createMater span i{
+	font-size: 40px;
+}
+.statusBox i.iconfont{
+	font-size: 14px;
+}
+.statusBox{
+	height: 24px;
+/*	line-height: 26px;*/
+}
+.pptStatus{
+	float: right;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	padding:0 10px;
+	color: #fff;
+	border-bottom-left-radius: 13px;
+	border-top-left-radius: 13px;
+	border-bottom-right-radius:13px ;
+	border-top-right-radius: 13px;
+}
+.StatusJxz{
+	background: #F6AB5E;
+}
+.StatusYwc{
+	background: #3492e9;
+}
+.StatusYgq{
+	background: #ec5064;
+}
+.pptContent{
+	margin-top: 15px;
+	font-size: 16px;
+}
+.pptAmount{
+	text-align: center;
+	margin-top: 10px;
+	color: #b8b8b8;
+}
+.scheduleBox{
+	width: 100%;
+	height: 10px;
+	text-align: center;
+	margin-top: 5px;
+}
+.scheduleA{
+	width: 60%;
+	height: 10px;
+	background: #f0f0f0;
+	margin: 0 auto;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius:5px ;
+	border-top-right-radius: 5px;
+}
+.scheduleB{
+/*	width: 60%;*/
+	height: 10px;
+	background: #85d1c2;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius:5px ;
+	border-top-right-radius: 5px;
+}
+.materialCx{
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #E7EAEC;
+}
+.materialCx .col-sm-12{
+	padding: 0 2.5%;
+}
+.materialCx .col-sm-5,
+.materialCx .col-sm-3,
+.materialCx .col-sm-1{
+	padding: 0;
+}
+.materialCx .col-sm-12{
+	height: 60px;
+	line-height: 60px;
+}
+.materialCx .col-sm-3 input,
+.materialCx .col-sm-3 select{
+	height: 26px;
+	line-height: 26px;
+	width: 150px;
+	color: #ACACAC;
+	border: 1px solid #ccc;
+}
+.materialCx .col-sm-5 input{
+	height: 26px;
+	line-height: 26px;
+	width: 110px;
+	color: #ACACAC;
+	border: 1px solid #CCC;
+	background-image: url(../../images/pptDate.png);
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 90% center;
+}
+
+.materialCx .col-sm-5 input::-webkit-search-cancel-button{
+  display: none;
+}
+.materialCx .col-sm-5 input[type=search]::-ms-clear{
+  display: none;
+}
+.materialCx label{
+	margin-right: 10px;
+	font-size: 14px;
+	color: #323232;
+}
+.materialCx button{
+	height: 28px;
+	line-height: 28px;
+	border: none;
+	background: #3492e9;
+	color: #fff;
+	border-radius: 2px;
+	padding: 0 10px;
+	font-size: 14px;
+}
+/*创建会议材料收集箱*/
+.conferName,.SatFnshDate,.gatherZb{
+	height: 50px;
+	line-height: 50px;
+}
+.conferName label,.SatFnshDate label,.gatherZb label{
+	font-size: 14px;
+	color: #323232;
+}
+.conferName input,
+.gatherZb input{
+	width: 200px;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 5px;
+}
+.SatFnshDate input{
+	width: 100px;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 5px;
+}
+.gatherZb button.gatherSave{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	border: none;
+	background: #3492e9;
+	border-radius: 2px;
+	color: #fff;
+	margin-left: 5px;
+}
+.gatherZb button.gatherReset{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: none;
+	background: #1fb495;
+	border-radius: 2px;
+	color: #fff;
+	margin-left: 5px;
+}
+.gatherSave i.iconfont{
+	font-size: 14px;
+}
+.gatherReset i.iconfont{
+	font-size: 16px;
+}
+.TabControl{
+	padding-left: 70px;
+	width: 100%;
+	height: 100%;
+}
+.TabControl1,.TabControl2{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #c8c8c8;
+}
+.TabControlTit{
+	height: 40px;
+	background: #eff6fd;
+/*	line-height: 38px;*/
+	padding-left: 10px;
+	position: relative;
+}
+.TabControlTit span{
+	font-size: 16px;
+	color: #323232;
+	margin-left: 30px;
+}
+.TabControlTit span i.iconfont{
+	color: #3492e9;	
+}
+.TabControlTit span.checkTit{
+	display: inline-block;
+	height: 40px;
+	line-height: 38px;
+}
+.TabControlTit span.pptCombtn{
+	display: inline-block;
+	height: 40px;
+	line-height: 38px;
+	float: right;
+	margin-right: 15px;
+	color: #646464;
+}
+/*复选框控件*/
+.icheckbox_square-green{
+	position: absolute;
+	top: 9px;
+}
+.TabControl .col-sm-12,
+.TabControl .col-sm-11,
+.TabControl .col-sm-10,
+.TabControl .col-sm-9,
+.TabControl .col-sm-8,
+.TabControl .col-sm-7,
+.TabControl .col-sm-6,
+.TabControl .col-sm-5,
+.TabControl .col-sm-4,
+.TabControl .col-sm-3,
+.TabControl .col-sm-2,
+.TabControl .col-sm-1{
+	padding:0;
+	height: 40px;
+    line-height: 40px;
+}
+.TabControlMain1,.TabControlMain2{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 40px;
+}
+.TabControlMain1 label,.TabControlMain2 label{
+	margin-left: 30px;
+	font-size: 14px;
+	width: calc(100% - 30px);
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+/*3月份经济活动分析会*/
+.pushBox{
+	height:50px;
+	line-height: 50px;
+	width:100%;
+	padding: 0 20px;
+}
+.pushBtn{
+	height:28px;
+	line-height: 28px;
+	padding: 0 10px;
+	background: #3492e9;
+	color:#fff;
+	border: none;
+	border-radius: 3px;
+	font-size: 14px;
+}
+.pushBtn i{
+	font-size: 15px;
+}
+.pushMain{
+	width: 100%;
+	height: 100%;
+	padding: 0 20px 20px 20px;
+	overflow: hidden;
+}
+.pushMain .indexFirst,
+.pushMain .indexSecond,
+.pushMain .indexThird{
+	width: 32%;
+	float: left;
+	/*height: 100px;*/
+}
+.pushMain .indexSecond,
+.pushMain .indexThird{
+	margin-left: 2%;
+}
+.indexFirst,.indexSecond,.indexThird{
+	border: 1px solid #dcdcdc;
+}
+.firstTit,.secondTit,.thirdTit{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #eff6fd;
+	position: relative;
+}
+.firstTit span,.secondTit span,.thirdTit span{
+	display: inline-block;
+	font-size: 16px;
+	color: #323232;
+}
+.mgl30{
+	margin-left: 30px;
+}
+.firstMain,.secondMain,.thirdMain{
+	border-top: 1px solid #dcdcdc;
+}
+.firstBox,.secondBox,.thirdBox{
+	height: 36px;
+	line-height: 36px;
+	position: relative;
+	padding-left: 30px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.firstMain .firstBox:last-child,
+.secondMain .secondBox:last-child,
+.thirdMain .thirdBox:last-child{
+	border: none;
+}
+.firstBox .icheckbox_square-green,
+.secondBox .icheckbox_square-green,
+.thirdBox .icheckbox_square-green{
+    position: absolute;
+    top: 7px;
+}
+.firstBox label,
+.secondBox label,
+.thirdBox label{
+    margin-left: 30px;
+    font-size: 14px;
+    color: #323232;
+    width: calc(100% - 70px);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.firstBox span,
+.secondBox span,
+.thirdBox span{
+	float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #323232;
+    width: 30px;
+    text-align: center;
+}
+
+.pushTk{
+	width: 600px;
+	height: 360px;
+	padding: 10px 30px;
+}
+.pushTk label{
+	margin-right: 10px;
+	font-size: 14px;
+	color: #323232;
+}
+.pushMan{
+	height: 42px;
+	line-height: 42px;
+}
+.pushMan input{
+	width: 150px;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 5px;
+	background: url(../../images/pushman.png);
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	background-position:90% center; 
+	border: 1px solid #dcdcdc;
+}
+.pushidxBox{
+	display: inline-table;
+	height: 100%;
+}
+.pushIndex label{
+	height: 30px;
+	line-height: 30px;
+}
+.pushIndex p{
+	height: 30px;
+	line-height: 30px;
+	color: #323232;
+	font-size: 14px;
+	background: #f0f0f0;
+	padding: 0 10px;
+	border-radius:3px;
+}
+.pushIndex p:not(:first-child){
+	margin-top: 10px;
+}
+/*singlepagePPT.html*/
+.singlePptNew {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.singlePptNew button{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+	float: right;
+	margin-top: 5px;
+}
+.singlePptNew button i.iconfont{
+	font-size: 14px;
+}
+.singlePptNew .savePPTbtn{
+	margin-right: 10px;
+	background: #3492e9;
+}
+.singlePptNew .submitPPTbtn{
+	background: #1ab394;
+}
+/*提交按钮弹窗*/
+.referPPTtk{
+	width: 450px;
+	height: 200px;
+	padding: 15px;
+}
+.referPPTtk1,.referPPTtk2,.referPPTtk3{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 12px;
+}
+.referPPTtk1 label,.referPPTtk2 label,.referPPTtk3 label{
+	color: #323232;
+	font-size: 14px;
+}
+.referPPTtk1 input,.referPPTtk2 select,.referPPTtk3 select{
+	width: 280px;
+	height: 26px;
+	line-height: 26px;
+}
+/*保存按钮弹窗*/
+.savePPTtk{
+	width: 450px;
+	height: 200px;
+	padding: 15px;
+}
+.savePPTtk1,.savePPTtk2{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 12px;
+}
+.savePPTicheck{
+	width: 70px;
+	height: 40px;
+	position: relative;
+	float: left;
+}
+.savePPTicheck .icheckbox_square-green {
+    position: absolute;
+    top: 9px;
+    left: 35px;
+}
+.savePPTtk1 label,.savePPTtk2 label{
+	color: #323232;
+	font-size: 14px;
+}
+.savePPTtk1 input,.savePPTtk2 select{
+	width: 280px;
+	height: 26px;
+	line-height: 26px;
+}
+/* meetingManagement.html */
+.meetMagentCx .col-sm-12{
+	height: 60px;
+	line-height: 60px;
+}
+.meetMagentCx .col-sm-12{
+	padding: 0 20px;
+}
+.meetMagentCx .col-sm-3,
+.meetMagentCx .col-sm-4,
+.meetMagentCx .col-sm-5{
+	padding: 0;
+}
+.meetMagentCx .col-sm-4 input,
+.meetMagentCx .col-sm-5 input,
+.meetMagentCx .col-sm-4 select{
+	height: 26px;
+	line-height: 26px;
+	width: 130px;
+	color: #ACACAC;
+	border: 1px solid #ccc;
+	color: #323232;
+}
+.meetMagentCx{
+	border-bottom: 1px solid #e7eaec;
+	overflow: hidden;
+}
+.meetMagentCx label{
+	font-size: 14px;
+	color: #323232;
+	margin-right: 5px;
+}
+.meetMagentCx button.green{height:30px;line-height:30px;padding:0px 10px;background:#1BBC9C;color:#fff;border:none;border-radius:2px;}
+.meetMagentCx button.blue{height:30px;line-height:30px;padding:0px 10px;background:#228ce4;color:#fff;border:none;border-radius:2px;}
+.meetMagentCx button.blue i{
+	font-size: 14px;
+}
+.newCretBtn{
+	height: 50px;
+	line-height: 50px;
+}
+.newCretBox{
+	height: 100%;
+	width: 100%;
+}
+.color27b{
+	color:#27b79a
+}
+.colorbfb{
+	color:#bfbfbf
+}
+.color3492{
+	color: #3492e9;
+}
+table tr td i.iconfont.icon-bianji{
+	font-size: 16px;
+}
+table tr td i.iconfont.icon-ai61{
+	font-size: 17px;
+}
+table tr td i.iconfont.icon-guanbi{
+	font-size: 17px;
+}
+table tr td i.iconfont.icon-xinzeng{
+	font-size: 16px;
+}
+table tr td i.iconfont.icon-yulan{
+	font-size: 17px;
+}
+table tr td i.iconfont.icon-baocun{
+	font-size: 15px;
+}
+table tr td i.iconfont.icon-meiyougengduojilu{
+	font-size: 18px;
+}
+table tr td i.iconfont.icon-bofangwenjian{
+	font-size: 18px;
+}
+.newCretBox table tr td i{
+	margin-right: 10px;
+}
+.newCretBtn button.green {
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+    background: #1BBC9C;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+/*新建会议弹窗*/
+.meetModifyBox{
+	padding: 15px;
+	width: 600px;
+	height: 390px;
+}
+.modify1,.modify2,.modify3,.modify4,.modify5,.modify7{
+	height: 36px;
+	line-height: 36px;
+}
+.meetModifyBox input,.meetModifyBox select{
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+}
+.meetModifyBox label{
+	margin-right: 5px;
+}
+.modify1 input,.modify2 select,.modify7 input{
+	width: 150px;
+}
+.modify7 input.layui-input{
+	display: inline-table;
+	padding: 0;
+	border: 1px solid #acacac;
+    border-radius: 0px;
+}
+.modify3 input{
+	width: calc(100% - 65px);
+}
+.wordsNum{
+	height: 20px;
+	font-size: 12px;
+	color: #ccc;
+	text-align: right;
+}
+.modify4 label,.modify5 label{
+	width: 60px;
+	height: 36px;
+	display: block;
+	position: relative;
+}
+.modify4 label .icheckbox_square-green,
+.modify5 label .icheckbox_square-green {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+.modify4 span,.modify5 span{
+	font-size: 12px;
+}
+.modify5{
+	position: relative;
+}
+.addPersonnel{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: normal;
+	position: absolute;
+	right: 0;
+	top: 11px;
+	color: #676767;
+}
+.modify6{
+	padding-left: 65px;
+	min-height: 120px;
+	overflow: hidden;
+}
+.modify6 textarea{
+	display: block;
+	padding: 5px;
+	width: 100%;
+	height: 118px;
+}
+/*材料预览弹框*/
+.clPreviewBox{
+	width: 600px;
+	height: 360px;
+	padding: 20px;
+}
+.clPreview{
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.clPreview table#material_preview tbody tr td{
+	border: none;
+}
+.clPreview table#material_preview tbody tr td:nth-child(2){
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.clPreview table.table-bordered>thead>tr>th {
+    border: none;
+}
+.clPreview .ui-jqgrid .ui-priority-secondary {
+     background: none; 
+}
+/*选中变色*/
+.clPreview .table>tbody>tr.success>td{
+	background-color: #eff6fd;
+}
+/*划过变色*/
+.clPreview .table>tbody>tr.active>td{
+	background-color: #eff6fd;
+}
+/*去掉最大复选框*/
+.clPreview .ui-jqgrid .ui-jqgrid-htable .ui-th-div input#cb_material_preview{
+	display: none;
+}
+
+/*newMeeting.html*/
+.pptCollect{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.pptCollect li{
+	width: 32%;
+    height:376px;
+    float: left;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+.pptCollect li:nth-child(1),.pptCollect li:nth-child(2),.pptCollect li:nth-child(3){
+	margin-top: 0; !important;
+}
+.pptCollect li:nth-child(3n+1){
+	margin-left: 0; !important;
+}
+
+.Collectchild{
+	width:100%;
+	height: 246px;
+}
+.pptCollect .Collectchild li{
+	float: left;
+	margin-top: 0;
+	margin-left: 0;
+	width: 33.333333333%;
+    height:60px;
+    background: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    color: #323232;
+}
+.pptCollect .Collectchild li.colorac{
+	color: #ACACAC;
+}
+.pptCollect .Collectchild li:nth-child(1),
+.pptCollect .Collectchild li:nth-child(2),
+.pptCollect .Collectchild li:nth-child(4),
+.pptCollect .Collectchild li:nth-child(5),
+.pptCollect .Collectchild li:nth-child(7),
+.pptCollect .Collectchild li:nth-child(8){
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.pptCollect .Collectchild li:nth-child(10),
+.pptCollect .Collectchild li:nth-child(11){
+	border-right: 1px solid #ccc;
+}
+.pptCollect .Collectchild li:nth-child(3),
+.pptCollect .Collectchild li:nth-child(6),
+.pptCollect .Collectchild li:nth-child(9){
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.pptCollect .Collectchild li:hover{
+	transform: scale(1.1); 
+	-moz-box-shadow: 0px 2px 7px #888888; 
+	box-shadow: 0px 2px 2px #888888;
+	border: none;
+}   
+/*四种颜色border*/
+.border99c8f3{
+	border:3px solid #99c8f3;
+}
+.border8cd9c9{
+	border:3px solid #8cd9c9;
+}
+.borderfad5ae{
+	border:3px solid #fad5ae;
+}
+.borderc4c0f1{
+	border:3px solid #c4c0f1;
+}
+.bgCollect1{
+	background: rgba(51,145,232,1);
+}
+.bgCollect2{
+	background: rgba(26,179,148,1);
+}
+.bgCollect3{
+	background: rgba(246,171,94,1);
+}
+.bgCollect4{
+	background: rgba(137,130,228,1);
+}
+.collectBtnBox button.bgCollect1:hover{
+	background: #71b2ef;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+/*按钮画过变色*/
+.collectBtnBox button.bgCollect2:hover{
+	background: #7cd1c0;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+.collectBtnBox button.bgCollect3:hover{
+	background: #f9cb9c;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+.collectBtnBox button.bgCollect4:hover{
+	background: #b0ace9;
+	transition:  background linear 0.2s;
+	border: none;
+	line-height:40px ;
+}
+.collectBox{
+	width: 100%;
+	height: 130px;
+	padding-top: 15px;
+}
+.collectName{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.collectBtnBox{
+	margin-top: 10px;
+	text-align: center;
+}
+.collectBtn{
+	height: 40px;
+	line-height: 38px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid #fff;
+	width: 90%;
+	border-radius: 5px;
+}
+/*查看科室弹窗*/
+.adminOfficeBox{
+	width: 600px;
+	height: 360px;
+	padding: 15px;
+}
+.adminOffice{
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.adminOffice table#adminOfficeJq tbody tr td{
+	border: none;
+}
+.adminOffice table#adminOfficeJq tbody tr td:nth-child(2){
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.adminOffice table.table-bordered>thead>tr>th {
+    border: none;
+}
+.adminOffice .ui-jqgrid .ui-priority-secondary {
+     background: none; 
+}
+/*表头居左*/
+.adminOffice table.table-bordered>thead>tr>th:nth-child(1) div {
+    text-align: left;
+}
+/*选中变色*/
+.adminOffice .table>tbody>tr.success>td{
+	background-color: #eff6fd;
+}
+/*划过变色*/
+.adminOffice .table>tbody>tr.active>td{
+	background-color: #eff6fd;
+}
+/*修改数据弹框*/
+.editDataBox{
+	width: 400px;
+	height: 150px;
+	padding: 15px;
+}
+.editJQdata{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 15px;
+}
+.editJQdata label{
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+}
+.editJQdata input{
+	height: 26px;
+	line-height: 26px;
+	width: 200px;
+}
+/*编辑会议纪要*/
+.editSummaryBox{
+	width: 600px;
+	height: 310px;
+	padding: 5px 15px 15px 15px;
+}
+.editSummary1{
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+.editSummary1 label{
+	margin-left: 30px;
+}
+.editSummary1 .iradio_square-green{
+	position: absolute;
+	top: 9px;
+}
+.editTextarea{
+	width: 100%;
+	height: 150px;
+	padding-left: 30px;
+}
+.editTextarea textarea{
+	display: inline-block;
+	width: 100%;
+	height: 150px;
+	padding: 5px;
+}
+.ediUploadBox{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 30px;
+}
+.ediUploadBox input#ediUpload{
+	height: 36px;
+	border: 1px solid #ACACAC;
+	width: calc(100% - 130px);
+	margin-left: 10px;
+}
+.ediUploadBox button{
+	display: block;
+	height: 36px;
+	width: 60px;
+	text-align: center;
+	line-height: 36px;
+	border: none;
+	background: #3492e9;
+	color: #FFF;
+}
+/*初始化上传附件样式*/
+.scfj{
+	color:#999999;
+}
+.ediUploadBox input#ediUpload {
+	border-color: #DDDDDD;
+}
+.ediUploadBox button.ediUploadBtn{
+	background: #DDDDDD;
+}
+/*systemnote.html*/
+.sysNotebtn{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+.sysNotebtn button{
+	height: 30px;
+	line-height: 30px;
+	background: #3a94e6;
+	color: #fff;
+	border: none;
+	padding: 0 10px;
+	border-radius: 3px;
+}
+.sysjqgrid{
+	width: 100%;
+	height: 100%;
+}
+.sysjqgrid1{
+	width: 100%;
+	height: 100%;
+}
+/*新建公告弹窗*/
+.systemNoteTK{
+	width: 600px;
+	height: 360px;
+	padding: 20px;
+}
+.systemNoteTK p{
+	height: 30px;
+	line-height: 30px;
+	color: #323232;
+	font-size: 14px;
+}
+.systemTitMain{
+	height: 40px;
+	line-height: 40px;
+}
+.systemTitMain input{
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 5px;
+}
+.systemMain{
+	width: 100%;
+	height: 210px;
+}
+.systemMain textarea{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+/*caiwuguanli.html*/
+/** 
+ * add liyanhua start
+ * 
+ */
+.jqBtn{
+	width:100%;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.jqBtn .corporateBtn{
+	font-size: 12px;
+    padding: 2px 10px;
+    border: 1px solid #3391e8;
+    color: #3391e8;
+    cursor: pointer;
+}
+.jqBtn .sameMonthBtn{
+	background: #3391e8;
+	color:#fff;
+}
+.jqBtn .company{
+	margin-right: 7px;
+}
+/** 
+ * add liyanhua end
+ * 
+ */

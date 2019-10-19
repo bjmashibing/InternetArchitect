@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mashibing.springboot.mapper.AccountMapper">
+  <resultMap id="BaseResultMap" type="com.mashibing.springboot.entity.Account">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="login_name" jdbcType="VARCHAR" property="loginName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="role" jdbcType="VARCHAR" property="role" />
+  </resultMap>
+  
+  <!--  自定义： 包含一对多关系 包含两个集合   roleList  permissionList-->
+  <resultMap type="com.mashibing.springboot.entity.Account" id="selectByPermissionResultMap">
+  
+    <id column="aid" jdbcType="INTEGER" property="id" />
+    <result column="login_name" jdbcType="VARCHAR" property="loginName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="role" jdbcType="VARCHAR" property="role" />
+  
+	  <collection property="roleList" ofType="com.mashibing.springboot.entity.Role">
+	  	
+		  <id column="rid" jdbcType="INTEGER" property="id" />
+	      <result column="rname" jdbcType="VARCHAR" property="name" />
+	  </collection>
+	  <collection property="permissionList" ofType="com.mashibing.springboot.entity.Permission">
+		  	
+	    <id column="pid" jdbcType="INTEGER" property="id" />
+	    <result column="uri" jdbcType="VARCHAR" property="uri" />
+	    <result column="pname" jdbcType="VARCHAR" property="name" />
+	    <result column="c" jdbcType="BIT" property="c" />
+	    <result column="r" jdbcType="BIT" property="r" />
+	    <result column="u" jdbcType="BIT" property="u" />
+	    <result column="d" jdbcType="BIT" property="d" />
+	  </collection>
+  
+  </resultMap>
+  <select id="findByLoginNameAndPassword"  resultMap="selectByPermissionResultMap">
+  SELECT
+	a.id as aid, 
+	a.login_name ,
+	a.password,
+	a.location,
+	r.id as rid,
+	r.name as rname,
+    p.id as pid,
+    p.uri,
+    p.c,
+    p.u,
+    p.d,
+    p.r,
+    p.name as pname
+FROM account as a 
+	inner join account_role as ar 
+		on a.id = ar.account_id
+    inner join role as r 
+		on ar.role_id = r.id
+        
+	left join role_permission rp 
+		on r.id =rp.role_id
+	left join permission p 
+		on p.id = rp.permission_id
+where a.login_name = #{loginName} and a.password = #{password}
+  </select>
+  
+  <select id="selectByPermission" resultMap="selectByPermissionResultMap">
+  
+  <!-- 
+  	SELECT * FROM account as a 
+	inner join account_role as ar 
+		on a.id = ar.account_id
+    inner join role as r 
+		on ar.role_id = r.id
+SELECT
+	a.id as aid, 
+	a.login_name ,
+	a.password,
+	a.location,
+	r.id as rid,
+	r.name as rname
+FROM account as a 
+	inner join account_role as ar 
+		on a.id = ar.account_id
+    inner join role as r 
+		on ar.role_id = r.id
+   -->
+   
+   SELECT
+	a.id as aid, 
+	a.login_name ,
+	a.password,
+	a.location,
+	r.id as rid,
+	r.name as rname,
+    p.id as pid,
+    p.uri,
+    p.c,
+    p.u,
+    p.d,
+    p.r,
+    p.name as pname
+FROM account as a 
+	inner join account_role as ar 
+		on a.id = ar.account_id
+    inner join role as r 
+		on ar.role_id = r.id
+        
+	left join role_permission rp 
+		on r.id =rp.role_id
+	left join permission p 
+		on p.id = rp.permission_id
+ 
+  </select>
+  
+  
+  
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, login_name, `password`, nick_name, age, `location`, `role`
+  </sql>
+  <select id="selectByExample" parameterType="com.mashibing.springboot.mapper.AccountExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from account
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from account
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from account
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.mashibing.springboot.mapper.AccountExample">
+    delete from account
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.mashibing.springboot.entity.Account" useGeneratedKeys="true">
+    insert into account (login_name, `password`, nick_name, 
+      age, `location`, `role`
+      )
+    values (#{loginName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{nickName,jdbcType=VARCHAR}, 
+      #{age,jdbcType=INTEGER}, #{location,jdbcType=VARCHAR}, #{role,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.mashibing.springboot.entity.Account" useGeneratedKeys="true">
+    insert into account
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="loginName != null">
+        login_name,
+      </if>
+      <if test="password != null">
+        `password`,
+      </if>
+      <if test="nickName != null">
+        nick_name,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="location != null">
+        `location`,
+      </if>
+      <if test="role != null">
+        `role`,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="loginName != null">
+        #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null">
+        #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        #{role,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.mashibing.springboot.mapper.AccountExample" resultType="java.lang.Long">
+    select count(*) from account
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update account
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.loginName != null">
+        login_name = #{record.loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null">
+        `password` = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.nickName != null">
+        nick_name = #{record.nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.age != null">
+        age = #{record.age,jdbcType=INTEGER},
+      </if>
+      <if test="record.location != null">
+        `location` = #{record.location,jdbcType=VARCHAR},
+      </if>
+      <if test="record.role != null">
+        `role` = #{record.role,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update account
+    set id = #{record.id,jdbcType=INTEGER},
+      login_name = #{record.loginName,jdbcType=VARCHAR},
+      `password` = #{record.password,jdbcType=VARCHAR},
+      nick_name = #{record.nickName,jdbcType=VARCHAR},
+      age = #{record.age,jdbcType=INTEGER},
+      `location` = #{record.location,jdbcType=VARCHAR},
+      `role` = #{record.role,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mashibing.springboot.entity.Account">
+    update account
+    <set>
+      <if test="loginName != null">
+        login_name = #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        `password` = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null">
+        nick_name = #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="location != null">
+        `location` = #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        `role` = #{role,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mashibing.springboot.entity.Account">
+    update account
+    set login_name = #{loginName,jdbcType=VARCHAR},
+      `password` = #{password,jdbcType=VARCHAR},
+      nick_name = #{nickName,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER},
+      `location` = #{location,jdbcType=VARCHAR},
+      `role` = #{role,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
