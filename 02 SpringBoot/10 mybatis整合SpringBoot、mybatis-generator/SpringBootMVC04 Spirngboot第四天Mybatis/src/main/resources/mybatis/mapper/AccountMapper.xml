@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+        
+ <!-- namespace 对应到 接口上 就不需要实例化了 -->
+<mapper namespace="com.mashibing.springboot.mapper.AccountMapper">
+
+
+
+<!-- pojo对象和表之间的 字段和属性的映射关系     -->
+	<resultMap type="com.mashibing.springboot.mapper.Account" id="BaseResultMap">
+		<!-- column 表里的字段 -->
+		<!-- property 实体对象里的属性 -->
+		<result column="login_name" property="loginName"/>
+		<result column="password" property="password"/>
+	</resultMap>
+
+
+<!-- <select id=""> 一个select 的实现 
+	<select id="findAll" resultMap="BaseResultMap">
+		select * from account
+	</select>
+
+ -->
+ 
+ 
+ 
+ 
+ <insert id="add" parameterType="Account">
+ 	insert into account(login_name,password)
+ 	values 
+ 	(
+ 		#{loginName},#{password}
+ 	)
+ 
+ </insert>
+
+</mapper>
