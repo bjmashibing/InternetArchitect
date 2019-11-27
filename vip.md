@@ -95,6 +95,7 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 84	Java NIO 二
 91  NIO之ByteBuffer
 96  Netty 之NIO selector
+101 Netty之内存管理
 ```
 
 ### JVM
@@ -103,6 +104,7 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 86	详解Class加载过程
 93  Java内存模型
 97  内存屏障与JVM指令
+102 Java运行时数据区和常用指令
 ```
 ### MYSQL基础
 
