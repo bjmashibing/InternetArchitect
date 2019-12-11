@@ -1,0 +1,32 @@
+[19:28:30,527] [INFO] ServerMain.main --> 服务器启动成功!
+[21:01:47,478] [INFO] ServerMain.main --> 服务器启动成功!
+[21:49:45,925] [INFO] ServerMain.main --> 服务器启动成功!
+[21:49:55,839] [ERROR] GameMsgDecoder.channelRead --> 无法识别的消息, msgCode = 9
+[22:14:34,232] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,263] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,281] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,312] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,330] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,342] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,403] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,415] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,436] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,452] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,509] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,514] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:34,530] [INFO] GameMsgRecognizer.init --> {0} <==> {1}
+[22:14:39,241] [INFO] ServerMain.main --> 服务器启动成功!
+[22:15:14,071] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[22:15:14,086] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[22:15:14,093] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[22:15:14,108] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[22:15:14,124] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[22:15:14,138] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[22:15:14,156] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[22:15:14,168] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[22:15:14,174] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[22:15:14,209] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[22:15:14,222] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[22:15:14,239] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[22:15:14,253] [INFO] GameMsgRecognizer.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[22:15:19,054] [INFO] ServerMain.main --> 服务器启动成功!
