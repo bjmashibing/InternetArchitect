@@ -94,6 +94,7 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 91  NIO之ByteBuffer [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067188000822317&type=1024&vid=5285890795677757727)
 96  Netty 之NIO selector [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067209475658797&type=1024&vid=5285890795889357665)
 101 Netty之内存管理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067230950495277&type=1024&vid=5285890796098401636)
+109 Netty之内存管理二[地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067265310233645&type=1024&vid=5285890796550106193)
 
 
 ### JVM
@@ -102,6 +103,7 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 93  Java内存模型 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067196590756909&type=1024&vid=5285890795710259061)
 97  内存屏障与JVM指令 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067213770626093&type=1024&vid=5285890795920195540)
 102 Java运行时数据区和常用指令  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067235245462573&type=1024&vid=5285890796130155429)
+110 JVM调优必备理论知识-GC Collector-三色标记  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067269605200941&type=1024&vid=5285890796558161975)
 
 ### MYSQL基础
 
