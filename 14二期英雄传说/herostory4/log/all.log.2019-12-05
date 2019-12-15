@@ -1,0 +1,174 @@
+[15:54:00,122] [INFO] ServerMain.main --> 服务器启动成功
+[15:55:03,042] [INFO] ServerMain.main --> 服务器启动成功
+[15:55:56,863] [INFO] ServerMain.main --> 服务器启动成功!
+[19:40:37,090] [INFO] ServerMain.main --> 服务器启动成功!
+[19:40:37,372] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[19:41:15,677] [INFO] ServerMain.main --> 服务器启动成功!
+[20:06:34,396] [INFO] ServerMain.main --> 服务器启动成功!
+[20:52:51,565] [INFO] ServerMain.main --> 服务器启动成功!
+[20:52:58,094] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd cannot be cast to io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame
+	at org.tinygame.herostory.GameMsgHandler.channelRead0(GameMsgHandler.java:17)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at org.tinygame.herostory.GameMsgDecoder.channelRead(GameMsgDecoder.java:37)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.Utf8FrameValidator.channelRead(Utf8FrameValidator.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler$1.channelRead(WebSocketServerProtocolHandler.java:272)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:313)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:427)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[20:54:53,669] [INFO] ServerMain.main --> 服务器启动成功!
+[21:06:41,758] [INFO] ServerMain.main --> 服务器启动成功!
+[21:16:35,397] [INFO] ServerMain.main --> 服务器启动成功!
+[21:45:23,904] [INFO] ServerMain.main --> 服务器启动成功!
+[21:57:41,030] [INFO] ServerMain.main --> 服务器启动成功!
+[22:07:04,832] [INFO] ServerMain.main --> 服务器启动成功!
+[22:07:37,241] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,242] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,242] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,242] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,241] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,245] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,245] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,245] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,244] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,248] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,246] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,249] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,251] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,252] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,252] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,252] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,252] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,252] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,252] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,257] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,259] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,259] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,260] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,258] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,260] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,260] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,260] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,259] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,263] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,259] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,259] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,259] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,265] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,264] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,264] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,263] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,262] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,262] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,261] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,269] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,268] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,267] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,266] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,266] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,273] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,272] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,272] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,270] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,274] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,274] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,277] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,278] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,276] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,278] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,279] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,280] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,280] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,282] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,283] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,283] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,283] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,284] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,284] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,284] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,286] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,286] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,286] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,326] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,327] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,327] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,327] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,328] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,328] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,328] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,327] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,327] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,327] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,327] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,330] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,330] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,329] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,329] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,328] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,333] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,332] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,331] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,335] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,337] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,336] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:07:37,377] [ERROR] GameMsgEncoder.write --> 无法识别的消息类型, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+[22:09:09,258] [INFO] ServerMain.main --> 服务器启动成功!
