@@ -1,0 +1,301 @@
+[12:13:24,304] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[12:13:24,320] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[12:13:24,320] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[12:13:24,320] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[12:13:24,335] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[12:13:24,335] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[12:13:24,335] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[12:13:24,351] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[12:13:24,367] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[12:13:24,367] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[12:13:24,382] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[12:13:24,382] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[12:13:24,398] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[12:13:26,262] [INFO] ServerMain.main --> 服务器启动成功!
+[12:14:02,722] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[12:14:02,734] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[12:14:03,078] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 133.04156
+moveToPosY: -46.91466
+
+[12:14:04,373] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -88.22758
+moveToPosY: -28.708971
+
+[12:14:15,520] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 46.214436
+moveToPosY: 6.3019695
+
+[12:14:17,023] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -169.45296
+moveToPosY: -20.306345
+
+[12:14:18,623] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 32.210056
+moveToPosY: 35.71116
+
+[12:14:19,322] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 74.22319
+moveToPosY: -46.91466
+
+[20:35:40,885] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <===> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[20:35:40,894] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <===> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[20:35:40,898] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <===> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[20:35:41,067] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[20:35:41,072] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[20:35:41,077] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[20:35:41,094] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[20:35:41,110] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[20:35:41,119] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[20:35:41,128] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[20:35:41,132] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[20:35:41,136] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[20:35:41,145] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[20:35:41,149] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[20:35:41,155] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[20:35:41,164] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[20:35:42,489] [INFO] ServerMain.main --> 服务器启动成功!
+[20:36:03,820] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[20:36:03,843] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:36:04,304] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -160.28168
+moveToPosY: -36.90141
+
+[20:36:15,641] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = userId: 2
+heroAvatar: "Hero_Shaman"
+
+[20:36:15,644] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:36:17,002] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 227.04227
+moveToPosY: 10.985915
+
+[20:36:18,045] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 5.915508
+moveToPosY: -96.056335
+
+[20:36:18,970] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 158.02818
+moveToPosY: -111.54929
+
+[20:36:19,604] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -230.70421
+moveToPosY: 36.338028
+
+[20:36:20,445] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -268.7324
+moveToPosY: -45.35211
+
+[20:36:21,313] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 115.774666
+moveToPosY: -12.9577465
+
+[20:46:58,755] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <===> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[20:46:58,775] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <===> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[20:46:58,783] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <===> org.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[20:46:58,792] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <===> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[20:46:59,195] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[20:46:59,210] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[20:46:59,225] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[20:46:59,234] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[20:46:59,240] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[20:46:59,244] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[20:46:59,255] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[20:46:59,261] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[20:46:59,276] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[20:46:59,294] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[20:46:59,307] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[20:46:59,311] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[20:46:59,325] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[20:47:02,455] [INFO] ServerMain.main --> 服务器启动成功!
+[20:47:11,315] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[20:47:11,356] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:47:13,943] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = userId: 2
+heroAvatar: "Hero_Shaman"
+
+[20:47:13,947] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:47:14,907] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -185.63379
+moveToPosY: -77.746475
+
+[20:47:15,768] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 5.915508
+moveToPosY: -4.5070424
+
+[20:47:16,409] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:47:17,275] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:58:54,604] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <===> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[20:58:54,627] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <===> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[20:58:54,646] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <===> org.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[20:58:54,657] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <===> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[20:58:54,976] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[20:58:54,992] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[20:58:55,027] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[20:58:55,047] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[20:58:55,065] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[20:58:55,078] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[20:58:55,083] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[20:58:55,094] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[20:58:55,124] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[20:58:55,140] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[20:58:55,145] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[20:58:55,159] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[20:58:55,168] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[20:58:58,828] [INFO] ServerMain.main --> 服务器启动成功!
+[20:59:07,775] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[20:59:07,892] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:59:09,260] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = userId: 2
+heroAvatar: "Hero_Shaman"
+
+[20:59:09,264] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:59:10,595] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -108.169
+moveToPosY: -0.28169015
+
+[20:59:11,912] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -16.619703
+moveToPosY: 3.943662
+
+[20:59:12,308] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:13,396] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:13,547] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:13,696] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:13,848] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:13,988] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:14,112] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:14,260] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:14,396] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:14,545] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:14,692] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:14,831] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:14,972] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:15,099] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:15,243] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:15,376] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:15,527] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:15,675] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:15,961] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:16,114] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:59:16,248] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:00:37,777] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:00:37,932] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:00:38,120] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:00:38,287] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:00:39,257] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 139.71832
+moveToPosY: -10.140845
+
+[21:00:39,798] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 5.915508
+moveToPosY: 8.169014
+
+[21:00:40,314] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:00:40,476] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:00:40,633] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:00:40,794] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:00:40,942] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:00:41,077] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:00:41,236] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[23:08:12,118] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <===> org.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[23:08:12,133] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <===> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[23:08:12,133] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <===> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[23:08:12,133] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <===> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[23:08:12,243] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[23:08:12,258] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[23:08:12,258] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[23:08:12,274] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[23:08:12,274] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[23:08:12,274] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[23:08:12,274] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[23:08:12,274] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[23:08:12,290] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[23:08:12,290] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[23:08:12,290] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[23:08:12,290] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[23:08:12,305] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[23:08:13,334] [INFO] ServerMain.main --> 服务器启动成功!
+[23:08:54,092] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <===> org.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[23:08:54,108] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <===> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[23:08:54,108] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <===> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[23:08:54,108] [INFO] CmdHandlerFactory.init --> org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <===> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[23:11:47,666] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[23:11:47,774] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[23:11:47,774] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[23:11:47,790] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[23:11:47,790] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[23:11:47,883] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[23:11:47,899] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[23:11:47,899] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[23:11:47,899] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[23:11:47,899] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[23:11:47,899] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[23:11:47,915] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[23:11:47,915] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[23:11:47,915] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[23:11:47,915] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[23:11:47,915] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[23:11:47,930] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[23:11:47,930] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[23:11:48,796] [INFO] ServerMain.main --> 服务器启动成功!
+[23:14:19,557] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[23:14:19,667] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[23:14:19,667] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[23:14:19,682] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[23:14:19,682] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[23:14:19,698] [INFO] GameMsgRecognizer.init --> ==== 完成 Cmd 和 MsgCode 的关联 ====
+[23:14:19,854] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[23:14:19,854] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[23:14:19,870] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[23:14:19,870] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[23:14:19,870] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[23:14:19,870] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[23:14:19,885] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[23:14:19,885] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[23:14:19,885] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[23:14:19,901] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[23:14:19,901] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[23:14:19,901] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[23:14:19,917] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[23:14:20,831] [INFO] ServerMain.main --> 服务器启动成功!
+[23:14:56,042] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[23:14:56,151] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[23:14:56,151] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[23:14:56,151] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[23:14:56,151] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[23:14:56,167] [INFO] GameMsgRecognizer.init --> ==== 完成 MsgBody 和 MsgCode 的关联 ====
+[23:14:56,268] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[23:14:56,283] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[23:14:56,283] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[23:14:56,283] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[23:14:56,299] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[23:14:56,299] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[23:14:56,299] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[23:14:56,299] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[23:14:56,315] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[23:14:56,315] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[23:14:56,315] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[23:14:56,330] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[23:14:56,334] [INFO] GameMsgRecognizer.init --> 关联 org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[23:14:57,230] [INFO] ServerMain.main --> 服务器启动成功!
