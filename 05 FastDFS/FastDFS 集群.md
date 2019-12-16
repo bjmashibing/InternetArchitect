@@ -1,6 +1,6 @@
 # FastDFS 集群
 
-![1564986976390](C:\Users\Administrator\Desktop\tmp\fastdfs图\1564986976390.png)
+![1564986976390](images/1564986976390.png)
 
 ## 克隆虚拟机
 
