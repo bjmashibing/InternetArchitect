@@ -30,7 +30,7 @@ FastDFS中的文件标识分为两个部分：卷名和文件名，二者缺一�
 
 ### web项目架构
 
-![](C:\Users\Administrator\Desktop\tmp\fastdfs图\install.png)
+![](images/install.png)
 
 ### 谁在用？
 
@@ -91,7 +91,7 @@ FastDFS中的文件标识分为两个部分：卷名和文件名，二者缺一�
 
 ### 上传流程
 
-![](C:\Users\Administrator\Desktop\tmp\fastdfs图\upload.png)
+![](images/upload.png)
 
 
 
@@ -140,13 +140,13 @@ FastDFS中的文件标识分为两个部分：卷名和文件名，二者缺一�
 
 ### 下载流程
 
-![](C:\Users\Administrator\Desktop\tmp\fastdfs图\download.png)
+![](images/download.png)
 
 - client询问tracker下载文件的storage，参数为文件标识（组名和文件名）；
 - tracker返回一台可用的storage；
 - client直接和storage通讯完成文件下载。
 
-![](C:\Users\Administrator\Desktop\tmp\fastdfs图\find.jpg)
+![](images/find.jpg)
 
 ### binlog
 
@@ -642,7 +642,7 @@ uploadFile  = fc.uploadImageAndCrtThumbImage(filename.getInputStream(), filename
 		
 ```
 
-![1563360427239](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1563360427239.png)
+
 
 ### 下载文件
 
