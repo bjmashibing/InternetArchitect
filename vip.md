@@ -95,7 +95,7 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 96  Netty 之NIO selector [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067209475658797&type=1024&vid=5285890795889357665)
 101 Netty之内存管理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067230950495277&type=1024&vid=5285890796098401636)
 109 Netty之内存管理二[地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067265310233645&type=1024&vid=5285890796550106193)
-
+118 NETTY小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067303964939309&type=1024&vid=5285890796973596740)
 
 ### JVM
 80	JVM入门级class文件格式 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385671180227629&type=1024&vid=5285890795254417183)
@@ -104,6 +104,77 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 97  内存屏障与JVM指令 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067213770626093&type=1024&vid=5285890795920195540)
 102 Java运行时数据区和常用指令  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067235245462573&type=1024&vid=5285890796130155429)
 110 JVM调优必备理论知识-GC Collector-三色标记  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067269605200941&type=1024&vid=5285890796558161975)
+114 JVM调优实战 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067286785070125&type=1024&vid=5285890796770442292)
+119 JVM实战调优 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067308259906605&type=1024&vid=5285890797005699401)
+
+### 亿级流量多级缓存高并发系统架构实战
+
+59 亿级流量多级缓存高并发系统架构实战一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385580985914413&type=1024&vid=5285890794297568090)
+60 亿级流量多级缓存高并发系统架构实战二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385585280881709&type=1024&vid=5285890794352666497)
+61 亿级流量多级缓存高并发系统架构实战三 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385589575849005&type=1024&vid=5285890794406875432)
+65 亿级流量多级缓存高并发系统架构实战四 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385606755718189&type=1024&vid=5285890794487964582)
+68 亿级流量多级缓存高并发系统架构实战五 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385619640620077&type=1024&vid=5285890794755056474)
+70 亿级流量多级缓存高并发系统架构实战六 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385628230554669&type=1024&vid=5285890794846482328)
+73 亿级流量多级缓存高并发系统架构实战七 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385641115456557&type=1024&vid=5285890794907098090)
+75 亿级流量系统架构之限流 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385649705391149&type=1024&vid=5285890795027196090)
+78 亿级流量系统架构之扩容 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385662590293037&type=1024&vid=5285890795118954092)
+79 亿级流量系统架构之降级 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385666885260333&type=1024&vid=5285890795241583575)
+82 亿级流量系统架构之分布式事务原理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385679770162221&type=1024&vid=5285890795334000268)
+83 亿级流量系统架构之实战流量分发层 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385684065129517&type=1024&vid=5285890795452423442)
+87 亿级流量系统架构之实战域名与https [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067170820953133&type=1024&vid=5285890795502214371)
+88 亿级流量系统架构之网关kong [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067175115920429&type=1024&vid=5285890795543304509)
+89 电商系统详情页PLAN A [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067179410887725&type=1024&vid=5285890795603819984)
+90 静态文件生成-rsync [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067183705855021&type=1024&vid=5285890795665408978)
+94 静态化文件生成业务流程及技术选型解析 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067200885724205&type=1024&vid=5285890795819050143)
+95 Arica开发实战CRUD [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067205180691501&type=1024&vid=5285890795877662149)
+98 静态文件生成 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067218065593389&type=1024&vid=5285890795968574352)
+99 html同步，生成首页，批量生成，健康检查 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067222360560685&type=1024&vid=5285890796027373496)
+100 单机事务，并发锁，压力测试 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067226655527981&type=1024&vid=5285890796087063574)
+103 html架构的应用场景，扩容，静态分页实现 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067239540429869&type=1024&vid=5285890796178868473)
+104 分页逻辑2，动态加静态，lua访问mysql [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067243835397165&type=1024&vid=5285890796239514922)
+105 resty_template,静态文件补偿机制实现 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067248130364461&type=1024&vid=5285890796299478231)
+106 亿级流量高并发项目总结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067252425331757&type=1024&vid=5285890796391731488)
+
+### mysql调优
+
+107 精通mysql调优大师班一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067256720299053&type=1024&vid=5285890796450429140)
+108 精通mysql调优大师班二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067261015266349&type=1024&vid=5285890796510158724)
+111 精通mysql调优大师班三 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067273900168237&type=1024&vid=5285890796598967563)
+112 精通mysql调优大师班四 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067278195135533&type=1024&vid=5285890796686398461)
+113 精通mysql调优大师班五 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067282490102829&type=1024&vid=5285890796759143626)
+115 精通mysql调优大师班六 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067291080037421&type=1024&vid=5285890796847119428)
+116 精通mysql调优大师班七 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067295375004717&type=1024&vid=5285890796905611672)
+117 精通mysql调优大师班八 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067299669972013&type=1024&vid=5285890796964066182)
+
+### 架构师前置知识
+
+4 spring,ioc入门与详解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067299669972013&type=1024&vid=5285890796964066182)
+5 maven的简单构建，springaop [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385409187222573&type=1024&vid=5285890790630114912)
+6 spring中的循环依赖、代理方式讲解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385413482189869&type=1024&vid=5285890790589942447)
+7 springboot mvc项目结构、开发、热部署 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385417777157165&type=1024&vid=5285890790511540996)
+8 springboot web项目整合数据源、Thymeleaf [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385422072124461&type=1024&vid=5285890793325592794)
+9 项目开发-thymeleaf、jpa、bootstrap [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385426367091757&type=1024&vid=5285890793329539892)
+10 mybatis整合SpringBoot、mybatis-generator [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385430662059053&type=1024&vid=5285890793325623033)
+11 企业项目开发中的角色、流程、任务分配 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385434957026349&type=1024&vid=5285890793326572044)
+12 pageHelper、翻页、Example使用、异步表单 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385439251993645&type=1024&vid=5285890793322637365)
+13 开发-RBAC、表设计、YAML、项目配置 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385443546960941&type=1024&vid=5285890793322532723)
+14 开发-RBAC前后端、mybatis多表、thymeleaf [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385447841928237&type=1024&vid=5285890793322418005)
+15 开发-Odata、Restful、SpringBoot文件上传 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385452136895533&type=1024&vid=5285890793326639752)
+16 开发-权限认证、Icheck、Mybatis plus [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385456431862829&type=1024&vid=5285890793326245685)
+17 Tengine原理、对比、部署、配置、虚拟主机 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3528762310661165&type=1024&vid=5285890793323424174)
+19 Tengine 反向代理、负载均衡、 session共享 等 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3528766605628461&type=1024&vid=5285890793328967920)
+20  Tengine 动静分离 https SSL 非对称加密 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385460726830125&type=1024&vid=5285890791583725588)
+21 Nginx OpenSSL 自签名证书 xca FastDFS介绍 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385465021797421&type=1024&vid=5285890793323154714)
+22 FastDFS 部署 原理  整合Nginx JavaAPI  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385469316764717&type=1024&vid=5285890793323413627)
+30 FastDFS 集群原理 部署 缓存 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3737287267849261&type=1024&vid=5285890792435208507)
+31 FastDFS keepalived 高可用 zookeeper [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385495086568493&type=1024&vid=5285890792474198556)
+32 dubbo demo、角色、 RPC、原理 、RMI [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385499381535789&type=1024&vid=5285890792514876863)
+33 项目微服务拆分 注册中心、dubbo admin [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385503676503085&type=1024&vid=5285890792633119995)
+35 dubbo下的微信公众号项目 一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385507971470381&type=1024&vid=5285890792754277214)
+36 dubbo下的微信公众号项目 二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385512266437677&type=1024&vid=5285890792834815388)
+38 RestFul风格API、swagger API [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3781967812629549&type=1024&vid=5285890792954029131)
+39 dubbo核心配置 聚合项目构建  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385520856372269&type=1024&vid=5285890793032809072)
+
 
 ### MYSQL基础
 
