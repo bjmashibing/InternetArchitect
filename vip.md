@@ -29,6 +29,10 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 
 密码：dk2w
 
+docker和k8s资料：[地址](https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug)
+
+密码：zcmq
+
 
 ##  VIP学员大课资料：
 1.  A：JAVA后端工程师，[统一访问GitHub仓库中的java库](https://github.com/bjmashibing/java)
