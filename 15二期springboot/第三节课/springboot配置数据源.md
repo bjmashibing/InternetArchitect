@@ -375,22 +375,22 @@ public class DruidConfig {
 ```yaml
 spring:
   datasource:
+    local:
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/demo?serverTimezone=UTC&useUnicode=true@characterEncoding=utf-8
     remote:
       username: root
       password: 123456
-      url: jdbc:mysql://192.168.85.111:3306/demo?serverTimezone=UTC&useUnicode=true@characterEncoding=utf-8
       driver-class-name: com.mysql.jdbc.Driver
-    local:
-        username: root
-        password: 123456
-        url: jdbc:mysql://localhost:3306/demo?serverTimezone=UTC&useUnicode=true@characterEncoding=utf-8
-        driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.85.111:3306/demo?serverTimezone=UTC&useUnicode=true@characterEncoding=utf-8
 ```
 
 2、创建数据源枚举类
 
 ```java
-package com.mashibing.config;
+package com.mashibing.mult;
 
 public enum DataSourceType {
     REMOTE,
@@ -403,7 +403,7 @@ public enum DataSourceType {
 ​		创建一个数据源切换处理类，有对数据源变量的获取、设置和情况的方法，其中threadlocal用于保存某个线程共享变量。
 
 ```java
-package com.mashibing.config;
+package com.mashibing.mult;
 
 public class DynamicDataSourceContextHolder {
 
@@ -444,7 +444,7 @@ public class DynamicDataSourceContextHolder {
 ​		动态切换数据源主要依靠AbstractRoutingDataSource。创建一个AbstractRoutingDataSource的子类，重写determineCurrentLookupKey方法，用于决定使用哪一个数据源。这里主要用到AbstractRoutingDataSource的两个属性defaultTargetDataSource和targetDataSources。defaultTargetDataSource默认目标数据源，targetDataSources（map类型）存放用来切换的数据源。
 
 ```java
-package com.mashibing.config;
+package com.mashibing.mult;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
@@ -475,7 +475,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
 5、注入数据源
 
 ```java
-package com.mashibing.config;
+package com.mashibing.mult;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -492,24 +492,23 @@ import java.util.Map;
 public class DataSourceConfig {
     @Bean
     @ConfigurationProperties("spring.datasource.remote")
-    public DataSource masterDataSource() {
+    public DataSource remoteDataSource() {
         return DataSourceBuilder.create().build();
     }
 
     @Bean
     @ConfigurationProperties("spring.datasource.local")
-    @ConditionalOnProperty(prefix = "spring.datasource.local", name = "enabled", havingValue = "true")
-    public DataSource slaveDataSource() {
+    public DataSource localDataSource() {
         return DataSourceBuilder.create().build();
     }
     
     @Bean(name = "dynamicDataSource")
     @Primary
-    public DynamicDataSource dataSource(DataSource masterDataSource, DataSource slaveDataSource) {
+    public DynamicDataSource dataSource(DataSource remoteDataSource, DataSource localDataSource) {
         Map<Object, Object> targetDataSources = new HashMap<>();
-        targetDataSources.put(DataSourceType.REMOTE.name(), masterDataSource);
-        targetDataSources.put(DataSourceType.LOCAL.name(), slaveDataSource);
-        return new DynamicDataSource(masterDataSource, targetDataSources);
+        targetDataSources.put(DataSourceType.REMOTE.name(), remoteDataSource);
+        targetDataSources.put(DataSourceType.LOCAL.name(), localDataSource);
+        return new DynamicDataSource(remoteDataSource, targetDataSources);
     }
 }
 ```
@@ -519,7 +518,7 @@ public class DataSourceConfig {
 ​		设置拦截数据源的注解，可以设置在具体的类上，或者在具体的方法上
 
 ```java
-package com.mashibing.config;
+package com.mashibing.mult;
 
 import java.lang.annotation.*;
 
@@ -539,7 +538,7 @@ public @interface DataSource {
 ​		通过拦截上面的注解，在其执行之前处理设置当前执行SQL的数据源的信息，CONTEXT_HOLDER.set(dataSourceType)这里的数据源信息从我们设置的注解上面获取信息，如果没有设置就是用默认的数据源的信息。
 
 ```java
-package com.mashibing.config;
+package com.mashibing.mult;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -556,7 +555,7 @@ import java.lang.reflect.Method;
 @Component
 public class DataSourceAspect {
 
-    @Pointcut("@annotation(com.mashibing.config.DataSource)")
+    @Pointcut("@annotation(com.mashibing.mult.DataSource)")
     public void dsPointCut() {
 
     }
@@ -582,22 +581,54 @@ public class DataSourceAspect {
 8、使用切换数据源注解
 
 ```java
-package com.mashibing.contoller;
+package com.mashibing.mult;
 
-import com.mashibing.config.DataSource;
-import com.mashibing.config.DataSourceType;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+import java.util.Map;
 
 
 @RestController
 public class EmpController {
-    @GetMapping("/selectEmp")
+
+    @Autowired
+    JdbcTemplate jdbcTemplate;
+
+    @GetMapping("/local")
     @DataSource(value = DataSourceType.LOCAL)
-    public String selectEmp(){
-       return "ok";
+    public List<Map<String, Object>> local(){
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from emp");
+        return maps;
+    }
+    @GetMapping("/remote")
+    @DataSource(value = DataSourceType.REMOTE)
+    public List<Map<String, Object>> remote(){
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from emp");
+        return maps;
     }
 
+}
+```
+
+9、在启动项目的过程中会发生循环依赖的问题，直接修改启动类即可
+
+```java
+package com.mashibing;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+public class SpringbootDataApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootDataApplication.class, args);
+    }
 }
 ```
 
