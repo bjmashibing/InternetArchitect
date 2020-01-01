@@ -29,7 +29,7 @@ AI人工智能工程师的上课时间：周六下午3点，周六晚上8点
 
 密码：dk2w
 
-docker和k8s资料：[地址](https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug)
+docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 
 密码：zcmq
 

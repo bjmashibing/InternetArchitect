@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    <label th:text="#{login.username}">Username</label>
+    <input type="text"  name="username"  placeholder="Username" th:placeholder="#{login.username}">
+    <label th:text="#{login.password}">Password</label>
+    <input type="password" name="password" placeholder="Password" th:placeholder="#{login.password}">
+    <br> <br>
+    <div>
+        <label>
+            <input type="checkbox" value="remember-me"/> [[#{login.remmber}]]
+        </label>
+    </div>
+    <br>
+    <button  type="submit" th:text="#{login.sign}">Sign in</button>
+    <br> <br>
+    <a th:href="@{/login(language='zh_CN')}">中文</a>
+    <a th:href="@{/login(language='en_US')}">English</a>
+</form>
+</body>
+</html>
