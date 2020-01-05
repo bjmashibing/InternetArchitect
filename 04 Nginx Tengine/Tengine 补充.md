@@ -55,7 +55,7 @@ service ntpd status
 
 
 
-![enter image description here](http://images.gitbook.cn/3312b3d0-1d6b-11e8-a1b7-770e0be79dd9)
+![enter image description here](images/3312b3d0-1d6b-11e8-a1b7-770e0be79dd9)
 
 SSL 能够帮助系统在客户端和服务器之间建立一条安全通信通道。SSL 安全协议是由 Netscape Communication 公司在 1994 年设计开发，SSL 依赖于加密算法、极难窃听、有较高的安全性，因此 SSL 协议已经成为网络上最常用的安全保密通信协议，该安全协议主要用来提供对用户和服务器的认证；对传送的数据进行加密和隐藏；确保数据在传送中不被改变，即数据的完整性，现已成为该领域中全球化的标准。
 
@@ -103,7 +103,7 @@ https://www.charlesproxy.com/latest-release/download.do
 
 CA 是负责签发证书、认证证书、管理已颁发证书的机关。它要制定政策和具体步骤来验证、识别用户身份，并对用户证书进行签名，以确保证书持有者的身份和公钥的拥有权。
 
-![img](https://img.alicdn.com/tfs/TB1JNDiVNjaK1RjSZFAXXbdLFXa-796-76.png)
+![img](images/TB1JNDiVNjaK1RjSZFAXXbdLFXa-796-76.png)
 
 常见的ca厂商
 
@@ -243,7 +243,7 @@ SSL/TSL通过四次握手，主要交换三个信息：
 
 
 
-![img](https://img-blog.csdn.net/20180509165645445?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29keXl5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![img](images/20180509165645445.png)
 
 
 
