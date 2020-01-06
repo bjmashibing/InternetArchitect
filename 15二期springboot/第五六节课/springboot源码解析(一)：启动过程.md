@@ -25,9 +25,9 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
 	this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
     //推断当前 WEB 应用类型，一共有三种：NONE,SERVLET,REACTIVE
 	this.webApplicationType = WebApplicationType.deduceFromClasspath();
-    //设置应用上线文初始化器,从"META-INF/spring.factories"读取ApplicationContextInitializer类的实例名称集合并去重，并进行set去重。（一共5个）
+    //设置应用上线文初始化器,从"META-INF/spring.factories"读取ApplicationContextInitializer类的实例名称集合并去重，并进行set去重。（一共7个）
 	setInitializers((Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class));
-    //设置监听器,从"META-INF/spring.factories"读取ApplicationListener类的实例名称集合并去重，并进行set去重。（一共10个）
+    //设置监听器,从"META-INF/spring.factories"读取ApplicationListener类的实例名称集合并去重，并进行set去重。（一共11个）
 	setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));
     //推断主入口应用类，通过当前调用栈，获取Main方法所在类，并赋值给mainApplicationClass
 	this.mainApplicationClass = deduceMainApplicationClass();

@@ -1,4 +1,4 @@
-# springboot源码解析（一）
+# springboot源码解析(一):启动过程
 
 ### 1、springboot的入口程序
 
@@ -25,9 +25,9 @@ public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySourc
 	this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
     //推断当前 WEB 应用类型，一共有三种：NONE,SERVLET,REACTIVE
 	this.webApplicationType = WebApplicationType.deduceFromClasspath();
-    //设置应用上线文初始化器,从"META-INF/spring.factories"读取ApplicationContextInitializer类的实例名称集合并去重，并进行set去重。（一共5个）
+    //设置应用上线文初始化器,从"META-INF/spring.factories"读取ApplicationContextInitializer类的实例名称集合并去重，并进行set去重。（一共7个）
 	setInitializers((Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class));
-    //设置监听器,从"META-INF/spring.factories"读取ApplicationListener类的实例名称集合并去重，并进行set去重。（一共10个）
+    //设置监听器,从"META-INF/spring.factories"读取ApplicationListener类的实例名称集合并去重，并进行set去重。（一共11个）
 	setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));
     //推断主入口应用类，通过当前调用栈，获取Main方法所在类，并赋值给mainApplicationClass
 	this.mainApplicationClass = deduceMainApplicationClass();
@@ -478,7 +478,7 @@ private void refreshContext(ConfigurableApplicationContext context) {
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
-            //为上下文准备beanfactory，对beanFactory的各种功能进行填充，如@autowired，设置spel表达式解析器，设置西元编辑注册器，添加applicationContextAwareprocessor处理器等等
+            //为上下文准备beanfactory，对beanFactory的各种功能进行填充，如@autowired，设置spel表达式解析器，设置编辑注册器，添加applicationContextAwareprocessor处理器等等
 			prepareBeanFactory(beanFactory);
 
 			try {
@@ -515,7 +515,7 @@ private void refreshContext(ConfigurableApplicationContext context) {
 				finishBeanFactoryInitialization(beanFactory);
 
 				// Last step: publish corresponding event.
-                //发布相关的所有事件
+                //发完成刷新过程，通知声明周期处理器刷新过程，同时发出ContextRefreshEvent通知别人
 				finishRefresh();
 			}
 
@@ -542,7 +542,6 @@ private void refreshContext(ConfigurableApplicationContext context) {
 			}
 		}
 	}
-
 ```
 
 12、应用上下文刷新后置处理
