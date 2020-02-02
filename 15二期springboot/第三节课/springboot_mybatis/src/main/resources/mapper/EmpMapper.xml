@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mashibing.mapper.EmpMapper">
+
+    <select id="selectEmp" resultType="Emp">
+    select * from emp
+  </select>
+
+    <select id="selectEmpById" resultType="Emp">
+    select * from emp where empno = #{empno}
+    </select>
+
+    <insert id="addEmp" parameterType="Emp">
+    insert into emp (empno,ename) values (#{empno},#{ename})
+    </insert>
+
+    <update id="updateEmp" parameterType="Emp">
+    update emp set ename=#{ename} where empno = #{empno}
+    </update>
+
+    <delete id="deleteEmp" parameterType="int">
+    delete from emp where empno = #{empno}
+</delete>
+</mapper>

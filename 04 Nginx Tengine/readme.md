@@ -24,7 +24,7 @@ Nginx ("engine x") 是一个高性能的 **HTTP** 和 **反向代理** 服务器
 
   其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：新浪、网易、腾讯等。
 
-![1562918361888](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1562918361888.png)
+![image-20200103154530929](images/20200103154530929.png)
 
 功能：
 
@@ -527,13 +527,13 @@ location /basic_status {
 
 反向代理（Reverse Proxy）方式是指以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器
 
-![1562928994400](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1562928994400.png)
+![image-20200103154711795](images/image-20200103154711795.png)
 
 #### 经典的反向代理结构
 
-![1562929023224](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1562929023224.png)
 
 
+![image-20200103154652173](images/image-20200103154652173.png)
 
 ```
 Proxy_pass http://192.168.43.152/
