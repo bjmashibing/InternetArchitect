@@ -70,7 +70,7 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 72	网约车项目实战一：乘客用户功能 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385636820489261&type=1024&vid=5285890794866224667)
 77	网约车项目实战二：接口安全设计和分布式锁 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385658295325741&type=1024&vid=5285890795046849433)
 85	网约车项目实战三：消息队列应用 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385692655064109&type=1024&vid=5285890795471293703)
-92  网约车项目实战四：项目小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067192295789613&type=1024&vid=5285890795681263105)
+92    网约车项目实战四：项目小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067192295789613&type=1024&vid=5285890795681263105)
 
 ### 多线程与高并发编程
 41	多线程与高并发编程一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385529446306861&type=1024&vid=5285890793201449862)
@@ -83,6 +83,15 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 74	多线程与高并发编程八 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385645410423853&type=1024&vid=5285890794967826662)
 76	多线程与高并发编程九 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385654000358445&type=1024&vid=5285890795040042548)
 
+### 消息中间件
+
+127  消息中间件-ActiveMQ 01 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067342619644973&type=1024&vid=5285890797618744036)
+129  消息中间件-ActiveMQ 02 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067351209579565&type=1024&vid=5285890797648000488)
+130  消息中间件-ActiveMQ 03 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067355504546861&type=1024&vid=5285890797801304966)
+131  消息中间件-ActiveMQ 04 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067359799514157&type=1024&vid=5285890797855910122)
+132  消息中间件-ActiveMQ 05 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067364094481453&type=1024&vid=5285890797958593897)
+133  消息中间件-ActiveMQ 06 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067368389448749&type=1024&vid=5285890798408980736)
+134  消息中间件-ActiveMQ 07 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067372684416045&type=1024&vid=5285890798483964676)
 
 ### Spring源码分析
 18	Spring源码-源码概览 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3665578493875245&type=1024&vid=5285890793322671596)
