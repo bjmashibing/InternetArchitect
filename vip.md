@@ -261,11 +261,11 @@ mysql有道云笔记的连接：文档：MySQL
 1.	架构师高级技能kubernetes入门到精通，[课程链接]()，[资料地址]()
 
 ##  以下课程是在VIP大课截取，VIP学员不必观看
-1.	自定义注解，[课程链接]()，[资料地址]()
-1.	JDK8新特性-stream api，[课程链接]()，[资料地址]()
-1.	JDK8新特性～lambda表达式，[课程链接]()，[资料地址]()
+1.	自定义注解，[课程链接](https://ke.qq.com/course/458641?tuin=6e67ea5e)，[资料地址]()
+1.	JDK8新特性-stream api，[课程链接](https://ke.qq.com/course/458646?tuin=6e67ea5e)，[资料地址]()
+1.	JDK8新特性～lambda表达式，[课程链接](https://ke.qq.com/course/458630?tuin=6e67ea5e)，[资料地址]()
 1.	高并发高可用lvs+keepalived分布式架构师前修课，[课程链接](https://ke.qq.com/course/458615?tuin=a75a5977)，[资料地址]()
-1.	全网最新redis+zookeeper架构师必修课，[课程链接]()，[资料地址]()
+1.	全网最新redis+zookeeper架构师必修课，[课程链接](https://ke.qq.com/course/458724?tuin=6e67ea5e)，[资料地址]()
 1.	Hadoop零基础从入门到精通，[课程链接](https://ke.qq.com/course/432890?tuin=a75a5977)
 1.	Java web【马士兵教育】，[课程链接](https://ke.qq.com/course/422068?tuin=a75a5977)
 
