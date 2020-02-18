@@ -7,7 +7,7 @@
 
 
 
-官方网站**
+**官方网站**
 
 http://rocketmq.apache.org
 
@@ -146,6 +146,10 @@ mvn -Prelease-all -DskipTests clean install -U
 #### 下载
 
 https://github.com/apache/rocketmq-externals
+
+**中文指南**
+
+https://github.com/apache/rocketmq-externals/blob/master/rocketmq-console/doc/1_0_0/UserGuide_CN.md
 
 #### 上传到服务器并解压缩
 
