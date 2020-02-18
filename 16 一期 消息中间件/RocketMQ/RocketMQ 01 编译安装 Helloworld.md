@@ -165,6 +165,8 @@ mvn clean package -Dmaven.test.skip=true
 
 #### 启动
 
+
+
 编译成功后在`rocketmq-console/target`目录下执行`rocketmq-console-ng-1.0.1.jar`
 
 启动时，直接动态添加`nameserver`地址或编辑`application.properties`添加属性
