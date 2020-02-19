@@ -91,6 +91,8 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 131  消息中间件-ActiveMQ 04 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067359799514157&type=1024&vid=5285890797855910122)
 133  消息中间件-ActiveMQ 05 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067368389448749&type=1024&vid=5285890798408980736)
 134  消息中间件-ActiveMQ 06 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067372684416045&type=1024&vid=5285890798483964676)
+135  消息中间件-ActiveMQ 07 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067376979383341&type=1024&vid=5285890798593302228)
+136  消息中间件-ActiveMQ 08 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067381274350637&type=1024&vid=5285890798667036503)
 
 ### Spring源码分析
 18	Spring源码-源码概览 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3665578493875245&type=1024&vid=5285890793322671596)
@@ -112,6 +114,7 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 101  Netty之内存管理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067230950495277&type=1024&vid=5285890796098401636)
 109  Netty之内存管理二[地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067265310233645&type=1024&vid=5285890796550106193)
 118  NETTY小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067303964939309&type=1024&vid=5285890796973596740)
+137  Netty 内存管理 （netty源码） [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067385569317933&type=1024&vid=5285890798755934697)
 
 ### JVM
 80	JVM入门级class文件格式 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385671180227629&type=1024&vid=5285890795254417183)
@@ -242,8 +245,10 @@ mysql有道云笔记的连接：文档：MySQL
 ### 网约车项目
 
 19 网约车项目一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185729098191917&type=1024&vid=5285890797675722327)
-
 20 网约车项目二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185733393159213&type=1024&vid=5285890797908496068)
+21 网约车项目三 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185737688126509&type=1024&vid=5285890798297399505)
+22 网约车项目四 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185741983093805&type=1024&vid=5285890798557419555)
+23 网约车项目五 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185746278061101&type=1024&vid=5285890798818937191)
 
 ##  课程包中的小课
 
