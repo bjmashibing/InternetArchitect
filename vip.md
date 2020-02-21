@@ -180,7 +180,7 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 
 ### 架构师前置知识
 
-4 spring,ioc入门与详解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067299669972013&type=1024&vid=5285890796964066182)
+4 spring,ioc入门与详解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385404892255277&type=1024&vid=5285890790625135834)
 5 maven的简单构建，springaop [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385409187222573&type=1024&vid=5285890790630114912)
 6 spring中的循环依赖、代理方式讲解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385413482189869&type=1024&vid=5285890790589942447)
 7 springboot mvc项目结构、开发、热部署 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385417777157165&type=1024&vid=5285890790511540996)
@@ -264,6 +264,7 @@ mysql有道云笔记的连接：文档：MySQL
 1.	马士兵Java零基础入门【马士兵教育】，[课程链接](https://ke.qq.com/course/421576?taid=3640328381165256&tuin=a75a5977)
 1.	架构师必备技能doker入门到专精，[课程链接](https://ke.qq.com/course/458623?tuin=a75a5977)，[资料地址]()
 1.	架构师高级技能kubernetes入门到精通，[课程链接]()，[资料地址]()
+1.	PMP大讲堂之：TDD在敏捷开发中的最佳实践，[视频地址](链接：https://pan.baidu.com/s/1ZAifDHBKYpnEsLoQ794SRg )     密码：y5fe
 
 ##  以下课程是在VIP大课截取，VIP学员不必观看
 1.	自定义注解，[课程链接](https://ke.qq.com/course/458641?tuin=6e67ea5e)，[资料地址]()
