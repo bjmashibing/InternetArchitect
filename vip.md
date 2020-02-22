@@ -180,7 +180,7 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 
 ### 架构师前置知识
 
-4 spring,ioc入门与详解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067299669972013&type=1024&vid=5285890796964066182)
+4 spring,ioc入门与详解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385404892255277&type=1024&vid=5285890790625135834)
 5 maven的简单构建，springaop [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385409187222573&type=1024&vid=5285890790630114912)
 6 spring中的循环依赖、代理方式讲解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385413482189869&type=1024&vid=5285890790589942447)
 7 springboot mvc项目结构、开发、热部署 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385417777157165&type=1024&vid=5285890790511540996)
@@ -216,6 +216,10 @@ mysql视频：链接：https://pan.baidu.com/s/1M5ztqdYJAoHaU__Z2oX_hA
 mysql有道云笔记的连接：文档：MySQL
 链接：http://note.youdao.com/noteshare?id=764336de06a157bbdffe5fb89ad7b733
 ```
+
+### PMP大讲堂之：TDD在敏捷开发中的最佳实践，[视频地址](链接：https://pan.baidu.com/s/1ZAifDHBKYpnEsLoQ794SRg )     密码：y5fe
+
+
 
 # 架构二期课程每阶段对应目录章节(持续更新中)：
 

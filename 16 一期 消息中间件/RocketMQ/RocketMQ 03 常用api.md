@@ -194,6 +194,78 @@ messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
 message.setDelayTimeLevel(1); 
 ```
 
+
+
+### 顺序消费
+
+队列先天支持FIFO模型，单一生产和消费者下只要保证使用`MessageListenerOrderly`监听器即可
+
+顺序消费表示消息消费的顺序同生产者为每个消息队列发送的顺序一致，所以如果正在处理全局顺序是强制性的场景，需要确保使用的主题只有一个消息队列。
+
+并行消费不再保证消息顺序，消费的最大并行数量受每个消费者客户端指定的线程池限制。
+
+那么只要顺序的发送，再保证一个线程只去消费一个队列上的消息，那么他就是有序的。
+
+
+
+跟普通消息相比，顺序消息的使用需要在producer的send()方法中添加MessageQueueSelector接口的实现类，并重写select选择使用的队列，因为顺序消息局部顺序，需要将所有消息指定发送到同一队列中。
+
+
+
+**保证有序参与因素**
+
+- FIFO
+- 队列内保证有序
+- 消费线程
+
+
+
+### 重试机制
+
+#### producer
+
+**默认超时时间**
+
+```
+    /**
+     * Timeout for sending messages.
+     */
+    private int sendMsgTimeout = 3000;
+```
+
+		// 异步发送时 重试次数，默认 2
+		producer.setRetryTimesWhenSendAsyncFailed(1);
+		// 同步发送时 重试次数，默认 2
+		producer.setRetryTimesWhenSendFailed(1);	
+		
+		// 是否向其他broker发送请求 默认false
+		producer.setRetryAnotherBrokerWhenNotStoreOK(true);
+#### Consumer
+
+消费超时，单位分钟
+
+`consumer.setConsumeTimeout()`
+
+发送ack，消费失败
+
+`RECONSUME_LATER`
+
+#### broker投递
+
+只有在消息模式为MessageModel.CLUSTERING集群模式时，Broker才会自动进行重试，广播消息不重试
+
+重投使用`messageDelayLevel`
+
+默认值
+
+```
+messageDelayLevel	1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+```
+
+
+
+
+
 ### 事务消息
 
 分布式系统中的事务可以使用TCC（Try、Confirm、Cancel）、2pc来解决分布式系统中的消息原子性
@@ -204,7 +276,7 @@ RocketMQ 4.3+提供分布事务功能，通过 RocketMQ 事务消息能达到分
 
 **Half Message：**预处理消息，当broker收到此类消息后，会存储到RMQ_SYS_TRANS_HALF_TOPIC的消息消费队列中
 
-**检查事务状态：**Broker会开启一个定时任务，消费RMQ_SYS_TRANS_HALF_TOPIC队列中的消息，每次执行任务会向消息发送者确认事务执行状态（提交、回滚、未知），如果是未知，等待下一次回差。
+**检查事务状态：**Broker会开启一个定时任务，消费RMQ_SYS_TRANS_HALF_TOPIC队列中的消息，每次执行任务会向消息发送者确认事务执行状态（提交、回滚、未知），如果是未知，等待下一次回调。
 
 **超时：**如果超过回查次数，默认回滚消息
 
@@ -231,3 +303,8 @@ broker将发送检查消息来检查事务状态，并将调用此方法来获�
 **LocalTransactionState.UNKNOW**
 
 暂时为未知状态，等待broker回查
+
+
+
+
+
