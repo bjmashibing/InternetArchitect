@@ -45,7 +45,7 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 1.  D：AI人工智能工程师，[统一访问GitHub仓库中的]()
 1.  E：JVM资料，[统一访问GitHub仓库中的JVM库](https://github.com/bjmashibing/JVM)
 ##### 后端、大数据、AI无需跳跃，按顺序学习即可
-## 架构师知识点视频观看顺序(持续更新中)：
+## 架构一期课程每阶段对应目录章节(持续更新中)：
 ### 网络到分布式
 24	高并发负载均衡：网络协议原理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385473611732013&type=1024&vid=5285890793326178319)
 25	高并发负载均衡：LVS的DR,TUN,NAT模型推导 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385477906699309&type=1024&vid=5285890791944493841)
@@ -70,7 +70,7 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 72	网约车项目实战一：乘客用户功能 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385636820489261&type=1024&vid=5285890794866224667)
 77	网约车项目实战二：接口安全设计和分布式锁 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385658295325741&type=1024&vid=5285890795046849433)
 85	网约车项目实战三：消息队列应用 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385692655064109&type=1024&vid=5285890795471293703)
-92  网约车项目实战四：项目小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067192295789613&type=1024&vid=5285890795681263105)
+92    网约车项目实战四：项目小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067192295789613&type=1024&vid=5285890795681263105)
 
 ### 多线程与高并发编程
 41	多线程与高并发编程一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385529446306861&type=1024&vid=5285890793201449862)
@@ -83,6 +83,16 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 74	多线程与高并发编程八 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385645410423853&type=1024&vid=5285890794967826662)
 76	多线程与高并发编程九 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385654000358445&type=1024&vid=5285890795040042548)
 
+### 消息中间件
+
+127  消息中间件-ActiveMQ 01 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067342619644973&type=1024&vid=5285890797618744036)
+129  消息中间件-ActiveMQ 02 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067351209579565&type=1024&vid=5285890797648000488)
+130  消息中间件-ActiveMQ 03 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067355504546861&type=1024&vid=5285890797801304966)
+131  消息中间件-ActiveMQ 04 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067359799514157&type=1024&vid=5285890797855910122)
+133  消息中间件-ActiveMQ 05 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067368389448749&type=1024&vid=5285890798408980736)
+134  消息中间件-ActiveMQ 06 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067372684416045&type=1024&vid=5285890798483964676)
+135  消息中间件-ActiveMQ 07 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067376979383341&type=1024&vid=5285890798593302228)
+136  消息中间件-ActiveMQ 08 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067381274350637&type=1024&vid=5285890798667036503)
 
 ### Spring源码分析
 18	Spring源码-源码概览 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3665578493875245&type=1024&vid=5285890793322671596)
@@ -99,21 +109,26 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 ### NIO & Netty
 81	Java NIO 一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385675475194925&type=1024&vid=5285890795284954411)
 84	Java NIO 二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385688360096813&type=1024&vid=5285890795463737756)
-91  NIO之ByteBuffer [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067188000822317&type=1024&vid=5285890795677757727)
-96  Netty 之NIO selector [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067209475658797&type=1024&vid=5285890795889357665)
-101 Netty之内存管理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067230950495277&type=1024&vid=5285890796098401636)
-109 Netty之内存管理二[地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067265310233645&type=1024&vid=5285890796550106193)
-118 NETTY小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067303964939309&type=1024&vid=5285890796973596740)
+91    NIO之ByteBuffer [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067188000822317&type=1024&vid=5285890795677757727)
+96    Netty 之NIO selector [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067209475658797&type=1024&vid=5285890795889357665)
+101  Netty之内存管理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067230950495277&type=1024&vid=5285890796098401636)
+109  Netty之内存管理二[地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067265310233645&type=1024&vid=5285890796550106193)
+118  NETTY小结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067303964939309&type=1024&vid=5285890796973596740)
+137  Netty 内存管理 （netty源码） [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067385569317933&type=1024&vid=5285890798755934697)
 
 ### JVM
 80	JVM入门级class文件格式 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385671180227629&type=1024&vid=5285890795254417183)
 86	详解Class加载过程 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385696950031405&type=1024&vid=5285890795495098927)
-93  Java内存模型 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067196590756909&type=1024&vid=5285890795710259061)
-97  内存屏障与JVM指令 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067213770626093&type=1024&vid=5285890795920195540)
-102 Java运行时数据区和常用指令  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067235245462573&type=1024&vid=5285890796130155429)
-110 JVM调优必备理论知识-GC Collector-三色标记  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067269605200941&type=1024&vid=5285890796558161975)
-114 JVM调优实战 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067286785070125&type=1024&vid=5285890796770442292)
-119 JVM实战调优 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067308259906605&type=1024&vid=5285890797005699401)
+93    Java内存模型 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067196590756909&type=1024&vid=5285890795710259061)
+97    内存屏障与JVM指令 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067213770626093&type=1024&vid=5285890795920195540)
+102  Java运行时数据区和常用指令  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067235245462573&type=1024&vid=5285890796130155429)
+110  JVM调优必备理论知识-GC Collector-三色标记  [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067269605200941&type=1024&vid=5285890796558161975)
+114  JVM调优实战 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067286785070125&type=1024&vid=5285890796770442292)
+119  JVM实战调优 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067308259906605&type=1024&vid=5285890797005699401)
+124  JVM实战调优 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067329734743085&type=1024&vid=5285890797384112958)
+128  垃圾回收算法串讲 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067346914612269&type=1024&vid=5285890797630925075)
+132  JVM常见参数总结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067364094481453&type=1024&vid=5285890797958593897)
+
 
 ### 亿级流量多级缓存高并发系统架构实战
 
@@ -143,7 +158,7 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 105 resty_template,静态文件补偿机制实现 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067248130364461&type=1024&vid=5285890796299478231)
 106 亿级流量高并发项目总结 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067252425331757&type=1024&vid=5285890796391731488)
 
-### mysql调优
+## mysql调优
 
 107 精通mysql调优大师班一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067256720299053&type=1024&vid=5285890796450429140)
 108 精通mysql调优大师班二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067261015266349&type=1024&vid=5285890796510158724)
@@ -154,9 +169,18 @@ docker和k8s资料：[地址]( https://pan.baidu.com/s/12T37i2xKFzS4wEsBVfn0ug )
 116 精通mysql调优大师班七 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067295375004717&type=1024&vid=5285890796905611672)
 117 精通mysql调优大师班八 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067299669972013&type=1024&vid=5285890796964066182)
 
+### 区块链
+
+120 区块链-比特币、挖矿、炒币原理(1) [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067312554873901&type=1024&vid=5285890797052447190)
+121 区块链-比特币、挖矿、炒币原理(2) [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067316849841197&type=1024&vid=5285890797111429226)
+122 区块链-以太坊原理 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067321144808493&type=1024&vid=5285890797169219172)
+123 区块链-幽灵协议，pow，pos [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067325439775789&type=1024&vid=5285890797257969276)
+125 区块链-DPOS共识协议，solidity智能合约开发 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067334029710381&type=1024&vid=5285890797401704704)
+126 区块链-solidity手写加密货币 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067338324677677&type=1024&vid=5285890797502304978)
+
 ### 架构师前置知识
 
-4 spring,ioc入门与详解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=4067299669972013&type=1024&vid=5285890796964066182)
+4 spring,ioc入门与详解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385404892255277&type=1024&vid=5285890790625135834)
 5 maven的简单构建，springaop [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385409187222573&type=1024&vid=5285890790630114912)
 6 spring中的循环依赖、代理方式讲解 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385413482189869&type=1024&vid=5285890790589942447)
 7 springboot mvc项目结构、开发、热部署 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100475149&taid=3385417777157165&type=1024&vid=5285890790511540996)
@@ -193,6 +217,43 @@ mysql有道云笔记的连接：文档：MySQL
 链接：http://note.youdao.com/noteshare?id=764336de06a157bbdffe5fb89ad7b733
 ```
 
+### PMP大讲堂之：TDD在敏捷开发中的最佳实践，[视频地址](链接：https://pan.baidu.com/s/1ZAifDHBKYpnEsLoQ794SRg )     密码：y5fe
+
+
+
+# 架构二期课程每阶段对应目录章节(持续更新中)：
+
+### Java游戏开发
+
+2  创建 Netty 服务器 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185656083747885&type=1024&vid=5285890796421259974)
+3  Protobuf 消息应用 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185660378715181&type=1024&vid=5285890796480593357)
+4  重构，设计模式实战 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185664673682477&type=1024&vid=5285890796569015277)
+5  通过 Javassist 提升反射效率 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185668968649773&type=1024&vid=5285890796628391162)
+6  重新设计移动消息 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185673263617069&type=1024&vid=5285890796730368428)
+7  游戏服务器中的单线程设计 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185677558584365&type=1024&vid=5285890796819334080)
+8  多线程读写数据库 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185681853551661&type=1024&vid=5285890796877116049)
+9  利用RocketMQ 实现简单的排行榜 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185686148518957&type=1024&vid=5285890796936155669)
+10 游戏服务器的部署 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185690443486253&type=1024&vid=5285890797024197969)
+
+### springboot
+
+11 架构体系讲解及springboot入门 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185694738453549&type=1024&vid=5285890797081447599)
+12 springboot  web开发 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185699033420845&type=1024&vid=5285890797218126105)
+13 springboot-thymeleaf及数据源配置 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185703328388141&type=1024&vid=5285890797229364178)
+14 springboot启动源码解析一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185707623355437&type=1024&vid=5285890797343966192)
+15 springboot启动源码解析二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185711918322733&type=1024&vid=5285890797420877897)
+16 springboot启动源码解析三 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185716213290029&type=1024&vid=5285890797431520693)
+17 springboot自动装配源码解析 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185720508257325&type=1024&vid=5285890797531324996)
+18 springboot与tomcat整合源码解析 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185724803224621&type=1024&vid=5285890797589178594)
+
+### 网约车项目
+
+19 网约车项目一 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185729098191917&type=1024&vid=5285890797675722327)
+20 网约车项目二 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185733393159213&type=1024&vid=5285890797908496068)
+21 网约车项目三 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185737688126509&type=1024&vid=5285890798297399505)
+22 网约车项目四 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185741983093805&type=1024&vid=5285890798557419555)
+23 网约车项目五 [地址](https://ke.qq.com/webcourse/index.html#cid=398381&term_id=100558952&taid=4185746278061101&type=1024&vid=5285890798818937191)
+
 ##  课程包中的小课
 
 1.	多线程与高并发，[课程链接](https://ke.qq.com/course/446547?tuin=a75a5977)，[资料地址](http://www.github.com/bjmashibing/JUC)
@@ -209,11 +270,11 @@ mysql有道云笔记的连接：文档：MySQL
 1.	架构师高级技能kubernetes入门到精通，[课程链接]()，[资料地址]()
 
 ##  以下课程是在VIP大课截取，VIP学员不必观看
-1.	自定义注解，[课程链接]()，[资料地址]()
-1.	JDK8新特性-stream api，[课程链接]()，[资料地址]()
-1.	JDK8新特性～lambda表达式，[课程链接]()，[资料地址]()
+1.	自定义注解，[课程链接](https://ke.qq.com/course/458641?tuin=6e67ea5e)，[资料地址]()
+1.	JDK8新特性-stream api，[课程链接](https://ke.qq.com/course/458646?tuin=6e67ea5e)，[资料地址]()
+1.	JDK8新特性～lambda表达式，[课程链接](https://ke.qq.com/course/458630?tuin=6e67ea5e)，[资料地址]()
 1.	高并发高可用lvs+keepalived分布式架构师前修课，[课程链接](https://ke.qq.com/course/458615?tuin=a75a5977)，[资料地址]()
-1.	全网最新redis+zookeeper架构师必修课，[课程链接]()，[资料地址]()
+1.	全网最新redis+zookeeper架构师必修课，[课程链接](https://ke.qq.com/course/458724?tuin=6e67ea5e)，[资料地址]()
 1.	Hadoop零基础从入门到精通，[课程链接](https://ke.qq.com/course/432890?tuin=a75a5977)
 1.	Java web【马士兵教育】，[课程链接](https://ke.qq.com/course/422068?tuin=a75a5977)
 
