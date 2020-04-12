@@ -430,8 +430,6 @@ Eureka Server通过自我保护模式来解决整个问题，当Server在短时�
 
 
 
-
-
 自我保护机制的触发条件：
 （当每分钟心跳次数( renewsLastMin ) 小于 numberOfRenewsPerMinThreshold 时，并且开启自动保护模式开关( eureka.server.enable-self-preservation = true ) 时，触发自我保护机制，不再自动过期租约。）
 numberOfRenewsPerMinThreshold = expectedNumberOfRenewsPerMin * 续租百分比( eureka.server.renewalPercentThreshold, 默认0.85 )
