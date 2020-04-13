@@ -739,6 +739,14 @@ RestTemplate是Spring提供的同步HTTP网络客户端接口，它可以简化�
 第四个层次（Level 3）的 Web 服务使用 HATEOAS。在资源的表达中包含了链接信息。客户端可以根据链接来发现可以执行的动作。
 ```
 
+**git的restful api**
+
+https://developer.github.com/v3/
+
+
+
+
+
 ## 作业：
 
 - 使用ribbon完成负载均衡的调用

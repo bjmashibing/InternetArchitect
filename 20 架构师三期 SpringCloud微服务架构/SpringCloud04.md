@@ -31,7 +31,6 @@ getForEntity方法的返回值是一个ResponseEntity，ResponseEntity是Spring�
 
 ```
 <200,Hi,[Content-Type:"text/plain;charset=UTF-8", Content-Length:"8", Date:"Fri, 10 Apr 2020 09:58:44 GMT", Keep-Alive:"timeout=60", Connection:"keep-alive"]>
-
 ```
 
 
