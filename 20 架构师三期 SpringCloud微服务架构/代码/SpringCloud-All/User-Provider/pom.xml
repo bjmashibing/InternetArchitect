@@ -8,10 +8,10 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mashibing.eureka-server</groupId>
-	<artifactId>Eureka-Consumer</artifactId>
+	<groupId>com.mashibing.User-Provider</groupId>
+	<artifactId>User-Provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Eureka-Consumer</name>
+	<name>User-Provider</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -28,7 +28,12 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
+		<!-- 引入自定义的API -->
+		<dependency>
+			<groupId>com.mashibing.User-API</groupId>
+			<artifactId>User-API</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -39,10 +44,6 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
 
