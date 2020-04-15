@@ -40,6 +40,12 @@
 			<artifactId>User-API</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		
+		<!-- HttpClient 实现 -->
+		<dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -50,6 +56,12 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>
+				spring-cloud-starter-netflix-hystrix
+			</artifactId>
 		</dependency>
 	</dependencies>
 
