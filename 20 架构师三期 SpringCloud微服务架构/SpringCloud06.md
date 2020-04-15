@@ -233,7 +233,7 @@ Feign默认支持Ribbon；Ribbon的重试机制和Feign的重试机制有冲突�
 ```
 #连接超时时间(ms)
 ribbon.ConnectTimeout=1000
-#通信超时时间(ms)
+#业务逻辑超时时间(ms)
 ribbon.ReadTimeout=6000
 ```
 
@@ -414,3 +414,10 @@ public class AliveBack implements ConsumerApi{
 
 ```
 
+## 作业：
+
+
+
+Feign 远程调用 必须自己敲
+
+自己整合 RestTemplate 、整合Feign
