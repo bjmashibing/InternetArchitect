@@ -372,6 +372,14 @@ public class HystrixTest extends HystrixCommand {
 
 ### 整合Feign
 
+#### 配置
+
+```
+feign.hystrix.enabled=true
+```
+
+
+
 #### 接口
 
 ```
@@ -414,10 +422,176 @@ public class AliveBack implements ConsumerApi{
 
 ```
 
+
+
+### 使用fallbackFactory检查具体错误
+
+#### 实现类
+
+```java
+package com.mashibing.UserConsumer;
+
+import java.util.Map;
+
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.springframework.stereotype.Component;
+
+import com.mashibing.UserAPI.Person;
+
+import feign.hystrix.FallbackFactory;
+
+@Component
+public class WebError implements FallbackFactory<ConsumerApi> {
+
+	@Override
+	public ConsumerApi create(Throwable cause) {
+		// TODO Auto-generated method stub
+		return new ConsumerApi() {
+			
+			@Override
+			public Person postPserson(Person person) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public String getById(Integer id) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public String alive() {
+				// TODO Auto-generated method stub
+				System.out.println(cause.getLocalizedMessage());
+				cause.printStackTrace();
+				return ToStringBuilder.reflectionToString(cause);
+			}
+			
+			@Override
+			public Map<Integer, String> postMap(Map<String, Object> map) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Map<Integer, String> getMap3(Map<String, Object> map) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Map<Integer, String> getMap2(Integer id, String name) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Map<Integer, String> getMap(Integer id) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		};
+	}
+
+}
+
+```
+
+
+
+#### 针对不同异常返回响应
+
+```java
+			@Override
+			public String alive() {
+				// TODO Auto-generated method stub
+				System.out.println(cause);
+				if(cause instanceof InternalServerError) {
+					System.out.println("InternalServerError");
+					return "远程服务报错";
+				}else if(cause instanceof RuntimeException) {
+					
+					return "请求时异常：" + cause;
+				}else {
+					return "都算不上";
+				}
+			}
+```
+
+### 信号量隔离与线程隔离
+
+
+
+默认情况下hystrix使用线程池控制请求隔离
+
+线程池隔离技术，是用 Hystrix 自己的线程去执行调用；而信号量隔离技术，是直接让 tomcat 线程去调用依赖服务。信号量隔离，只是一道关卡，信号量有多少，就允许多少个 tomcat 线程通过它，然后去执行。
+
+
+
+信号量隔离主要维护的是Tomcat的线程，不需要内部线程池，更加轻量级。
+
+配置
+
+```
+hystrix.command.default.execution.isolation.strategy 隔离策略，默认是Thread, 可选Thread｜Semaphore
+thread 通过线程数量来限制并发请求数，可以提供额外的保护，但有一定的延迟。一般用于网络调用
+semaphore 通过semaphore count来限制并发请求数，适用于无网络的高并发请求
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds 命令执行超时时间，默认1000ms
+hystrix.command.default.execution.timeout.enabled 执行是否启用超时，默认启用true
+hystrix.command.default.execution.isolation.thread.interruptOnTimeout 发生超时是是否中断，默认true
+hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests 最大并发请求数，默认10，该参数当使用ExecutionIsolationStrategy.SEMAPHORE策略时才有效。如果达到最大并发请求数，请求会被拒绝。理论上选择semaphore size的原则和选择thread size一致，但选用semaphore时每次执行的单元要比较小且执行速度快（ms级别），否则的话应该用thread。
+semaphore应该占整个容器（tomcat）的线程池的一小部分。
+```
+
+
+
+#### Feign下配置
+
+```
+hystrix.command.default.execution.isolation.strategy=SEMAPHORE
+```
+
+
+
+### 开启dashboard
+
+启动类
+
+```
+@EnableHystrixDashboard
+```
+
+
+
+引入依赖
+
+```
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>
+				spring-cloud-starter-netflix-hystrix-dashboard
+			</artifactId>
+		</dependency>
+		
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+
+健康上报
+
+http://localhost:90/actuator/hystrix.stream
+
+图形化
+
+http://localhost:90/hystrix
+
+
+
 ## 作业：
 
+整合Feign fallback 
 
-
-Feign 远程调用 必须自己敲
-
-自己整合 RestTemplate 、整合Feign
+zuul 配出来
