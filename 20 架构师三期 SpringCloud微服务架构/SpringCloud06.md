@@ -595,3 +595,31 @@ http://localhost:90/hystrix
 整合Feign fallback 
 
 zuul 配出来
+
+
+
+
+
+
+
+老师，我还是不太明白，线程隔离怎么能和调一个宕机得服务走failback联系在一起
+
+编程界首帅
+
+
+
+
+
+restTemplate 与Hystrix 结合为啥不能在controller写，刚才没说
+
+wensan-
+
+
+
+
+
+
+
+worker线程hang住了等请求返回，用信号量和线程池都是要等最终业务逻辑执行啊，没区别啊，为什么要考虑io阻塞呢
+
+烬初
