@@ -24,27 +24,27 @@ CREATE TABLE `Student`(
     `s_birth` VARCHAR(20) NOT NULL DEFAULT '',
     `s_sex` VARCHAR(10) NOT NULL DEFAULT '',
     PRIMARY KEY(`s_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --课程表
 CREATE TABLE `Course`(
     `c_id`  VARCHAR(20),
     `c_name` VARCHAR(20) NOT NULL DEFAULT '',
     `t_id` VARCHAR(20) NOT NULL,
     PRIMARY KEY(`c_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --教师表
 CREATE TABLE `Teacher`(
     `t_id` VARCHAR(20),
     `t_name` VARCHAR(20) NOT NULL DEFAULT '',
     PRIMARY KEY(`t_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --成绩表
 CREATE TABLE `Score`(
     `s_id` VARCHAR(20),
     `c_id`  VARCHAR(20),
     `s_score` INT(3),
     PRIMARY KEY(`s_id`,`c_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --插入学生表测试数据
 insert into Student values('01' , '赵雷' , '1990-01-01' , '男');
 insert into Student values('02' , '钱电' , '1990-12-21' , '男');
@@ -88,9 +88,9 @@ insert into Score values('07' , '03' , 98);
 ```sql
 -- 1、查询"01"课程比"02"课程成绩高的学生的信息及课程分数  
 select a.* ,b.s_score as 01_score,c.s_score as 02_score from 
-    student a 
-    join score b on a.s_id=b.s_id and b.c_id='01'
-    left join score c on a.s_id=c.s_id and c.c_id='02' or c.c_id = NULL where b.s_score>c.s_score
+    Student a 
+    join Score b on a.s_id=b.s_id and b.c_id='01'
+    left join Score c on a.s_id=c.s_id and c.c_id='02' or c.c_id = NULL where b.s_score>c.s_score
 -- 2、查询"01"课程比"02"课程成绩低的学生的信息及课程分数 
 select a.* ,b.s_score as 01_score,c.s_score as 02_score from 
     student a left join score b on a.s_id=b.s_id and b.c_id='01' or b.c_id=NULL 
@@ -321,17 +321,17 @@ from (select s_id,SUM(s_score) as sum_score from score GROUP BY s_id ORDER BY su
         -- 查询最高分（可能有相同分数）
         select MAX(s_score) from score where c_id='02'
         -- 查询信息
-        select a.*,b.s_score,b.c_id,c.c_name from student a
-            LEFT JOIN score b on a.s_id = b.s_id
-            LEFT JOIN course c on b.c_id=c.c_id
-            where b.c_id =(select c_id from course c,teacher d where c.t_id=d.t_id and d.t_name='张三')
-            and b.s_score in (select MAX(s_score) from score where c_id='02')
+        select a.*,b.s_score,b.c_id,c.c_name from Student a
+            LEFT JOIN Score b on a.s_id = b.s_id
+            LEFT JOIN Course c on b.c_id=c.c_id
+            where b.c_id =(select c_id from Course c,Teacher d where c.t_id=d.t_id and d.t_name='张三')
+            and b.s_score in (select MAX(s_score) from Score where c_id=(select c_id from Course c,Teacher d where c.t_id=d.t_id and d.t_name='张三'))
 -- 41、查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩 
     select DISTINCT b.s_id,b.c_id,b.s_score from score a,score b where a.c_id != b.c_id and a.s_score = b.s_score
 -- 42、查询每门功成绩最好的前两名 
         -- 牛逼的写法
-    select a.s_id,a.c_id,a.s_score from score a
-        where (select COUNT(1) from score b where b.c_id=a.c_id and b.s_score>=a.s_score)<=2 ORDER BY a.c_id
+    select a.s_id,a.c_id,a.s_score from Score a
+        where (select COUNT(1) from Score b where b.c_id=a.c_id and b.s_score>=a.s_score)<=2 ORDER BY a.c_id
 -- 43、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列  
         select c_id,count(*) as total from score GROUP BY c_id HAVING total>5 ORDER BY total,c_id ASC
 -- 44、检索至少选修两门课程的学生学号 
