@@ -33,8 +33,6 @@ JSONP只支持`GET`请求，CORS支持所有类型的HTTP请求。JSONP的优势
 Shiro 是 Java 的一个安全框架。目前，使用 Apache Shiro 的人越来越多，因为它相 当简单，对比 Spring
 Security，可能没有 Spring Security 做的功能强大，但是在实际工作时 可能并不需要那么复杂的东西，所以使用小而简单的Shiro 就足够了。
 
-![img](../../../images-02/37eb00020300d0856a0e.jpg)
-
 
 
 认证
@@ -148,7 +146,7 @@ https://spring.io/projects/spring-security
 
 #### 启动项目
 
-![image-20200508165901345](images/image-20200508165901345.png)
+![image-20200508165901345](../images/image-20200508165901345.png)
 
 启动成功后会生成一个默认密码
 
@@ -194,7 +192,7 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-多用户
+##### 基于内存存储的多用户
 
 ```
 		auth.inMemoryAuthentication()
@@ -206,6 +204,62 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 			.password("444")
 			.roles("xxoo");
 ```
+
+
+
+
+
+或者
+
+```
+	@Bean
+	public UserDetailsService userDetailsService() {
+		
+		
+		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
+
+		User user = new User("a", new BCryptPasswordEncoder().encode("1"), true, true, true, true, Collections.singletonList(new SimpleGrantedAuthority("xx")));
+		manager.createUser(user);
+		manager.createUser(User.withUsername("yiming").password(new BCryptPasswordEncoder().encode("xx")).roles("xxz").build());
+		return manager;
+	
+	}
+```
+
+
+
+### Security中的User对象
+
+```java
+	private String password;
+	private final String username;
+	private final Set<GrantedAuthority> authorities;
+	private final boolean accountNonExpired;
+	private final boolean accountNonLocked;
+	private final boolean credentialsNonExpired;
+	private final boolean enabled;
+```
+
+### Session中存储的对象
+
+```
+		Enumeration<String> attributeNames = request.getSession().getAttributeNames();
+		
+		
+//		while (attributeNames.hasMoreElements()) {
+//			String string = (String) attributeNames.nextElement();
+//			System.out.println(string);
+//			System.out.println(request.getSession().getAttribute(string));
+//			
+//		}
+		
+		SecurityContext attribute = (SecurityContext)request.getSession().getAttribute("SPRING_SECURITY_CONTEXT");
+		System.out.println(attribute.getAuthentication().getAuthorities());
+```
+
+
+
+
 
 ### 忽略静态请求
 
@@ -232,51 +286,32 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 	}
 ```
 
+### 自定义表单属性
 
-
-### 密码加密
-
-接口
-
-PasswordEncoder 
-
-三个方法
+配置类中
 
 ```java
-	/**
-	 * Encode the raw password. Generally, a good encoding algorithm applies a SHA-1 or
-	 * greater hash combined with an 8-byte or greater randomly generated salt.
-	 用来加密
-	 */
-	String encode(CharSequence rawPassword);
-
-	/**
-	 * Verify the encoded password obtained from storage matches the submitted raw
-	 * password after it too is encoded. Returns true if the passwords match, false if
-	 * they do not. The stored password itself is never decoded.
-	 *
-	 * @param rawPassword the raw password to encode and match
-	 * @param encodedPassword the encoded password from storage to compare with
-	 * @return true if the raw password, after encoding, matches the encoded password from
-	 * storage
-	 校验密码
-	 */
-	boolean matches(CharSequence rawPassword, String encodedPassword);
-
-	/**
-	 * Returns true if the encoded password should be encoded again for better security,
-	 * else false. The default implementation always returns false.
-	 * @param encodedPassword the encoded password to check
-	 * @return true if the encoded password should be encoded again for better security,
-	 * else false.
-	 
-	 是否需要再次加密
-	 */
-	default boolean upgradeEncoding(String encodedPassword) {
-		return false;
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		// TODO Auto-generated method stub
+		http.authorizeRequests()
+		//所有请求都需要验证
+		.anyRequest().authenticated()
+		.and()
+		//permitAll 给没登录的 用户可以访问这个地址的权限
+		.formLogin().loginPage("/login.html")
+		//自定义表单
+		.usernameParameter("xx")
+		.passwordParameter("oo")
+		
+		.loginProcessingUrl("/login")
+		.failureUrl("/login.html?error")
+		.defaultSuccessUrl("/").permitAll()
+		.and()
+		.csrf().csrfTokenRepository(new HttpSessionCsrfTokenRepository())
+		
+		;
 	}
 ```
 
-
-
-### 认证方式
+### 
