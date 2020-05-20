@@ -4,9 +4,9 @@
 
 ```
 –1.学生表 
-Student(s_id,s_name,s_birth,s_sex) –学生编号,学生姓名, 出生年月,学生性别 
+student(s_id,s_name,s_birth,s_sex) –学生编号,学生姓名, 出生年月,学生性别 
 –2.课程表 
-Course(c_id,c_name,t_id) – –课程编号, 课程名称, 教师编号 
+course(c_id,c_name,t_id) – –课程编号, 课程名称, 教师编号 
 –3.教师表 
 Teacher(t_id,t_name) –教师编号,教师姓名 
 –4.成绩表 
@@ -18,69 +18,69 @@ Score(s_id,c_id,s_score) –学生编号,课程编号,分数
 ```sql
 --建表
 --学生表
-CREATE TABLE `Student`(
+CREATE TABLE `student`(
     `s_id` VARCHAR(20),
     `s_name` VARCHAR(20) NOT NULL DEFAULT '',
     `s_birth` VARCHAR(20) NOT NULL DEFAULT '',
     `s_sex` VARCHAR(10) NOT NULL DEFAULT '',
     PRIMARY KEY(`s_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --课程表
-CREATE TABLE `Course`(
+CREATE TABLE `course`(
     `c_id`  VARCHAR(20),
     `c_name` VARCHAR(20) NOT NULL DEFAULT '',
     `t_id` VARCHAR(20) NOT NULL,
     PRIMARY KEY(`c_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --教师表
-CREATE TABLE `Teacher`(
+CREATE TABLE `teacher`(
     `t_id` VARCHAR(20),
     `t_name` VARCHAR(20) NOT NULL DEFAULT '',
     PRIMARY KEY(`t_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --成绩表
-CREATE TABLE `Score`(
+CREATE TABLE `score`(
     `s_id` VARCHAR(20),
     `c_id`  VARCHAR(20),
     `s_score` INT(3),
     PRIMARY KEY(`s_id`,`c_id`)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --插入学生表测试数据
-insert into Student values('01' , '赵雷' , '1990-01-01' , '男');
-insert into Student values('02' , '钱电' , '1990-12-21' , '男');
-insert into Student values('03' , '孙风' , '1990-05-20' , '男');
-insert into Student values('04' , '李云' , '1990-08-06' , '男');
-insert into Student values('05' , '周梅' , '1991-12-01' , '女');
-insert into Student values('06' , '吴兰' , '1992-03-01' , '女');
-insert into Student values('07' , '郑竹' , '1989-07-01' , '女');
-insert into Student values('08' , '王菊' , '1990-01-20' , '女');
+insert into student values('01' , '赵雷' , '1990-01-01' , '男');
+insert into student values('02' , '钱电' , '1990-12-21' , '男');
+insert into student values('03' , '孙风' , '1990-05-20' , '男');
+insert into student values('04' , '李云' , '1990-08-06' , '男');
+insert into student values('05' , '周梅' , '1991-12-01' , '女');
+insert into student values('06' , '吴兰' , '1992-03-01' , '女');
+insert into student values('07' , '郑竹' , '1989-07-01' , '女');
+insert into student values('08' , '王菊' , '1990-01-20' , '女');
 --课程表测试数据
-insert into Course values('01' , '语文' , '02');
-insert into Course values('02' , '数学' , '01');
-insert into Course values('03' , '英语' , '03');
+insert into course values('01' , '语文' , '02');
+insert into course values('02' , '数学' , '01');
+insert into course values('03' , '英语' , '03');
 --教师表测试数据
-insert into Teacher values('01' , '张三');
-insert into Teacher values('02' , '李四');
-insert into Teacher values('03' , '王五');
+insert into teacher values('01' , '张三');
+insert into teacher values('02' , '李四');
+insert into teacher values('03' , '王五');
 --成绩表测试数据
-insert into Score values('01' , '01' , 80);
-insert into Score values('01' , '02' , 90);
-insert into Score values('01' , '03' , 99);
-insert into Score values('02' , '01' , 70);
-insert into Score values('02' , '02' , 60);
-insert into Score values('02' , '03' , 80);
-insert into Score values('03' , '01' , 80);
-insert into Score values('03' , '02' , 80);
-insert into Score values('03' , '03' , 80);
-insert into Score values('04' , '01' , 50);
-insert into Score values('04' , '02' , 30);
-insert into Score values('04' , '03' , 20);
-insert into Score values('05' , '01' , 76);
-insert into Score values('05' , '02' , 87);
-insert into Score values('06' , '01' , 31);
-insert into Score values('06' , '03' , 34);
-insert into Score values('07' , '02' , 89);
-insert into Score values('07' , '03' , 98);
+insert into score values('01' , '01' , 80);
+insert into score values('01' , '02' , 90);
+insert into score values('01' , '03' , 99);
+insert into score values('02' , '01' , 70);
+insert into score values('02' , '02' , 60);
+insert into score values('02' , '03' , 80);
+insert into score values('03' , '01' , 80);
+insert into score values('03' , '02' , 80);
+insert into score values('03' , '03' , 80);
+insert into score values('04' , '01' , 50);
+insert into score values('04' , '02' , 30);
+insert into score values('04' , '03' , 20);
+insert into score values('05' , '01' , 76);
+insert into score values('05' , '02' , 87);
+insert into score values('06' , '01' , 31);
+insert into score values('06' , '03' , 34);
+insert into score values('07' , '02' , 89);
+insert into score values('07' , '03' , 98);
 ```
 
 ### 3、测试题
@@ -89,8 +89,8 @@ insert into Score values('07' , '03' , 98);
 -- 1、查询"01"课程比"02"课程成绩高的学生的信息及课程分数  
 select a.* ,b.s_score as 01_score,c.s_score as 02_score from 
     student a 
-    join score b on a.s_id=b.s_id and b.c_id='01'
-    left join score c on a.s_id=c.s_id and c.c_id='02' or c.c_id = NULL where b.s_score>c.s_score
+    join Score b on a.s_id=b.s_id and b.c_id='01'
+    left join Score c on a.s_id=c.s_id and c.c_id='02' or c.c_id = NULL where b.s_score>c.s_score
 -- 2、查询"01"课程比"02"课程成绩低的学生的信息及课程分数 
 select a.* ,b.s_score as 01_score,c.s_score as 02_score from 
     student a left join score b on a.s_id=b.s_id and b.c_id='01' or b.c_id=NULL 
@@ -322,16 +322,16 @@ from (select s_id,SUM(s_score) as sum_score from score GROUP BY s_id ORDER BY su
         select MAX(s_score) from score where c_id='02'
         -- 查询信息
         select a.*,b.s_score,b.c_id,c.c_name from student a
-            LEFT JOIN score b on a.s_id = b.s_id
+            LEFT JOIN Score b on a.s_id = b.s_id
             LEFT JOIN course c on b.c_id=c.c_id
-            where b.c_id =(select c_id from course c,teacher d where c.t_id=d.t_id and d.t_name='张三')
-            and b.s_score in (select MAX(s_score) from score where c_id='02')
+            where b.c_id =(select c_id from course c,Teacher d where c.t_id=d.t_id and d.t_name='张三')
+            and b.s_score in (select MAX(s_score) from Score where c_id=(select c_id from course c,Teacher d where c.t_id=d.t_id and d.t_name='张三'))
 -- 41、查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩 
     select DISTINCT b.s_id,b.c_id,b.s_score from score a,score b where a.c_id != b.c_id and a.s_score = b.s_score
 -- 42、查询每门功成绩最好的前两名 
         -- 牛逼的写法
-    select a.s_id,a.c_id,a.s_score from score a
-        where (select COUNT(1) from score b where b.c_id=a.c_id and b.s_score>=a.s_score)<=2 ORDER BY a.c_id
+    select a.s_id,a.c_id,a.s_score from Score a
+        where (select COUNT(1) from Score b where b.c_id=a.c_id and b.s_score>=a.s_score)<=2 ORDER BY a.c_id
 -- 43、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列  
         select c_id,count(*) as total from score GROUP BY c_id HAVING total>5 ORDER BY total,c_id ASC
 -- 44、检索至少选修两门课程的学生学号 
