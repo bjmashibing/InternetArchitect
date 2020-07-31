@@ -152,10 +152,42 @@ select * from student where s_id in(
     select distinct a.s_id from score a where a.c_id in(select a.c_id from score a where a.s_id='01')
     );
 -- 13、查询和"01"号的同学学习的课程完全相同的其他同学的信息  
-select a.* from student a where a.s_id in(
-    select distinct s_id from score where s_id!='01' and c_id in(select c_id from score where s_id='01')
-    group by s_id 
-    having count(1)=(select count(1) from score where s_id='01'));
+SELECT
+	* 
+FROM
+	student 
+WHERE
+	s_id IN (
+	SELECT
+		s_id 
+	FROM
+		(
+		SELECT
+			s_id,
+			COUNT( s_id ) cou 
+		FROM
+			(
+			SELECT
+				* 
+			FROM
+				score 
+			WHERE
+				s_id IN (
+				SELECT
+					s_id 
+				FROM
+					( SELECT s_id, COUNT( s_id ) count FROM score WHERE s_id != '01' GROUP BY s_id ) t1 
+				WHERE
+					t1.count = ( SELECT count( c_id ) FROM score WHERE s_id = '01' ) 
+				) 
+			) t3 
+		WHERE
+			t3.c_id IN ( SELECT c_id FROM score WHERE s_id = '01' ) 
+		GROUP BY
+			s_id 
+		) t4 
+WHERE
+	t4.cou = ( SELECT count( c_id ) FROM score WHERE s_id = '01' ))
 -- 14、查询没学过"张三"老师讲授的任一门课程的学生姓名 
 select a.s_name from student a where a.s_id not in (
     select s_id from score where c_id = 
