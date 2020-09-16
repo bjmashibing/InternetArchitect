@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a289d249-a804-4c31-b14a-eb207cb91e17" name="Default" comment="" />
+    <list default="true" id="a289d249-a804-4c31-b14a-eb207cb91e17" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mashibing/SpringbootDataApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mashibing/SpringbootDataApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DataSourceAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DataSourceAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DataSourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DataSourceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DataSourceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DataSourceType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DynamicDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DynamicDataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DynamicDataSourceContextHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mashibing/mult/DynamicDataSourceContextHolder.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,101 +23,100 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+            <state relative-caret-position="363">
+              <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JDBCController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/controller/JDBCController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mashibing/SpringbootDataApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DynamicDataSourceContextHolder.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DynamicDataSourceContextHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="644">
               <caret line="23" column="42" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DruidConfig.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/config/DruidConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="112">
               <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElementType.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/annotation/ElementType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+            <state relative-caret-position="1848">
+              <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSourceAspect.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DataSourceAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="560">
+              <caret line="28" column="29" selection-start-line="27" selection-start-column="10" selection-end-line="28" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmpController.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/EmpController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="252">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="1456">
               <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RetentionPolicy.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/annotation/RetentionPolicy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="364">
               <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
             </state>
           </provider>
@@ -127,6 +135,9 @@
     <findStrings>
       <find>initialS</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -150,17 +161,12 @@
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/apache-maven-3.2.5" />
-        <option name="userSettingsFile" value="C:\apache-maven-3.2.5\conf\settings.xml" />
+        <option name="localRepository" value="E:\javaMvn" />
+        <option name="mavenHome" value="C:/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="C:\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -169,19 +175,34 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot_data" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot_data" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -207,43 +228,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot_data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot_data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mashibing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot_data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mashibing" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot_data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mashibing" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_data" type="b2602c69:ProjectViewProjectNode" />
@@ -279,21 +263,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_data" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot_data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="mashibing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,9 +277,11 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="DruidData&#9;PSI&#9;JAVA://com.alibaba.druid.pool.DruidDataSource&#10;DataSourcePr&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.jdbc.DataSourceProperties&#10;HttpPro&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.http.HttpProperties" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -326,6 +304,9 @@
   <component name="RunManager" selected="JUnit.SpringbootDataApplicationTests.contextLoads">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SpringbootDataApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot_data" />
@@ -335,20 +316,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.mashibing" />
       <option name="MAIN_CLASS_NAME" value="com.mashibing.SpringbootDataApplicationTests" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SpringbootDataApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot_data" />
@@ -358,67 +332,42 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.mashibing" />
       <option name="MAIN_CLASS_NAME" value="com.mashibing.SpringbootDataApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SpringbootDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot_data" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.SpringbootDataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.SpringbootDataApplication" />
       <item itemvalue="JUnit.SpringbootDataApplicationTests" />
       <item itemvalue="JUnit.SpringbootDataApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.SpringbootDataApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -438,6 +387,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577624101070</updated>
       <workItem from="1577624106941" duration="4261000" />
+      <workItem from="1588151221212" duration="221000" />
     </task>
     <servers />
   </component>
@@ -463,107 +413,106 @@
     <history-entry file="SpringbootDataApplicationTests_contextLoads - 2019.12.29 at 21h 27m 29s.xml">
       <configuration name="SpringbootDataApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringbootDataApplicationTests_contextLoads - 2020.04.29 at 17h 08m 47s.xml">
+      <configuration name="SpringbootDataApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootDataApplicationTests_contextLoads - 2020.04.29 at 17h 09m 11s.xml">
+      <configuration name="SpringbootDataApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4261000" />
+    <option name="totallyTimeSpent" value="4482000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="JRebel Executor" weight="0.40967283" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info anchor="right" id="Database" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.25301206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38975817" />
-      <window_info anchor="bottom" id="Spring" weight="0.32859176" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Problems" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info id="JRebel" sideWeight="0.50071126" side_tool="true" weight="0.25" />
-      <window_info id="Web" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" sideWeight="0.50071126" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3064972" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32859176" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Problems" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" weight="0.40967283" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="right" id="Maven" visible="true" weight="0.32931727" />
+      <window_info anchor="right" id="Translate" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Palette" order="0" />
       <window_info id="JRebel" order="1" sideWeight="0.50071126" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" order="0" weight="0.32859176" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Run" order="12" weight="0.38975817" />
-      <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49928877" visible="true" weight="0.25" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32859176" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="bottom" id="TODO" order="16" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Problems" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" order="2" />
-      <window_info anchor="bottom" id="Find" order="11" />
       <window_info anchor="bottom" id="JRebel Executor" order="8" weight="0.47652915" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49928877" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="JRebel Console" order="9" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="10" />
-      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="11" />
+      <window_info anchor="bottom" id="Run" order="12" weight="0.38975817" />
+      <window_info anchor="bottom" id="Debug" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="16" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Maven Projects" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="13" weight="0.4" />
       <window_info anchor="right" id="Bean Validation" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/SpringbootDataApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mashibing/SpringbootDataApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -620,20 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/annotation/RetentionPolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.4.1/HikariCP-3.4.1.jar!/com/zaxxer/hikari/HikariConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -641,73 +576,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/controller/JDBCController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="112">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DataSourceAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DynamicDataSourceContextHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/EmpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/annotation/ElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+        <state relative-caret-position="644">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/config/DruidConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DynamicDataSourceContextHolder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="112">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/annotation/ElementType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        <state relative-caret-position="1848">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/DataSourceAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="29" selection-start-line="27" selection-start-column="10" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mashibing/mult/EmpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/annotation/RetentionPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mashibing/SpringbootDataApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <last-edited>c3p0-0.9.5.4</last-edited>
@@ -723,6 +700,17 @@
       <state key="JdkListConfigurable.UI">
         <settings>
           <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
