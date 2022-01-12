@@ -20,7 +20,7 @@
 	<!-- 集中在properties 标签中定义所有 依赖的版本号 -->
 	<properties>
 		<java.version>1.8</java.version>
-		<dubbo.version>2.7.1</dubbo.version>
+		<dubbo.version>2.7.15</dubbo.version>
 	</properties>
 
 	<!-- 定义公共依赖的版本号 -->
